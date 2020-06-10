@@ -1,0 +1,13 @@
+@import '../../../../global/abstract/variables';
+
+.notification {
+  border: 1px solid $HomekItorange;
+  padding: 10px;
+  text-align: center;
+  p {
+    font-size: 1.9rem;
+    letter-spacing: 0.12rem;
+    font-family: 'Lato', sans-serif;
+    color: $HomekItorange;
+  }
+}
