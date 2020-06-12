@@ -13,7 +13,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 85%;
-  margin: 150px auto 0 auto;
+  margin: 80px auto 0 auto;
+  align-items: center;
 }
 .header__text{
   width: 50%;
@@ -388,11 +389,16 @@
 
 .award {
   display: flex;
+  height: 90vh;
 
   &__content {
     padding: 60px;
     background-color: #f2f1f8;
     width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h1 {
       text-align: left;
@@ -401,9 +407,9 @@
     }
     p {
       font-family: 'Poppins', sans-serif;
-      margin-top: 20px;
+      margin-top: 40px;
       font-size: 18px;
-      line-height: 37px;
+      line-height: 3.7rem;
     }
   }
   &__icon {
@@ -431,7 +437,7 @@
   .award__content{
     p{
       font-size: 1.8rem;
-      line-height: 2.7rem;
+      // line-height: 2.7rem;
     }
   }
   .award__icon-container{
