@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
         licenseKey: 'YOUR LICENSE KEY HERE',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         menu: '#menu',
+        verticalCentered: false,
 
         afterResize: () => {
           console.log('After resize');

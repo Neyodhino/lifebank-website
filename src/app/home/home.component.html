@@ -1,95 +1,92 @@
 <section (scroll)="onWindowScroll($event);">
-  <section class="container">
-    <div class="header">
-      <div>
-        <app-notification></app-notification>
-      </div>
-
-      <div>
-        <app-navbar></app-navbar>
-      </div>
-      <div class="header__content">
-        <div class="header__text">
-          <h1>
-            Our Business is Saving Lives.
-          </h1>
-          <p>
-            We deliver critical medical supplies round the clock to busy hospital teams using accessible technology and a
-            multi-modal distribution network.
-            We focus on offering our customers speed, convenience and safety in delivering medical supplies that will help them save their patients' lives.
-            We offer a cross-subsidization business model to ensure universal access to these supplies. We are committed to impact.
-          </p>
+  <section>
+    <section class="container section">
+      <div class="header">
+        <div>
+          <app-notification></app-notification>
         </div>
-        <div class="header__img">
-          <img src="../../assets/images/new_globe.png" alt="" srcset="">
+
+        <div>
+          <app-navbar></app-navbar>
         </div>
-      </div>
-      <div class="header__direction">
-        <img src="../../assets/images/direction.png" alt="">
-      </div>
-    </div>
-
-
-    <div class="color__links">
-      <div class="color__red">
-        <div id="lifebank">
-          <button>LifeBank</button>
+        <div class="header__content">
+          <div class="header__text">
+            <h1>
+              Our Business is Saving Lives.
+            </h1>
+            <p>
+              We deliver critical medical supplies round the clock to busy hospital teams using accessible technology and a
+              multi-modal distribution network.
+              We focus on offering our customers speed, convenience and safety in delivering medical supplies that will help them save their patients' lives.
+              We offer a cross-subsidization business model to ensure universal access to these supplies. We are committed to impact.
+            </p>
+          </div>
+          <div class="header__img">
+            <img src="../../assets/images/new_globe.png" alt="" srcset="">
+          </div>
+        </div>
+        <div class="header__direction">
+          <img src="../../assets/images/direction.png" alt="">
         </div>
       </div>
-      <div class="color__orange">
-        <div id="quip">
-          <button>Quip</button>
+
+
+      <div class="color__links">
+        <div class="color__red">
+          <div id="lifebank">
+            <button>LifeBank</button>
+          </div>
+        </div>
+        <div class="color__orange">
+          <div id="quip">
+            <button>Quip</button>
+          </div>
+        </div>
+        <div class="color__blue">
+          <div id="air">
+            <button>AirBank</button>
+          </div>
+        </div>
+        <div class="color__green">
+          <div id="stock">
+            <button>StockBank</button>
+          </div>
         </div>
       </div>
-      <div class="color__blue">
-        <div id="air">
-          <button>AirBank</button>
-        </div>
+    </section>
+
+    <section class="values section">
+      <div class="values__content">
+        <p>LifeBank distributes critical supplies to hospitals round the clock using technology and a multi-modal delivery network. We are committed to reaching every patient, every time, everywhere.</p>
+        <button class="btn-link">Find Out More</button>
       </div>
-      <div class="color__green">
-        <div id="stock">
-          <button>StockBank</button>
-        </div>
+    </section>
+
+    <section class="hospital section">
+      <div class="hospital__content">
+        <h1>For Hospitals</h1>
+        <p> Find critical supplies you need round the clock, faster, cheaper and safer.</p>
+        <button class="btn-link">Find Out More</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-<section>
+    <section class="patient section">
+      <div class="patient__content">
+        <h1>For Patients</h1>
+        <p>  LifeBank ensures that should you ever need us we will be there 24 hours a day, 27 days a week with safe supplies because you deserve health </p>
+        <button class="btn-link">Find Out More</button>
+      </div>
+    </section>
 
-  <section class="values section">
-    <div class="values__content">
-      <p>LifeBank distributes critical supplies to hospitals round the clock using technology and a multi-modal delivery network. We are committed to reaching every patient, every time, everywhere.</p>
-      <button class="btn-link">Find Out More</button>
-    </div>
-  </section>
+    <section class="partner section">
+      <div class="partner__content">
+        <h1>For Partner</h1>
+        <p> You can support us to reach every African, especially vulnerable mothers and children with critical medical products</p>
+        <button class="btn-link">Find Out More</button>
+      </div>
+    </section>
 
-  <section class="hospital section">
-    <div class="hospital__content">
-      <h1>For Hospitals</h1>
-      <p> Find critical supplies you need round the clock, faster, cheaper and safer.</p>
-      <button class="btn-link">Find Out More</button>
-    </div>
-  </section>
-
-  <section class="patient section">
-    <div class="patient__content">
-      <h1>For Patients</h1>
-      <p>  LifeBank ensures that should you ever need us we will be there 24 hours a day, 27 days a week with safe supplies because you deserve health </p>
-      <button class="btn-link">Find Out More</button>
-    </div>
-  </section>
-
-  <section class="partner section">
-    <div class="partner__content">
-      <h1>For Partner</h1>
-      <p> You can support us to reach every African, especially vulnerable mothers and children with critical medical products</p>
-      <button class="btn-link">Find Out More</button>
-    </div>
-  </section>
-
-</section>
-
-  <section class="award">
+  <section class="award section">
     <div class="award__content">
       <h1>LifeBank has won several awards</h1>
       <p>These include the 2018 MIT Solve Health Challenge, Africa’s Top 50 Innovations by the Africa Innovation
@@ -113,7 +110,7 @@
     </div>
   </section>
 
-  <section class="achievement">
+  <section class="achievement section">
     <h1>Our Achievements</h1>
     <p>We are on a mission to save lives across the globe through the delivery of essential medical products regardless of location or timing. We aim to save as many lives within Sub-Saharan Africa and other developing countries. Be a Part of It!</p>
     <div class="achievement__container">
@@ -133,12 +130,9 @@
         <h1>5,910</h1>
         <p>Donors</p>
       </div>
-      <div class="achievement__card">
-        <h1>8,200</h1>
-        <p>Lives Saved</p>
-      </div>
     </div>
   </section>
 
   <app-footer></app-footer>
+</section>
 </section>
