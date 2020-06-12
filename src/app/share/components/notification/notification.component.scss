@@ -1,17 +1,23 @@
 @import '../../../../global/abstract/variables';
 
 .notification {
-  border: 1px solid $HomekItorange;
+  border: 1px solid #B70303;
   padding: 10px;
-  display: flex;
   justify-content: space-around;
+  text-align: center;
+  position: relative;
+  background-color: #B70303;
+  color: white;
   p {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    color: $HomekItorange;
   }
   svg{
-    fill: $HomekItorange;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    fill: white;
     width: 30px;
     height: 30px;
     cursor: pointer;

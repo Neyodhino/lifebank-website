@@ -10,13 +10,13 @@
 
 .header__content {
   display: flex;
-  // justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 85%;
-  margin: 50px auto 0 auto;
+  margin: 150px auto 0 auto;
 }
 .header__text{
-  width: 90%;
-  margin-left: 170px;
+  width: 50%;
   h1 {
     font-size: 10rem;
     font-family: 'Poppins', sans-serif;
@@ -28,14 +28,14 @@
     font-size: 18px;
     margin: 20px 0;
     font-family: 'Poppins', sans-serif;
-    width: 70%;
+    width: 90%;
     line-height: 30px;
   }
 }
 .header__img{
   margin-left: -100px;
   align-self: center;
-  width: 70%;
+  width: 50%;
   height: 70%;
   img{
     width: 100%;
@@ -59,14 +59,10 @@
       font-size: 7rem;
     }
   }
-  .header__content{
-    width: 100%;
-  }
   .header__img{
     align-self: center;
-    width: 88%;
     height: 88%;
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
@@ -472,8 +468,8 @@
   &__card {
     background-color: $LifeBankred;
     border-radius: 20px;
-    width: 250px;
-    height: 300px;
+    width: 18%;
+    // height: 300px;
     color: white;
     box-shadow: 0 16px 16px 0 #FFCCCC;
     padding-top: 70px;
@@ -483,7 +479,7 @@
       font-family: inherit;
     }
     p {
-      margin-top: 40px;
+      margin: 40px auto 70px;
       font-size: 17px;
       width: 100%;
       font-family: 'Poppins', sans-serif;
