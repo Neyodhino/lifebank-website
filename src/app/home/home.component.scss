@@ -11,7 +11,7 @@
 .header__content {
   display: flex;
   // justify-content: space-around;
-  width: 97%;
+  width: 90%;
   margin: 50px auto 0 auto;
 }
 .header__text{
@@ -208,18 +208,17 @@
 
 .values{
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
-             url(../../assets/images/values.jpeg);
+  background :linear-gradient(to right bottom,rgba(0,0,0,1),rgba(128,128,128,.6)),url(../../assets/images/values.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    align-items: center;
 
     &__content {
+      margin-left: 150px;
       color: white;
-      width: 50%;
-      margin: auto;
-      text-align: center;
+      width: 37%;
       p {
         font-size: 39px;
         font-family: 'Poppins', sans-serif;
@@ -236,8 +235,7 @@
 
 .hospital {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
-             url(../../assets/images/hospital.jpeg);
+  background: linear-gradient(to right bottom,rgba(0,0,0,.9),rgba(128,128,128,.6)),url('../../assets//images/hospital.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,10 +244,14 @@
 
     &__content {
       color: white;
-      width: 50%;
+      width: 35%;
       margin-bottom: 100px;
       margin-left: 100px;
+      h1 {
+        font-size: 19px;
+      }
       p {
+        margin-top: 20px;
         font-size: 50px;
         font-family: 'Poppins', sans-serif;
       }
@@ -276,7 +278,7 @@
 
     &__content {
       color: white;
-      width: 50%;
+      width: 35%;
       margin-bottom: 100px;
       margin-left: 100px;
       p {
@@ -297,19 +299,20 @@
 
 .partner {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
-             url(../../assets/images/partner.jpeg);
+  background: linear-gradient(to right bottom,rgba(0,0,0,.9),rgba(128,128,128,.5)),url('../../assets/images/partner.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
 
     &__content {
       color: white;
       width: 50%;
       margin-bottom: 100px;
-      margin-left: 100px;
+      margin-right: 100px;
+      text-align: right;
       p {
         font-size: 40px;
         font-family: 'Poppins', sans-serif;
@@ -385,10 +388,10 @@
     margin: 40px auto 120px auto;
   }
   &__container{
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   &__card {

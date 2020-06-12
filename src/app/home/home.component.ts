@@ -7,9 +7,29 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  config: any;
+  fullpage_api: any;
+
   constructor(
     @Inject(DOCUMENT) document
-  ) { }
+  ) {
+      this.config = {
+
+        licenseKey: 'YOUR LICENSE KEY HERE',
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        menu: '#menu',
+
+        afterResize: () => {
+          console.log('After resize');
+        },
+        afterLoad: (origin, destination, direction) => {
+          console.log(origin.index);
+        }
+      };
+  }
+  getRef(fullPageRef) {
+    this.fullpage_api = fullPageRef;
+  }
 
   ngOnInit(): void { }
 
