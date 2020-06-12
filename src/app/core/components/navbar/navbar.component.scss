@@ -6,8 +6,8 @@
   align-items: center;
   padding: 5px 170px;
   &__logo {
-    width: 12%;
-    height: 12%;
+    width: 13%;
+    height: 13%;
 
     img {
       width: 100%;
@@ -35,4 +35,11 @@
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+@media(max-width: '1440px') {
+  .navbar__logo{
+    width: 18%;
+    height: 18%;
+  }
 }
