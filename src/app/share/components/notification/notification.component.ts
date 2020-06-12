@@ -8,5 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class NotificationComponent implements OnInit {
   constructor() { }
 
+  showNotification = true;
+
   ngOnInit(): void { }
+
+  removeNotification(): void {
+    this.showNotification = false;
+  }
 }

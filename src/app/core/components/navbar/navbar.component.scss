@@ -1,3 +1,5 @@
+@import '../../../../global/component/button';
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,10 +22,17 @@
 
     a{
       text-decoration: none;
-      color: black;
       margin-left: 30px;
       font-weight: bold;
     }
   }
 }
+//styles to stick navbar at the top.
 
+.sticky {
+  background-color: white;
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

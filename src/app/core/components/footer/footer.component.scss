@@ -1,0 +1,10 @@
+@import '../../../../global/abstract/variables';
+
+footer{
+  padding: 20px;
+  background-color: $LifeBankred;
+  color: white;
+  p {
+    text-align: center;
+  }
+}

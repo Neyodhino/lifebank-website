@@ -3,10 +3,17 @@
 .notification {
   border: 1px solid $HomekItorange;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
   p {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     color: $HomekItorange;
+  }
+  svg{
+    fill: $HomekItorange;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
   }
 }

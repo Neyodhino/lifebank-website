@@ -1,4 +1,5 @@
 @import '../../global/abstract/variables';
+@import '../../global/component/button';
 
 .container{
   height: 100vh;
@@ -7,10 +8,10 @@
   justify-content: space-between;
 }
 
-.header__content{
+.header__content {
   display: flex;
   // justify-content: space-around;
-  width: 87%;
+  width: 90%;
   margin: 50px auto 0 auto;
 }
 .header__text{
@@ -21,19 +22,20 @@
     text-align: center;
     font-weight: bolder;
   }
-  p{
+  p {
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     margin: 20px auto;
     font-family: 'Poppins', sans-serif;
-    width: 65%;
+    width: 70%;
+    line-height: 30px;
   }
 }
 .header__img{
   margin-left: -100px;
   align-self: center;
-  width: 48%;
-  height: 48%;
+  width: 53%;
+  height: 53%;
   img{
     width: 100%;
     height: 100%;
@@ -42,7 +44,7 @@
 .header__direction{
   width: 2%;
   min-height: 2%;
-  margin: -30px auto 0 auto;
+  margin: -70px auto 0 auto;
   img{
     width: 100%;
     height: 100%;
@@ -50,15 +52,15 @@
   }
 }
 
-.color__links{
+.color__links {
   justify-self: flex-end;
   display: flex;
 }
-.color__red{
+.color__red {
   background-color: $LifeBankred;
   height: 10px;
   width: 25%;
-  &:hover > #air {
+  &:hover > #lifebank {
     visibility: visible;
     animation: slide .6s ease-in-out
   }
@@ -67,18 +69,86 @@
   background-color:#B32911;;
   height: 10px;
   width: 25%;
+  &:hover > #quip {
+    visibility: visible;
+    animation: slide .6s ease-in-out
+  }
 }
 .color__blue {
   background-color:$airbankblue;
   height: 10px;
   width: 25%;
+  &:hover > #air {
+    visibility: visible;
+    animation: slide .6s ease-in-out
+  }
 }
-.color__black {
+.color__green {
   background-color: $stockbankgreen;
   height: 10px;
   width: 25%;
+  &:hover > #stock {
+    visibility: visible;
+    animation: slide .6s ease-in-out
+  }
 }
 
+
+#lifebank{
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
+             url(../../assets/images/lifebank.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  position: absolute;
+  width: 25%;
+  top: 0;
+  height: 100vh;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  button{
+    background-color: transparent;
+    padding: 16px 40px;
+    border: 1px solid $LifeBankred;
+    border-radius: 30px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+  }
+}
+
+#quip{
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
+             url(../../assets/images/lifebank.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  position: absolute;
+  width: 25%;
+  top: 0;
+  height: 100vh;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  button{
+    background-color: transparent;
+    padding: 16px 40px;
+    border: 1px solid $HomekItorange;
+    border-radius: 30px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+  }
+}
 
 #air{
   background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
@@ -97,13 +167,247 @@
   button{
     background-color: transparent;
     padding: 16px 40px;
-    border: 1px solid orangered;
+    border: 1px solid $airbankblue;
     border-radius: 30px;
     color: white;
     width: 50%;
     margin: 0 auto;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 17px;
+    outline: none;
+  }
+}
+
+#stock{
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
+             url(../../assets/images/stock.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  position: absolute;
+  width: 25%;
+  top: 0;
+  height: 100vh;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  button{
+    background-color: transparent;
+    padding: 16px 40px;
+    border: 1px solid $stockbankgreen;
+    border-radius: 30px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+  }
+}
+
+.values{
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
+             url(../../assets/images/values.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+
+    &__content {
+      color: white;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      p {
+        font-size: 39px;
+        font-family: 'Poppins', sans-serif;
+      }
+      button{
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 15px 35px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+      }
+    }
+}
+
+.hospital {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
+             url(../../assets/images/hospital.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    &__content {
+      color: white;
+      width: 50%;
+      margin-bottom: 100px;
+      margin-left: 100px;
+      p {
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+      }
+      button {
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 15px 35px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        font-weight: 550;
+      }
+    }
+}
+
+.patient {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
+             url(../../assets/images/patients.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    &__content {
+      color: white;
+      width: 50%;
+      margin-bottom: 100px;
+      margin-left: 100px;
+      p {
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+      }
+      button {
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 15px 35px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        font-weight: 550;
+      }
+    }
+}
+
+.partner {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
+             url(../../assets/images/partner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    &__content {
+      color: white;
+      width: 50%;
+      margin-bottom: 100px;
+      margin-left: 100px;
+      p {
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+      }
+      button {
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 15px 35px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        font-weight: 550;
+      }
+    }
+}
+
+.award {
+  display: flex;
+
+  &__content {
+    padding: 60px;
+    background-color: #f2f1f8;
+    width: 50%;
+
+    h1 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+    }
+    p {
+      font-family: 'Poppins', sans-serif;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 37px;
+    }
+  }
+  &__icon {
+    padding: 20px;
+    flex: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+    &-container {
+      display: flex;
+      justify-content: space-around;
+      img {
+        width: 20%;
+        height: 20%;
+      }
+    }
+  }
+}
+.award__icon-container:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.achievement {
+  margin: 150px 0;
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 550;
+  }
+  p{
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    margin: 40px auto 120px auto;
+  }
+  &__container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__card {
+    background-color: $LifeBankred;
+    border-radius: 20px;
+    padding: 90px 60px 2px 60px;
+    color: white;
+    box-shadow: 0 16px 16px 0 #FFCCCC;
+    h1{
+      font-size: 50px;
+      text-align: center;
+      font-family: inherit;
+    }
+    p {
+      margin-top: 40px;
+      font-size: 17px;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 }
 
