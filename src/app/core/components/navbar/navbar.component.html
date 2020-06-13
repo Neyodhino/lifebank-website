@@ -1,6 +1,6 @@
 <div class="navbar" id="navbar">
   <div class="navbar__logo">
-    <img src="../../../../assets/images/final-logo.gif" alt="lifebank logo">
+    <a [routerLink] = "['/home']" ><img src="../../../../assets/images/final-logo.gif" alt="lifebank logo"></a>
   </div>
   <nav>
     <ul>
@@ -14,16 +14,15 @@
         <a href="#" style="color: black;">Patients</a>
       </li>
       <li>
-        <a href="#" style="color: black;">Impact</a>
+        <a [routerLink] = "['/impact']" style="color: black;">Impact</a>
       </li>
       <li>
         <a href="#" style="color: black;">Careers</a>
       </li>
       <li>
-        <a href="#" class="btn-link">Get in Touch</a>
+        <a [routerLink] = "['/contact']" class="btn-link">Get in Touch</a>
       </li>
     </ul>
   </nav>
 </div>
-
 
