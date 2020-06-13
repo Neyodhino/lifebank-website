@@ -24,6 +24,5 @@ export class HomeComponent implements OnInit {
       element.classList.remove('sticky');
      }
   }
-
 }
 

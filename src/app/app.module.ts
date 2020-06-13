@@ -28,7 +28,8 @@ import { HospitalsComponent } from './hospitals/hospitals.component';
     CoreModule,
     ShareModule,
     BrowserAnimationsModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
