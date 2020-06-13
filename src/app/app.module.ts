@@ -10,13 +10,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImpactComponent } from './impact/impact.component';
+import { VisionComponent } from './vision/vision.component';
+import { HospitalsComponent } from './hospitals/hospitals.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContactComponent,
-    ImpactComponent
+    ImpactComponent,
+    VisionComponent,
+    HospitalsComponent
   ],
   imports: [
     BrowserModule,
