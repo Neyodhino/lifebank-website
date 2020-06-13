@@ -1,7 +1,7 @@
 .vision {
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.5)),
-             url(../../assets/images/impact.jpeg);
+             url(../../assets/images/founder.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,10 +20,10 @@
         animation-duration: 2s;
       }
       p {
-        font-size: 26px;
+        font-size: 5rem;
         font-family: 'Poppins', sans-serif;
         margin-top: 40px;
-        line-height: 4rem;
+        line-height: 6rem;
         animation-name: moveInBottom;
         animation-duration: 2s;
       }
@@ -33,13 +33,107 @@
 @media(max-width: '1440px') {
   .vision__content{
     margin-left: 100px;
-    width: 67%;
+    width: 60%;
     h1{
-      font-size: 2.7rem;
+      font-size: 3.3rem;
     }
     p{
-      font-size: 2.6rem;
-      line-height: 4rem;
+      font-size: 4.6rem;
+      line-height: 6.1rem;
+    }
+  }
+
+}
+
+.vision_2 {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.5)),
+             url(../../assets/images/vision2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    &-content {
+      color: white;
+      width: 45%;
+      margin-bottom: 100px;
+      margin-left: 100px;
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+        animation-name: moveInTop;
+        animation-duration: 2s;
+      }
+      p {
+        font-size: 4rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 40px;
+        line-height: 6rem;
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+      }
+    }
+}
+
+@media(max-width: '1440px') {
+  .vision_2-content{
+    margin-left: 100px;
+    width: 60%;
+    h1{
+      font-size: 3.3rem;
+    }
+    p{
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+}
+
+.vision_3 {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.5)),
+             url(../../assets/images/vision3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    &-content {
+      color: white;
+      width: 45%;
+      margin-bottom: 100px;
+      margin-left: 100px;
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+        animation-name: moveInTop;
+        animation-duration: 2s;
+      }
+      p {
+        font-size: 5rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 40px;
+        line-height: 6rem;
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+      }
+    }
+}
+
+@media(max-width: '1440px') {
+  .vision_3-content{
+    margin-left: 100px;
+    width: 60%;
+    h1{
+      font-size: 3.3rem;
+    }
+    p{
+      font-size: 4.6rem;
+      line-height: 6.1rem;
     }
   }
 
