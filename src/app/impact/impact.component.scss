@@ -16,12 +16,16 @@
       h1 {
         font-size: 40px;
         font-weight: bold;
+        animation-name: moveIn;
+        animation-duration: 3s;
       }
       p {
         font-size: 26px;
         font-family: 'Poppins', sans-serif;
         margin-top: 40px;
         line-height: 4rem;
+        animation-name: moveIn;
+        animation-duration: 3s;
       }
     }
 }
@@ -38,4 +42,16 @@
     }
   }
 
+}
+
+@keyframes moveIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
 }
