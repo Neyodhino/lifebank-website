@@ -21,6 +21,8 @@ export class HomeComponent implements OnInit {
       menu: '#menu',
       navigation: true,
       verticalCentered: false,
+      parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+      fadingEffect: true,
 
       // events callback
       afterLoad: (origin, destination, direction) => {
