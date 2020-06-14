@@ -1,5 +1,4 @@
-<section (scroll)="onWindowScroll($event);">
-  <section>
+<div (scroll)="onWindowScroll($event);" fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
     <section class="container section">
       <div class="header">
         <div>
@@ -141,5 +140,4 @@
   </section>
 
   <app-footer></app-footer>
-</section>
-</section>
+</div>
