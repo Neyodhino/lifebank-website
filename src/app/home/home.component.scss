@@ -485,6 +485,7 @@
     color: white;
     box-shadow: 0 16px 16px 0 rgba(61, 118, 165, 0.05);
     padding-top: 70px;
+    transition: transform .3s;
     h1{
       font-size: 60px;
       text-align: center;
@@ -498,6 +499,9 @@
       width: 100%;
       font-family: 'Poppins', sans-serif;
       color: black;
+    }
+    &:hover{
+      transform: translateY(-1.5rem) scale(1.03);
     }
   }
 }
