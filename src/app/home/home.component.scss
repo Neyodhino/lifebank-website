@@ -1,5 +1,6 @@
 @import '../../global/abstract/variables';
 @import '../../global/component/button';
+@import'../../global/abstract/_sectionContentAnimation.css';
 
 .container {
   height: 100vh;
@@ -304,6 +305,7 @@
       }
     }
 }
+
 
 @media(max-width: '1440px') {
   .values__content{

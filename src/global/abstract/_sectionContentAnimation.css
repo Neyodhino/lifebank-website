@@ -1,0 +1,152 @@
+
+.section-one button {
+	-webkit-transform: translateY(-1000px);
+	        transform: translateY(-1000px);
+	opacity: 0;
+	-webkit-transition: opacity .8s ease-in-out,
+				-webkit-transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: opacity .8s ease-in-out,
+				-webkit-transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .8s ease-in-out;
+	transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .8s ease-in-out,
+				-webkit-transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.section-one.active  button {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+	opacity: 1;
+}
+
+.section-one  p {
+	-webkit-transform: translateX(100%);
+	        transform: translateX(100%);
+	opacity: 0;
+	-webkit-transition: opacity .8s ease-in-out,
+				-webkit-transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: opacity .8s ease-in-out,
+				-webkit-transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .8s ease-in-out;
+	transition: transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .8s ease-in-out,
+				-webkit-transform .8s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.section-one.active p {
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+	opacity: 1;
+}
+
+.section-one.active p {
+	-webkit-transition-delay: .2s;
+	        transition-delay: .2s;
+}
+
+
+/*  section two content animation */
+
+.section-two h1,
+.section-two  p{
+	-webkit-transform: translateY(1000px);
+	        transform: translateY(1000px);
+	opacity: 0;
+	-webkit-transition: opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.section-two.active h1,
+.section-two.active p{
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+	opacity: 1;
+}
+
+.section-two.active p {
+	-webkit-transition-delay: .22s;
+	        transition-delay: .22s;
+}
+
+/* ==================================================================================*/
+.section-three h1,
+.section-three p {
+	-webkit-transform: translateY(-1000px);
+	        transform: translateY(-1000px);
+	opacity: 0;
+	-webkit-transition: opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.section-three.active h1,
+.section-three.active p {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+	opacity: 1;
+}
+
+.section-three.active h1 {
+	-webkit-transition-delay: .44s;
+	        transition-delay: .44s;
+}
+
+.section-three.active p {
+	-webkit-transition-delay: .22s;
+	        transition-delay: .22s;
+}
+
+.section-three.active  p + p {
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
+}
+
+/* ======================================================== */
+
+.section-four h1,
+.section-four p {
+	-webkit-transform: translateX(-100%);
+	        transform: translateX(-100%);
+	opacity: 0;
+	-webkit-transition: opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out,
+				-webkit-transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.section-four.active h1,
+.section-four.active p {
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+	opacity: 1;
+}
+
+.section-four.active p {
+	-webkit-transition-delay: .22s;
+	        transition-delay: .22s;
+}
+
+.section-four.active p + p {
+	-webkit-transition-delay: .44s;
+	        transition-delay: .44s;
+}
