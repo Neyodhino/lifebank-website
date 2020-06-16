@@ -1,11 +1,11 @@
-<div (scroll)="onWindowScroll($event);" fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
+<div (scroll)="onWindowScroll($event);" fullpage id="fullpage" [options]="config" #fullpageRef>
     <section class="container section">
       <div class="header">
-        <div>
+        <div >
           <app-notification></app-notification>
         </div>
 
-        <div>
+        <div id="menu">
           <app-navbar></app-navbar>
         </div>
         <div class="header__content">

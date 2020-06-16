@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ImpactComponent } from './impact/impact.component';
 import { VisionComponent } from './vision/vision.component';
 import { HospitalsComponent } from './hospitals/hospitals.component';
+import { CareersComponent } from './careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HospitalsComponent } from './hospitals/hospitals.component';
     ContactComponent,
     ImpactComponent,
     VisionComponent,
-    HospitalsComponent
+    HospitalsComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,
