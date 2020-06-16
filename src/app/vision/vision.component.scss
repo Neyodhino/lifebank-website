@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 
     &__content {
       color: white;
@@ -18,10 +18,11 @@
         font-weight: bold;
         animation-name: moveInTop;
         animation-duration: 2s;
+        font-family: 'Crimson Text', serif;
       }
       p {
         font-size: 5rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Crimson Text', serif;
         margin-top: 40px;
         line-height: 6rem;
         animation-name: moveInBottom;
@@ -65,10 +66,11 @@
         font-weight: bold;
         animation-name: moveInTop;
         animation-duration: 2s;
+        font-family: 'Crimson Text', serif;
       }
       p {
         font-size: 4rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Crimson Text', sans-serif;
         margin-top: 40px;
         line-height: 6rem;
         animation-name: moveInBottom;
@@ -112,10 +114,11 @@
         font-weight: bold;
         animation-name: moveInTop;
         animation-duration: 2s;
+        font-family: 'Crimson Text', serif;
       }
       p {
         font-size: 5rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Crimson Text', serif;
         margin-top: 40px;
         line-height: 6rem;
         animation-name: moveInBottom;

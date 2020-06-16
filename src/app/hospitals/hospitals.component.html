@@ -1,52 +1,53 @@
 <app-navbar></app-navbar>
-<div class="container">
 
-  <section class="faster">
-    <div class="faster__content">
-      <div class="faster__content-img">
-        <img src="../../assets/images/air_bank.jpg" alt="">
-      </div>
-      <div class="faster__content-text">
-        <h1>Find critical supplies you need round the clock, faster, cheaper and safer.</h1>
-        <p>With LifeBank you can always get the critical supplies needed in less than 45 minutesOur. B2B business model charges a logistics fee on a sliding scale which averages approximately $10 per unit delivered. Our B2G business model charges governments and institutions an annual subscription fee to supply hospitals they manage with essential medical products.
-        </p>
-      </div>
+<section class="hero">
+  <div class="hero__content">
+    <h1>Find critical supplies you need round the clock, faster, cheaper and safer.</h1>
+    <p>With LifeBank you can always get the critical supplies needed in less than 45 minutes.</p>
+    <p>Our B2B business model charges a logistics fee on a sliding scale which averages approximately $10 per unit delivered.</p>
+    <p>Our B2G business model charges governments and institutions an annual subscription fee to supply hospitals they manage with essential medical products.</p>
+  </div>
+</section>
+
+<section class="product">
+  <div class="product__container">
+    <div class="product__text">
+      <h1>Eliminate the risk of counterfeit product</h1>
+      <p>Blood is often transported without a cold chain, leaving it vulnerable to bacteria proliferation which can result in serious health complications when transfused.</p>
+      <p>With LifeBank you are assured of optimum products. We comply with WHO/EU coldchain and safety standards.</p>
+      <p>One of our innovations, SmartBag, tracks and ensures the safety record of blood through our logistical network.</p>
+      <p>We pay close attention to maintaining optimum condition of oxygen and preventing a fire outbreak during transportation through our logistical network</p>
     </div>
-  </section>
-
-  <section class="eliminate">
-    <h1>Eliminate the risk of counterfeit products.</h1>
-    <div class="eliminate__content">
-      <div class="eliminate__content-text">
-        <p>Blood is often transported without a cold chain, leaving it vulnerable to bacteria proliferation which can result in serious health complications when transfused With LifeBank you are assured of optimum products. We comply with WHO/EU coldchain and safety standards. One of our innovations, SmartBag, tracks and ensures the safety record of blood through our logistical network. We pay close attention to maintaining optimum condition of oxygen and preventing a fire outbreak during transportation through our logistical network
-        </p>
-      </div>
-      <div class="eliminate__content-img">
-        <img src="../../assets/images/eliminate.jpeg" alt="">
-      </div>
+    <div class="product__image">
+      <img src="../../assets/images/eliminate.png" alt="career image">
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="product">
-    <div class="product__content">
-      <div class="product__content-img">
-        <img src="../../assets/images/partner.jpeg" alt="">
-      </div>
-      <div class="product__content-text">
-        <h1>No more hour or day long searching for products.</h1>
-        <p>Our systems address problems relating to accessibility by collating inventory information from thousands of medical suppliers using a combination of mobile and web applications. We seamlessly transmit information gathered to busy hospitals via our discovery applications and ensure that products ordered by hospitals are delivered in under 45 minutes, in the right condition. Our mobility solutions are designed to reach you as fast as possible, wherever you are, no matter how difficult it may be. </p>
-      </div>
+<section class="product">
+  <div class="product__container">
+    <div class="product__image">
+      <img src="../../assets/images/values.jpeg" alt="career image">
     </div>
-  </section>
-
-  <section class="gap">
-    <h1>Let us bridge the gap for you</h1>
-    <div class="gap__text">
-      <p>We are always available 24/7 to get you what you need at affordable prices. LifeBank is on a mission to increase access to essential medical products at hospital level for the vulnerable. We strive to build a sustainable, state of the art, high quality, distribution platform, powered by technology and innovation</p>
+    <div class="product__text">
+      <h1>No more hour or day long searching for products</h1>
+      <p>Our systems address problems relating to accessibility by collating inventory information from thousands of medical suppliers using a        combination of mobile and web applications. </p>
+      <p>We seamlessly transmit information gathered to busy hospitals via our discovery applications and ensure that products ordered by hospitals are delivered in under 45 minutes, in the right condition.</p>
+      <p>Our mobility solutions are designed to reach you as fast as possible, wherever you are, no matter how difficult it
+        may be.</p>
     </div>
-    <button class="btn-link" (click)="navigate()">Contact Us</button>
-  </section>
+  </div>
+</section>
 
-</div>
+<section class="gap">
+  <div class="gap__content">
+    <h1> Let us bridge the gap for you</h1>
+    <p>We are always available 24/7 to get you what you need at affordable prices.</p>
+    <p>LifeBank is on a mission to increase access to essential medical products at hospital level for the vulnerable.</p>
+    <p>We strive to build a sustainable, state of the art, high quality, distribution platform, powered by technology and innovation</p>
+    <a [routerLink] = "['/contact']" class="btn-link">Contact Us</a>
+  </div>
+</section>
 
 <app-footer></app-footer>
+
