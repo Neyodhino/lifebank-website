@@ -63,6 +63,13 @@
   }
 }
 
+@media(max-width: '900px') {
+  .navbar__logo {
+    width: 250px;
+    height: 100px;
+  }
+}
+
 @media(max-width: '570px'){
   .navbar {
     padding: 5px 20px;
@@ -73,6 +80,20 @@
   &__logo{
     width: 30%;
     height: 30%;
+  }
+  }
+}
+
+@media(max-width: '360px'){
+  .navbar {
+    padding: 5px 10px;
+    nav{
+      display: none;
+    }
+
+  &__logo{
+    width: 50%;
+    height: 50%;
   }
   }
 }

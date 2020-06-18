@@ -23,3 +23,25 @@
     cursor: pointer;
   }
 }
+
+@media(max-width: '777px') {
+  .notification {
+    p {
+      font-size: 17px;
+    }
+  }
+}
+
+@media(max-width: '610px') {
+  .notification {
+    min-height: 54px;
+    position: relative;
+    p {
+      position: absolute;
+      top: 10%;
+      left: 70px;
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+}
