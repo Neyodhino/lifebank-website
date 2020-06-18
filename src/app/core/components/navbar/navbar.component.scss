@@ -29,6 +29,9 @@
     }
   }
 }
+#mobile__nav {
+  display: none;
+}
 //styles to stick navbar at the top.
 
 .sticky {
@@ -60,6 +63,9 @@
     width: 20%;
     height: 20%;
   }
+  }
+  #mobile__nav {
+    display: block;
   }
 }
 
