@@ -1,7 +1,6 @@
 @import '../../global/abstract/variables';
 @import '../../global/component/button';
 @import'../../global/abstract/_sectionContentAnimation.css';
-
 .container {
   height: 100vh;
   display: flex;
@@ -59,74 +58,6 @@
   }
 }
 
-
-@media(max-width: '1884px') {
- .header__img{
-   height: 47%;
-   width: 45%;
- }
-  .header__text{
-    h1{
-      font-size: 10rem;
-    }
-  }
-}
-
-@media(max-width: '1802px') {
-  .header__img{
-    height: 48%;
-    width: 48%;
-  }
-   .header__text{
-     h1{
-       font-size: 9.5rem;
-     }
-   }
- }
-
- @media(max-width: '1694px') {
-  .header__img{
-    height: 49%;
-    width: 49%;
-  }
-   .header__text{
-     h1{
-       font-size: 8rem;
-     }
-   }
- }
-
- @media(max-width: '1566px') {
-  .header__img{
-    height: 52%;
-    width: 52%;
-  }
-   .header__text{
-     h1{
-       font-size: 8rem;
-     }
-   }
- }
-
- @media(max-width: '1440px') {
-  .header__text{
-    h1{
-      font-size: 6.8rem;
-    }
-    p{
-      font-size: 2.3rem;
-    }
-  }
-  .header__img{
-    align-self: center;
-    height: 88%;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-}
 
 .color__links {
   justify-self: flex-end;
@@ -310,17 +241,6 @@
 }
 
 
-@media(max-width: '1440px') {
-  .values__content{
-    margin-left: 100px;
-    width: 50%;
-    p{
-      font-size: 3.4rem;
-    }
-  }
-
-}
-
 .hospital {
   height: 100vh;
   background: linear-gradient(to right bottom,rgba(0,0,0,.9),rgba(128,128,128,.6)),url('../../assets//images/hospital.jpeg');
@@ -354,17 +274,6 @@
     }
 }
 
-@media(max-width: '1440px') {
-  .hospital__content{
-    margin-left: 100px;
-    width: 50%;
-    p{
-      font-size: 3.8rem;
-    }
-  }
-
-}
-
 .patient {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.5)),
@@ -394,20 +303,6 @@
         font-weight: 550;
       }
     }
-}
-
-@media(max-width: '1440px') {
-  .patient__content{
-    margin-left: 100px;
-    width: 50%;
-    h1{
-      font-size: 2.4rem;
-    }
-    p{
-      font-size: 3.4rem;
-    }
-  }
-
 }
 
 .partner {
@@ -467,7 +362,7 @@
     p {
       font-family: 'Crimson Text', serif;
       margin-top: 40px;
-      font-size: 18px;
+      font-size: 22px;
       line-height: 3.7rem;
     }
   }
@@ -492,23 +387,9 @@
 .award__icon-container:not(:last-child) {
   margin-bottom: 120px;
 }
-@media(max-width: '1440px') {
-  .award__content{
-    p{
-      font-size: 1.8rem;
-      // line-height: 2.7rem;
-    }
-  }
-  .award__icon-container{
-    img{
-      width: 30%;
-      height: 30%;
-    }
-  }
-}
 
 .achievement {
-  margin: 150px 0;
+  // margin: 150px 0;
   display: flex;
   flex-direction: column;
 
@@ -520,9 +401,10 @@
   }
   p{
     text-align: center;
-    font-size: 19px;
+    font-size: 2.5rem;
     font-family: 'Crimson Text', serif;
     width: 50%;
+    line-height: 4.5rem;
     margin: 40px auto 0 auto;
   }
   &__container{
@@ -558,12 +440,6 @@
     &:hover{
       transform: translateY(-1.5rem) scale(1.03);
     }
-  }
-}
-
-@media(max-width: '1440px') {
-  .achievement__container{
-    width: 86%;
   }
 }
 
@@ -611,4 +487,334 @@
     opacity: 1;
     transform: translate(0);
   }
+}
+
+/* ==========================================media queries==============================================================================*/
+
+@media(max-width: '1884px') {
+  .header__img{
+    height: 47%;
+    width: 45%;
+  }
+   .header__text{
+     h1{
+       font-size: 10rem;
+     }
+   }
+ }
+
+ @media(max-width: '1802px') {
+   .header__img{
+     height: 48%;
+     width: 48%;
+   }
+    .header__text{
+      h1{
+        font-size: 9.5rem;
+      }
+    }
+  }
+
+  @media(max-width: '1694px') {
+   .header__img{
+     height: 49%;
+     width: 49%;
+   }
+    .header__text{
+      h1{
+        font-size: 8rem;
+      }
+    }
+  }
+
+  @media(max-width: '1566px') {
+   .header__img{
+     height: 52%;
+     width: 52%;
+   }
+    .header__text{
+      h1{
+        font-size: 8rem;
+      }
+    }
+  }
+
+  @media(max-width: '1440px') {
+   .header__text{
+     h1{
+       font-size: 6.8rem;
+     }
+     p{
+       font-size: 2.3rem;
+     }
+   }
+   .header__img{
+     align-self: center;
+     height: 88%;
+     img {
+       width: 100%;
+       height: 100%;
+     }
+   }
+   .values__content{
+    margin-left: 100px;
+    width: 50%;
+    p{
+      font-size: 3.4rem;
+    }
+  }
+  .hospital__content{
+    margin-left: 100px;
+    width: 50%;
+    p{
+      font-size: 3.8rem;
+    }
+  }
+  .patient__content{
+    margin-left: 100px;
+    width: 50%;
+    h1{
+      font-size: 2.4rem;
+    }
+    p{
+      font-size: 3.4rem;
+    }
+  }
+  .award__content{
+    p{
+      font-size: 1.8rem;
+      // line-height: 2.7rem;
+    }
+  }
+  .award__icon-container{
+    img{
+      width: 30%;
+      height: 30%;
+    }
+  }
+  .achievement__container{
+    width: 86%;
+  }
+ }
+
+ @media(max-width: '1356px') {
+   .header__text{
+     h1{
+       font-size: 6rem;
+     }
+     p{
+       font-size: 2rem;
+     }
+   }
+   .header__img{
+     align-self: center;
+     height: 88%;
+     img {
+       width: 100%;
+       height: 100%;
+     }
+   }
+   .achievement__card{
+    h1{
+      font-size: 40px
+    }
+  }
+ }
+
+ @media(max-width: '1200px'){
+  .header__content{
+    width: 93%;
+  }
+  .header__direction{
+    margin: 100px auto 0 auto;
+  }
+ }
+
+ @media(max-width: '1000px') {
+   .header__img {
+     display: none;
+   }
+   .header__text{
+     width: 80%;
+     margin: 0 auto;
+     h1{
+       font-size: 10rem;
+       text-align: center;
+     }
+     p{
+       margin-top: 30px;
+       text-align: center;
+       font-size: 2.5rem;
+       width: 100%;
+       line-height: 40px;
+     }
+   }
+ }
+
+ @media(max-width: '848px') {
+
+  .header__text{
+    h1{
+      font-size: 8rem;
+      text-align: center;
+    }
+    p{
+      margin-top: 30px;
+      text-align: center;
+      font-size: 2.5rem;
+      width: 100%;
+      line-height: 40px;
+    }
+  }
+  .header__direction{
+    margin: 50px auto 0 auto;
+    width: 4%;
+  }
+}
+
+@media(max-width: '692px') {
+
+  .header__text{
+    h1{
+      font-size: 7.2rem;
+      text-align: center;
+    }
+    p{
+      margin-top: 30px;
+      text-align: center;
+      font-size: 2.3rem;
+      width: 100%;
+      line-height: 40px;
+    }
+  }
+  .header__direction{
+    margin: 50px auto 0 auto;
+    width: 4%;
+  }
+}
+
+@media(max-width: '587px') {
+
+  .header__content{
+    margin: 50px auto 0 auto;
+  }
+
+  .header__text{
+    h1{
+      font-size: 6rem;
+      text-align: center;
+    }
+    p{
+      margin-top: 25px;
+      text-align: center;
+      font-size: 2.3rem;
+      width: 100%;
+      line-height: 30px;
+    }
+  }
+  .header__direction{
+    margin: 70px auto 0 auto;
+    width: 6%;
+  }
+}
+
+@media(max-width: '500px') {
+  .header__content{
+    width: 95%;
+    margin: 50px auto 0 auto;
+  }
+
+  .header__text{
+    h1{
+      font-size: 5.3rem;
+      text-align: center;
+    }
+    p{
+      margin-top: 20px;
+      text-align: center;
+      font-size: 2.3rem;
+      width: 100%;
+      line-height: 27px;
+    }
+  }
+  .header__direction{
+    margin: 10px auto 0 auto;
+    width: 6%;
+  }
+}
+
+@media(max-width: '360px') {
+  .header__content{
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  .header__text{
+    h1{
+      font-size: 4.3rem;
+      text-align: center;
+    }
+    p{
+      margin-top: 15px;
+      text-align: center;
+      font-size: 1.7rem;
+      width: 100%;
+      line-height: 23px;
+    }
+  }
+  .header__direction{
+    margin: 0px auto 0 auto;
+    width: 6%;
+  }
+  .values{
+    align-items: flex-end;
+  }
+ .values__content{
+   margin-left: 10px;
+   margin-bottom: 30px;
+   width: 80%;
+   p{
+     font-size: 27px;
+   }
+ }
+.hospital__content{
+ margin-left: 10px;
+ width: 80%;
+ p{
+   font-size: 27px;
+ }
+}
+.patient__content{
+  margin-left: 20px;
+  margin-bottom: 60px;
+  width: 80%;
+  p{
+    font-size: 27px;
+  }
+ }
+ .partner__content{
+  margin-right: 20px;
+  margin-bottom: 60px;
+  width: 80%;
+  p{
+    font-size: 27px;
+  }
+ }
+ .award{
+   flex-wrap: wrap;
+   &__content{
+     padding: 20px;
+     width: 100%;
+     display: block;
+     h1{
+       font-size: 36px;
+       text-align: center;
+     }
+     p{
+       margin-top: 20px;
+       font-size: 18;
+       line-height: 2.8rem;
+     }
+   }
+ }
 }

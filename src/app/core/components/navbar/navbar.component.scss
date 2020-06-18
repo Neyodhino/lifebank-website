@@ -49,3 +49,30 @@
     height: 18%;
   }
 }
+@media(max-width: '1000px'){
+  .navbar {
+    padding: 5px 20px;
+    nav{
+      display: none;
+    }
+
+  &__logo{
+    width: 20%;
+    height: 20%;
+  }
+  }
+}
+
+@media(max-width: '570px'){
+  .navbar {
+    padding: 5px 20px;
+    nav{
+      display: none;
+    }
+
+  &__logo{
+    width: 30%;
+    height: 30%;
+  }
+  }
+}

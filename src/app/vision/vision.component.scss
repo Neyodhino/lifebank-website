@@ -1,3 +1,5 @@
+@import '../../global/abstract/_sectionContentAnimation.css';
+
 .vision {
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.5)),
@@ -21,7 +23,7 @@
         font-family: 'Crimson Text', serif;
       }
       p {
-        font-size: 5rem;
+        font-size: 4rem;
         font-family: 'Crimson Text', serif;
         margin-top: 40px;
         line-height: 6rem;
@@ -39,7 +41,7 @@
       font-size: 3.3rem;
     }
     p{
-      font-size: 4.6rem;
+      font-size: 4rem;
       line-height: 6.1rem;
     }
   }
@@ -69,12 +71,10 @@
         font-family: 'Crimson Text', serif;
       }
       p {
-        font-size: 4rem;
+        font-size: 3.7rem;
         font-family: 'Crimson Text', sans-serif;
         margin-top: 40px;
         line-height: 6rem;
-        animation-name: moveInBottom;
-        animation-duration: 2s;
       }
     }
 }
@@ -87,7 +87,7 @@
       font-size: 3.3rem;
     }
     p{
-      font-size: 4rem;
+      font-size: 3.7rem;
       line-height: 5rem;
     }
   }
@@ -117,12 +117,10 @@
         font-family: 'Crimson Text', serif;
       }
       p {
-        font-size: 5rem;
+        font-size: 4rem;
         font-family: 'Crimson Text', serif;
         margin-top: 40px;
         line-height: 6rem;
-        animation-name: moveInBottom;
-        animation-duration: 2s;
       }
     }
 }
@@ -135,7 +133,7 @@
       font-size: 3.3rem;
     }
     p{
-      font-size: 4.6rem;
+      font-size: 4rem;
       line-height: 6.1rem;
     }
   }
