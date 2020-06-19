@@ -1,4 +1,5 @@
 @import '../../../../global/component/button';
+@import '../../../../global/abstract/variables';
 
 .navbar {
   display: flex;
@@ -29,10 +30,81 @@
     }
   }
 }
-#mobile__nav {
+.nav__button {
+  position: fixed;
+  left: 90%;
+  top: 80px;
+  z-index: 30;
   display: none;
 }
-//styles to stick navbar at the top.
+.nav__checkbox {
+  display: none;
+}
+.mobile__navigation {
+  position: fixed;
+  background-color: $LifeBankred;
+  z-index: 1;
+  height: 100vh;
+  width: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  nav {
+    margin-top: 50px;
+    text-align: center;
+    ul {
+      li {
+        margin-top: 30px;
+        a {
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.navigation__icon {
+  position: relative;
+  &,
+  &::before,
+  &::after {
+    width: 2.6rem;
+    height: 3px;
+    background-color: black;
+    display: inline-block;
+  }
+  &::before,
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  &::before{
+    top: -1rem;
+  }
+  &::after{
+    top: 1rem;
+  }
+}
+
+.nav__checkbox:checked ~ .mobile__navigation {
+  opacity: 1;
+  width: 100vw;
+}
+
+.nav__checkbox:checked + .nav__button .navigation__icon {
+  background-color: transparent;
+}
+
+.nav__checkbox:checked + .nav__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.nav__checkbox:checked + .nav__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
 
 .sticky {
   background-color: white;
@@ -88,6 +160,9 @@
     height: 30%;
   }
   }
+  .nav__button{
+    display: block;
+  }
 }
 
 @media(max-width: '360px'){
@@ -103,3 +178,4 @@
   }
   }
 }
+
