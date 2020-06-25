@@ -17,12 +17,12 @@ export class HomeComponent implements OnInit {
   ) {
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
-      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
       // menu: '#menu',
       navigation: true,
       verticalCentered: false,
-      parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
       fadingEffect: true,
+      easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
+      scrollingSpeed: 550,
     };
   }
 
