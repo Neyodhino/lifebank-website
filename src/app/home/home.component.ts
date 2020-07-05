@@ -17,12 +17,12 @@ export class HomeComponent implements OnInit {
   ) {
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
-      // menu: '#menu',
-      navigation: true,
       verticalCentered: false,
+      horizontalCentered: false,
       fadingEffect: true,
       easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
       scrollingSpeed: 550,
+      navigation: false
     };
   }
 

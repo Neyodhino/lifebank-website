@@ -1,9 +1,20 @@
 <app-navbar></app-navbar>
 <section class="hero">
   <div class="hero__content">
-    <h1>Join Us in Saving Lives.</h1>
-    <p>Night gathers, and now my watch begins. It shall not end until my death. I shall take no wife, hold no lands, father no children. I shall wear no crowns and win no glory. I shall live and die at my post. I am the sword in the darkness. I am the watcher on the walls. I am the fire that burns against the cold, the light that brings the dawn, the horn that wakes the sleepers, the shield that guards the realms of men. I pledge my life and honor to be a LifeBanker.</p>
-    <p>Our community is diverse, reflective of a dynamic atmosphere that welcomes everyone. We are keen on making a difference across the continent.With your ideas, we can shake things up in the healthcare sector.</p>
+    <div class="hero__content-text">
+      <h1> Join us and save the world!</h1>
+      <p>
+        Night gathers, and now my watch begins. It shall not end until my death. I shall take no wife, hold no lands, father no children. I shall wear no crowns and win no glory. I shall live and die at my post. I am the sword in the darkness. I am the watcher on the walls. I am the fire that burns against the cold, the light that brings the dawn, the horn that wakes the sleepers, the shield that guards the realms of men. I pledge my life and honor to be a LifeBanker. The LifeBank Night's Watch Oath!
+      </p>
+      <p>We are LifeBankers - Our community is diverse, reflective of a dynamic atmosphere that welcomes everyone and asks that you bring your real self to work. We are keen on making a difference across our continent. With your ingenuity and hard work, we can rescue our people and build the infrastructure for healthcare in Africa. </p>
+    </div>
+    <div class="hero__content-quote">
+      <blockquote>
+        <p>
+          ...I shall take no wife, hold no lands, father no children. I shall wear no crowns and win no glory. I shall die at my post...
+    </blockquote>
+    <p class="float-right"> -The LifeBank Night's Watch Oath!</p>
+    </div>
   </div>
 </section>
 
@@ -20,40 +31,75 @@
     </div>
   </div>
 </section>
+<section class="virtues" id="desktop">
+  <div class="virtues__container">
+    <div class="virtues__text">
+      <h1>You must care.</h1>
+      <p>You must care for our patients, our people (team members) and our partners. We don't work with mean people, and we do not do office politics.</p>
+    </div>
+    <div class="virtues__image">
+      <img src="../../assets/images/care.jpg" alt="career image">
+    </div>
+  </div>
+</section>
+
+<section class="virtues" id="desktop">
+  <div class="virtues__container">
+    <div class="virtues__image">
+      <img src="../../assets/images/aaaaaaaaa.jpg" alt="career image">
+    </div>
+    <div class="virtues__text">
+      <h1>We are relentless in the pursuit of our goals.</h1>
+      <p>We believe each team member has the responsibility to rest and recharge but we do not believe in a set work life balance dynamic. You must do all it takes to ensure value for the company, because millions of vulnerable patients are relying on you to help them.</p>
+    </div>
+  </div>
+</section>
 
 <section class="virtues" id="desktop">
   <div class="virtues__container">
     <div class="virtues__text">
-      <h1>We are life bankers!</h1>
-      <p>You must care! Our Patients | Our People | Our Partners In this order, all the time. We are relentless in the pursuit of our goals We rest but we are against work-life balance!</p>
-      <p>We believe deeply in the growth mindset,  our cleaner should be preparing for the C.E.O role. We believe in Merit!</p>
-      <p>LifeBank owes you cash money and growth – if you fulfil our virtues</p>
+      <h1>We believe deeply in the growth mindset.</h1>
+      <p>Our cleaner must be preparing to take the CEO’s job. That is what truly matters to us. You must be committed to your personal growth, and be driven by a learning spirit.
+      </p>
     </div>
+        <div class="virtues__image">
+      <img src="../../assets/images/growth.jpg" alt="career image">
+    </div>
+  </div>
+</section>
+
+<section class="virtues" id="desktop">
+  <div class="virtues__container">
     <div class="virtues__image">
       <img src="../../assets/images/Careers_hub_01.jpg" alt="career image">
+    </div>
+    <div class="virtues__text">
+      <h1>We believe in merit. </h1>
+      <p>Our cleaner must be preparing to take the CEO’s job. That is what truly matters to us. You must be committed to your personal growth, and be driven by a learning spirit.
+      </p>
     </div>
   </div>
 </section>
 
 <section class="benefit">
   <div class="benefit__container">
-    <div class="benefit__image">
-      <img src="../../assets/images/Careers_hub_02.jpg" alt="career image">
-    </div>
     <div class="benefit__text">
       <h1>Work with us to improve healthcare in Africa.</h1>
-      <p>Housing Assistance (we provide relocation assistance to all LifeBankers)</p>
-      <p>Health Insurance (Comprehensive health insurance)</p>
-      <p>Focused caring team members (you get to join a team of incredible achievers)</p>
-      <p>Accelerated cover growth (we are committed to your growth and we believe that each team member should
-        change jobs in 18- 24 months).</p>
+      <p>Housing Assistance</p>
+      <p>Health Insurance </p>
+      <p>Life Insurance</p>
+      <p>Focused caring team members.</p>
+      <p>Accelerated cover growth.</p>
+    </div>
+    <div class="benefit__image">
+      <img src="../../assets/images/Careers_hub_02.jpg" alt="career image">
     </div>
   </div>
 </section>
 
 <section class="vacancies">
   <h1 class="vacancies__heading">Work with LifeBank</h1>
-  <p class="vacancies__text">Join our fast expanding team and help improve healthcare in Africa</p>
+  <p class="vacancies__text">Join our fast expanding team and help improve healthcare in Africa.</p>
   <div class="vacancies__container">
     <div class="vacancies__card">
       <h1>Chief Growth Officer</h1>
@@ -63,7 +109,7 @@
     <div class="vacancies__card">
       <h1>Chief Finance Officer</h1>
       <p>The CFO will be responsible for overseeing all the financial operations of LifeBank, including accounting, financial reporting, tax, business control and treasury. S/he will direct the company’s financial objectives, control the company’s finances, establish financial policies, manage financial risk.</p>
-      <a class="btn-link">Read More</a>
+      <a class="btn-link" [routerLink] = "['/careers/cfo']">Read More</a>
     </div>
     <div class="vacancies__card">
       <h1>Country Manager</h1>
@@ -73,5 +119,3 @@
   </div>
 </section>
 <app-footer></app-footer>
-
-

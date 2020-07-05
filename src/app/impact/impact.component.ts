@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JoinUsComponent } from '../join-us/join-us.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-impact',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImpactComponent implements OnInit {
 
-  constructor() { }
+  constructor (
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit() {
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(JoinUsComponent, {
+      width: '600px'
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 
 }

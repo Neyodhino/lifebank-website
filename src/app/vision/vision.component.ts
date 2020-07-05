@@ -11,6 +11,7 @@ export class VisionComponent implements OnInit {
   fullpage_api;
 
 
+
   constructor(private renderer: Renderer2) {
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',

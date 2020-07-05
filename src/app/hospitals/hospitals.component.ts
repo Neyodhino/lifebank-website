@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
-import { Router } from '@angular/router';
+import { DemoFormComponent } from '../demo-form/demo-form.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-hospitals',
@@ -7,18 +8,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./hospitals.component.scss']
 })
 export class HospitalsComponent implements OnInit {
-  @ViewChild('fullpageRef', {static: false}) fp_directive: ElementRef;
-  config;
-  fullpage_api;
-  constructor( private renderer: Renderer2, private router: Router ) {
+  constructor(
+    public dialog: MatDialog,
+  ) {
 
   }
-
   ngOnInit() {
+
   }
 
-  navigate(): void {
-    this.router.navigate(['/contact']);
+  openDialog() {
+    const dialogRef = this.dialog.open(DemoFormComponent, {
+      width: '600px'
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
-
 }

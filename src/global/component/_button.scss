@@ -1,8 +1,11 @@
 @import '../abstract/variables';
 
-.btn-link {
+.btn {
   background-color: $LifeBankred;
   padding: 15px 25px;
   color: white;
   border-radius: 50px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
 }

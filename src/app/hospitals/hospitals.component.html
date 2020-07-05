@@ -2,39 +2,49 @@
 
 <section class="hero">
   <div class="hero__content">
-    <h1>Find critical supplies you need round the clock, faster, cheaper and safer.</h1>
-    <p>With LifeBank you can always get the critical supplies needed in less than 45 minutes.</p>
-    <p>Our B2B business model charges a logistics fee on a sliding scale which averages approximately $10 per unit delivered.</p>
-    <p>Our B2G business model charges governments and institutions an annual subscription fee to supply hospitals they manage with essential medical products.</p>
+    <div class="hero__content-text">
+      <h1>Find critical supplies you need round the clock, faster, cheaper and safer.</h1>
+      <p>LifeBank helps you find the critical supplies you need faster, cheaper, and safer. We use the power of technology to inspire voluntary blood donors, we gather inventory from oxygen manufacturers, blood banks and other supplier partners across the country and we facilitate the safe and rapid transportation of critical products right to your hospital.</p>
+      <button (click)= "openDialog()">Book a demo</button>
+    </div>
+    <div class="hero__content-image">
+      <img src="../../assets/images/Hospital-room-wikimedia-commons-e1444127802520.jpeg" alt="">
+    </div>
   </div>
 </section>
 
 <section class="product" id="desktop">
   <div class="product__container">
     <div class="product__text">
-      <h1>Eliminate the risk of counterfeit product</h1>
-      <p>Blood is often transported without a cold chain, leaving it vulnerable to bacteria proliferation which can result in serious health complications when transfused.</p>
-      <p>With LifeBank you are assured of optimum products. We comply with WHO/EU coldchain and safety standards.</p>
-      <p>One of our innovations, SmartBag, tracks and ensures the safety record of blood through our logistical network.</p>
-      <p>We pay close attention to maintaining optimum condition of oxygen and preventing a fire outbreak during transportation through our logistical network</p>
+      <h1>Faster</h1>
+      <p>LifeBank is faster because you can discover all critical supplies on our platform in just 5 minutes. We deliver the order to the hospital in under 45 minutes.</p>
     </div>
-    <div class="product__image eliminate__image">
-      <img src="../../assets/images/eliminate.png" alt="career image">
+    <div class="product__image">
+      <img src="../../assets/images/faster.png" alt="career image">
     </div>
   </div>
 </section>
 
-<section class="product" id="mobile">
+<section class="product" id="desktop">
   <div class="product__container">
-    <div class="eliminate__image">
-      <img src="../../assets/images/eliminate.png" alt="career image">
+    <div class="product__image">
+      <img src="../../assets/images/hos_savings.jpg" alt="career image">
     </div>
     <div class="product__text">
-      <h1>Eliminate the risk of counterfeit product</h1>
-      <p>Blood is often transported without a cold chain, leaving it vulnerable to bacteria proliferation which can result in serious health complications when transfused.</p>
-      <p>With LifeBank you are assured of optimum products. We comply with WHO/EU coldchain and safety standards.</p>
-      <p>One of our innovations, SmartBag, tracks and ensures the safety record of blood through our logistical network.</p>
-      <p>We pay close attention to maintaining optimum condition of oxygen and preventing a fire outbreak during transportation through our logistical network</p>
+      <h1>Cheaper</h1>
+      <p>On LifeBank, oxygen, blood and blood products are cheaper because you have access to manufacturers and Lab-to-Lab prices respectively. On our platform, blood banks and oxygen manufacturers are competing for your business and this competition lowers the prices. With LifeBank, you are getting the best value for your money.</p>
+    </div>
+  </div>
+</section>
+
+<section class="product">
+  <div class="product__container">
+    <div class="product__text">
+      <h1>Safer</h1>
+      <p>We are safer because we move blood in a WHO recommended cold chain system. Our use of temperature strips, fail-proof blood box, and bluetooth padlock ensures the security of your products. Our cold chain system allows us to move blood at 10oC threshold for up to 36 hours. While oxygen is transported properly in safety-compliant vehicles designed to preserve the oxygen and prevent a fire outbreak.</p>
+    </div>
+    <div class="product__image">
+      <img src="../../assets/images/cold-chain.jpg" alt="career image">
     </div>
   </div>
 </section>
@@ -42,26 +52,14 @@
 <section class="product">
   <div class="product__container">
     <div class="product__image">
-      <img src="../../assets/images/values.jpeg" alt="career image">
+      <img src="../../assets/images/call-center.jpeg" alt="career image">
     </div>
     <div class="product__text">
-      <h1>No more hour or day long searching for products</h1>
-      <p>Our systems address problems relating to accessibility by collating inventory information from thousands of medical suppliers using a        combination of mobile and web applications. </p>
-      <p>We seamlessly transmit information gathered to busy hospitals via our discovery applications and ensure that products ordered by hospitals are delivered in under 45 minutes, in the right condition.</p>
-      <p>Our mobility solutions are designed to reach you as fast as possible, wherever you are, no matter how difficult it
-        may be.</p>
+      <h1>24 Hours Service</h1>
+      <p> LifeBank offers 24 hours service for all hospitals in our network, and we are able to provide access to safe blood in the event of an emergency or non-availability of a rare blood type.</p>
     </div>
   </div>
 </section>
 
-<section class="gap">
-  <div class="gap__content">
-    <h1> Let us bridge the gap for you</h1>
-    <p>We are always available 24/7 to get you what you need at affordable prices.</p>
-    <p>LifeBank is on a mission to increase access to essential medical products at hospital level for the vulnerable.</p>
-    <p>We strive to build a sustainable, state of the art, high quality, distribution platform, powered by technology and innovation</p>
-    <a [routerLink] = "['/contact']" class="btn-link">Contact Us</a>
-  </div>
-</section>
 <app-footer></app-footer>
 

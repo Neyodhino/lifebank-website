@@ -6,6 +6,10 @@ import { ImpactComponent } from './impact/impact.component';
 import { VisionComponent } from './vision/vision.component';
 import { HospitalsComponent } from './hospitals/hospitals.component';
 import { CareersComponent } from './careers/careers.component';
+import { InnovationComponent } from './innovation/innovation.component';
+import { CfoComponent } from './cfo/cfo.component';
+import { CgoComponent } from './cgo/cgo.component';
+import { CmComponent } from './cm/cm.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +18,11 @@ const routes: Routes = [
   { path: 'impact', component: ImpactComponent },
   { path: 'vision', component: VisionComponent },
   { path: 'hospitals', component: HospitalsComponent },
-  { path: 'careers', component: CareersComponent }
+  { path: 'careers', component: CareersComponent },
+  { path: 'innovation', component: InnovationComponent },
+  { path: 'careers/cfo', component: CfoComponent },
+  { path: 'careers/cgo', component: CgoComponent },
+  { path: 'careers/cm', component: CmComponent }
 ];
 
 @NgModule({

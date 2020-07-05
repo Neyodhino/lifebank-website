@@ -13,13 +13,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 85%;
-  margin: 20px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 .header__text{
-  align-self: center;
+  // align-self: center;
+  margin-top: 100px;
   width: 50%;
   h1 {
-    font-size: 10rem;
+    font-size: 9rem;
     font-family: 'Crimson Text', serif;
     text-align: left;
     font-weight: bolder;
@@ -28,30 +29,41 @@
   }
   p {
     text-align: left;
-    font-size: 20px;
+    font-size: 26px;
     margin: 20px 0;
     font-family: 'Crimson Text', serif;
     width: 90%;
-    line-height: 30px;
+    line-height: 38px;
     animation-name: moveInRight;
     animation-duration: 2s;
   }
+  button {
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 15px 70px;
+  }
 }
 .header__img{
-  width: 44%;
+  max-width: 38%;
   img{
     width: 100%;
     height: 100%;
   }
 }
-.header__direction{
-  width: 2%;
-  min-height: 2%;
-  margin: -70px auto 0 auto;
-  img{
-    width: 100%;
-    height: 100%;
-    animation: direction 1.5s ease-in-out infinite
+
+.header__trusted {
+  margin-top: 50px;
+  p {
+    font-size: 2rem;
+    font-family: 'Crimson Text', serif;
+  }
+  &-img  {
+    max-width: 200px;
+    max-height: 70px;
+    display: flex;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
@@ -98,79 +110,103 @@
 
 
 #lifebank{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
-             url(../../assets/images/lifebank.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0)),
+             url(../../assets/images/LifeBank.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   position: absolute;
   width: 25%;
-  top: 0;
-  height: 100vh;
+  top: 50%;
+  height: 50vh;
   visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  p {
+    font-size: 28px;
+    font-family: 'Crimson Text', serif;
+    color: white;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
   button{
     background-color: transparent;
     padding: 16px 40px;
-    border: 1px solid $LifeBankred;
+    border: 3px solid $LifeBankred;
     border-radius: 30px;
     color: white;
     width: 50%;
     margin: 0 auto;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 20px;
     outline: none;
   }
 }
 
 #quip{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
-             url(../../assets/images/lifebank.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0.2)),
+             url(../../assets/images/LabBank.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
   width: 25%;
-  top: 0;
-  height: 100vh;
+  top: 50%;
+  height: 50vh;
   visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  p {
+    font-size: 28px;
+    font-family: 'Crimson Text', serif;
+    color: white;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
   button{
     background-color: transparent;
     padding: 16px 40px;
-    border: 1px solid $HomekItorange;
+    border: 3px solid $HomekItorange;
     border-radius: 30px;
     color: white;
     width: 50%;
     margin: 0 auto;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 20px;
     outline: none;
   }
 }
 
 #air{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
-             url(../../assets/images/air_bank.jpg);
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0.2)),
+             url(../../assets/images/AirBank.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   position: absolute;
   width: 25%;
-  top: 0;
-  height: 100vh;
+  top: 50%;
+  height: 50vh;
   visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  p {
+    font-size: 28px;
+    font-family: 'Crimson Text', serif;
+    color: white;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
   button{
     background-color: transparent;
     padding: 16px 40px;
-    border: 1px solid $airbankblue;
+    border: 3px solid $airbankblue;
     border-radius: 30px;
     color: white;
     width: 50%;
@@ -182,120 +218,161 @@
 }
 
 #stock{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.9)),
-             url(../../assets/images/stock.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0.2)),
+             url(../../assets/images/StockBank.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   position: absolute;
   width: 25%;
-  top: 0;
-  height: 100vh;
+  top: 50%;
+  height: 50vh;
   visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  p {
+    font-size: 28px;
+    font-family: 'Crimson Text', serif;
+    color: white;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
   button{
     background-color: transparent;
     padding: 16px 40px;
-    border: 1px solid $stockbankgreen;
+    border: 3px solid $stockbankgreen;
     border-radius: 30px;
     color: white;
     width: 50%;
     margin: 0 auto;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 20px;
     outline: none;
   }
 }
 
-.values{
-  height: 100vh;
-  background :linear-gradient(to right bottom,rgba(0,0,0,1),rgba(128,128,128,.5)),url(../../assets/images/values.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    &__content {
-      margin-left: 150px;
-      color: white;
-      width: 47%;
-      h1 {
-        font-size: 27px;
-        font-family: 'Crimson Text', serif;
-      }
-      p {
-        margin-top: 20px;
-        font-size: 40px;
-        font-family: 'Crimson Text', serif;
-      }
-      button{
-        margin-top: 40px;
-        font-size: 18px;
-        padding: 15px 35px;
-        font-family: 'Crimson Text', serif;
-        cursor: pointer;
-      }
-    }
-}
+// .values{
+//   height: 100vh;
+//   background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/getty_happy_patient.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: top;
+//     &__content {
+//       color: white;
+//       width: 47%;
+//       margin: 26% 0 0 100px;
+//       h1 {
+//         font-size: 36px;
+//         font-family: 'Crimson Text', serif;
+//       }
+//       p {
+//         margin-top: 18px;
+//         font-size: 37px;
+//         font-family: 'Crimson Text', serif;
+//       }
+//       button{
+//         margin-top: 40px;
+//         font-size: 22px;
+//         padding: 15px 35px;
+//         font-family: 'Crimson Text', serif;
+//         cursor: pointer;
+//         color: white;
+//         background-color: $LifeBankred;
+//         border-radius: 10px;
+//       }
+//     }
+// }
 
 
-.hospital {
-  height: 100vh;
-  background: linear-gradient(to right bottom,rgba(0,0,0,.9),rgba(128,128,128,.6)),url('../../assets//images/hospital.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-    transition: all 0.6s cubic-bezier(0.55, 0.06, 0.68, 0.19);
-    &__content {
-      color: white;
-      width: 45%;
-      margin-bottom: 100px;
-      margin-left: 100px;
-      h1 {
-        font-size: 27px;
-        font-family: 'Crimson Text', serif;
-      }
-      p {
-        margin-top: 20px;
-        font-size: 50px;
-        font-family: 'Crimson Text', serif;
-      }
-      button {
-        margin-top: 40px;
-        font-size: 18px;
-        padding: 15px 35px;
-        font-family: 'Crimson Text', serif;
-        cursor: pointer;
-        font-weight: 550;
-      }
-    }
-}
+
+// .delivery{
+//   height: 100vh;
+//   background :linear-gradient(to right top,rgba(0,0,0,0.6),rgba(255, 254, 254, 0.2)),url(../../assets/images/transport.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     &__content {
+//       color: white;
+//       width: 47%;
+//       margin: 20% 0 0 200px;
+//       h1 {
+//         font-size: 37px;
+//         font-family: 'Crimson Text', serif;
+//       }
+//       p {
+//         margin-top: 18px;
+//         font-size: 35px;
+//         font-family: 'Crimson Text', serif;
+//       }
+//       button{
+//         margin-top: 40px;
+//         font-size: 18px;
+//         padding: 15px 35px;
+//         font-family: 'Crimson Text', serif;
+//         cursor: pointer;
+//         color: white;
+//         background-color: $LifeBankred;
+//         border-radius: 10px;
+//       }
+//     }
+// }
+
+// .technology {
+//   height: 100vh;
+//   background :linear-gradient(to right top,rgba(0,0,0,0.6),rgba(255, 254, 254, 0.2)),url(../../assets/images/responsive-screen.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     &__content {
+//       color: white;
+//       width: 47%;
+//       margin: 20% 0 0 200px;
+//       h1 {
+//         font-size: 37px;
+//         font-family: 'Crimson Text', serif;
+//       }
+//       p {
+//         margin-top: 18px;
+//         font-size: 35px;
+//         font-family: 'Crimson Text', serif;
+//       }
+//       button{
+//         margin-top: 40px;
+//         font-size: 18px;
+//         padding: 15px 35px;
+//         font-family: 'Crimson Text', serif;
+//         cursor: pointer;
+//         color: white;
+//         background-color: $LifeBankred;
+//         border-radius: 10px;
+//       }
+//     }
+// }
+
 
 .patient {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.5)),
-             url(../../assets/images/patients.jpeg);
+  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/gettyimages-syringe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     align-items: flex-end;
     transition: all 0.6s cubic-bezier(0.55, 0.06, 0.68, 0.19);
     &__content {
       color: white;
-      width: 45%;
-      margin-bottom: 100px;
-      margin-left: 100px;
+      width: 50%;
+      margin-bottom: 20px;
+      margin-left: 40px;
       h1 {
-        font-size: 27px;
+        font-size: 47px;
+        font-weight: bold;
         font-family: 'Crimson Text', serif;
       }
       p {
-        font-size: 40px;
+        font-size: 57px;
         font-family: 'Crimson Text', serif;
         margin-top: 20px;
       }
@@ -305,14 +382,16 @@
         padding: 15px 35px;
         font-family: 'Crimson Text', serif;
         cursor: pointer;
-        font-weight: 550;
+        color: white;
+        background-color: $LifeBankred;
+        border-radius: 10px;
       }
     }
 }
 
 .partner {
   height: 100vh;
-  background: linear-gradient(to right bottom,rgba(0,0,0,.9),rgba(128,128,128,.5)),url('../../assets/images/partner.jpeg');
+  background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/boat.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -326,7 +405,8 @@
       margin-right: 100px;
       text-align: right;
       h1{
-        font-size: 2.4rem;
+        font-size: 47px;
+        font-weight: bold;
         font-family: 'Crimson Text', serif;
       }
       p {
@@ -340,18 +420,19 @@
         padding: 15px 35px;
         font-family: 'Crimson Text', serif;
         cursor: pointer;
-        font-weight: 550;
+        color: white;
+        background-color: $LifeBankred;
+        border-radius: 10px;
       }
     }
 }
-
 .people {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(black, 0.9), rgba(gray, 0.5)),
-             url(../../assets/images/people.jpg);
+  background-image: linear-gradient(to right top, rgba(black, 0.6), rgba(gray, 0.5)),
+             url(../../assets/images/LifeBank-204.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     align-items: flex-end;
     &__content {
@@ -360,11 +441,11 @@
       margin-bottom: 100px;
       margin-left: 100px;
       h1 {
-        font-size: 27px;
+        font-size: 47px;
         font-family: 'Crimson Text', serif;
       }
       p {
-        font-size: 37px;
+        font-size: 40px;
         font-family: 'Crimson Text', serif;
         margin-top: 20px;
       }
@@ -374,7 +455,9 @@
         padding: 15px 35px;
         font-family: 'Crimson Text', serif;
         cursor: pointer;
-        font-weight: 550;
+        color: white;
+        background-color: $LifeBankred;
+        border-radius: 10px;
       }
     }
 }
@@ -530,10 +613,6 @@
 /* ==========================================media queries==============================================================================*/
 
 @media(max-width: '1884px') {
-  .header__img{
-    height: 47%;
-    width: 45%;
-  }
    .header__text{
      h1{
        font-size: 10rem;
@@ -542,10 +621,6 @@
  }
 
  @media(max-width: '1802px') {
-   .header__img{
-     height: 48%;
-     width: 48%;
-   }
     .header__text{
       h1{
         font-size: 9.5rem;
@@ -553,28 +628,29 @@
     }
   }
 
-  @media(max-width: '1694px') {
-   .header__img{
-     height: 49%;
-     width: 49%;
-   }
+  @media(max-width: '1731px') {
     .header__text{
       h1{
         font-size: 8rem;
       }
     }
-  }
+    .patient__content {
+      p {
+        font-size: 45px;
+      }
+    }
+    .partner__content {
+      p {
+        font-size: 38px;
+      }
+    }
 
-  @media(max-width: '1566px') {
-   .header__img{
-     height: 52%;
-     width: 52%;
-   }
-    .header__text{
-      h1{
-        font-size: 8rem;
+    .people__content {
+      p {
+        font-size: 38px;
       }
     }
+
   }
 
   @media(max-width: '1440px') {
@@ -586,16 +662,12 @@
        font-size: 2.3rem;
      }
    }
-   .header__img{
-     align-self: center;
-     width: 50%;
-     img {
-       width: 100%;
-       height: 100%;
-     }
+
+   .header__trusted-img {
+     max-width: 150px;
    }
+
    .values__content{
-    margin-left: 100px;
     width: 50%;
     p{
       font-size: 3.4rem;
@@ -609,13 +681,13 @@
     }
   }
   .patient__content{
-    margin-left: 100px;
-    width: 50%;
-    h1{
-      font-size: 2.4rem;
-    }
     p{
-      font-size: 3.4rem;
+      font-size: 40px
+    }
+  }
+  .partner__content {
+    p {
+      font-size: 35px;
     }
   }
   .award__content{
@@ -657,6 +729,16 @@
       font-size: 40px
     }
   }
+  .partner__content {
+    p {
+      font-size: 30px;
+    }
+  }
+  .people__content {
+    p {
+      font-size: 32px;
+    }
+  }
  }
 
  @media(max-width: '1200px'){
@@ -665,6 +747,16 @@
   }
   .header__direction{
     margin: 100px auto 0 auto;
+  }
+  .patient__content{
+    p {
+      font-size: 35px;
+    }
+  }
+  .partner__content {
+    p {
+      font-size: 28px;
+    }
   }
  }
 
@@ -675,8 +767,9 @@
    .header__text{
      width: 80%;
      margin: 0 auto;
+     text-align: center;
      h1{
-       font-size: 10rem;
+       font-size: 8rem;
        text-align: center;
      }
      p{
@@ -703,10 +796,6 @@
       width: 100%;
       line-height: 40px;
     }
-  }
-  .header__direction{
-    margin: 50px auto 0 auto;
-    width: 4%;
   }
 }
 

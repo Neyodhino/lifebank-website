@@ -13,6 +13,12 @@ import { ImpactComponent } from './impact/impact.component';
 import { VisionComponent } from './vision/vision.component';
 import { HospitalsComponent } from './hospitals/hospitals.component';
 import { CareersComponent } from './careers/careers.component';
+import { InnovationComponent } from './innovation/innovation.component';
+import { DemoFormComponent } from './demo-form/demo-form.component';
+import { JoinUsComponent } from './join-us/join-us.component';
+import { CfoComponent } from './cfo/cfo.component';
+import { CgoComponent } from './cgo/cgo.component';
+import { CmComponent } from './cm/cm.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { CareersComponent } from './careers/careers.component';
     ImpactComponent,
     VisionComponent,
     HospitalsComponent,
-    CareersComponent
+    CareersComponent,
+    InnovationComponent,
+    DemoFormComponent,
+    JoinUsComponent,
+    CfoComponent,
+    CgoComponent,
+    CmComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +46,7 @@ import { CareersComponent } from './careers/careers.component';
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DemoFormComponent, JoinUsComponent]
 })
 export class AppModule { }

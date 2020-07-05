@@ -1,30 +1,37 @@
-<div fullpage id="fullpage" [options]="config">
-  <div class="section section-two">
-    <app-navbar></app-navbar>
-    <section class="vision section">
-      <div class="vision__content">
-        <h1>Our Vision</h1>
-        <p>  We believe no AFRICAN should die because of a shortage of medical supplies.
-          I, TEMIE, believe death from postpartum haemorrhage is absolutely unacceptable.
-        </p>
-      </div>
+<div  fullpage id="fullpage" [options]="config" #fullpageRef>
+        <section class="section">
+          <div>
+            <app-navbar></app-navbar>
+          </div>
+          <div class="vision">
+            <div class="vision__content">
+              <h1>THIS IS LIFEBANK</h1>
+              <p>We believe no African should die because of the shortage of medical supplies.</p>
+              <p>LifeBank is committed to rescuing women, children and other vulnerable people through ensuring access to blood, oxygen, vaccines and other critical supplies.</p>
+              <button class="btn">Learn More</button>
+            </div>
+        </div>
+      </section>
+
+      <section class="section vision_2">
+        <div class="vision_2-content">
+          <h1>Multi-Modal Delivery Network</h1>
+          <p>We deliver using bikes, boats, drones, contactless pick up and delivery maruwa and trucks.</p>
+          <p>We bring flexibility and cost savings to our distribution network to deliver faster, safer and cheaper to every patient all the time.</p>
+          <button class="btn">Learn More</button>
+        </div>
     </section>
-  </div>
 
-  <section class="vision_2 section section-two">
-    <div class="vision_2-content">
-      <p> We believe that 9 out of 10 women who die from postpartum haemorrhage could have been saved with easy access to blood.</p>
-      <p>Lack of oxygen kills about 177,000 children every year.</p>
-      <p>1.5 million children around the world die annually from vaccine preventable illness globally</p>
-    </div>
+    <section class="section">
+      <div class="vision_3">
+        <div class="vision_3-content">
+          <h1>Our Tech</h1>
+          <p>We are building technology to improve blood safety, access and affordability of essential supplies. We combine accessible technology with deep tech to build tools that ensure universal access.</p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+      <div>
+        <app-footer></app-footer>
+      </div>
   </section>
-
-  <section class="vision_3 section section-two">
-    <div class="vision_3-content">
-      <p>  Critically ill people with chronic conditions like cancer, sickle cell, diabetes, kidney problems need consistent
-        access to critical supplies.</p>
-        <p>LifeBank is committed to rescuing women, children and other vulnerable people through ensuring access to blood, oxygen, vaccines and other critical supplies.</p>
-    </div>
-  </section>
-  <app-footer></app-footer>
 </div>
