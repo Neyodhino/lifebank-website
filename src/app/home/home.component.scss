@@ -354,7 +354,7 @@
 
 .patient {
   height: 100vh;
-  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/www.jpg);
+  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/www.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -391,19 +391,17 @@
 
 .partner {
   height: 100vh;
-  background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/boat.jpg);
+  background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/red-boat.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     &__content {
       color: white;
       width: 50%;
-      margin-bottom: 100px;
-      margin-right: 100px;
-      text-align: right;
+      margin-left: 100px;
+      // text-align: right;
       h1{
         font-size: 47px;
         font-weight: bold;

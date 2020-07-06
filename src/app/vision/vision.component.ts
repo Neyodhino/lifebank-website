@@ -15,24 +15,9 @@ export class VisionComponent implements OnInit {
   constructor(private renderer: Renderer2) {
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
-      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
       menu: '#menu',
-      navigation: true,
       verticalCentered: false,
-
-      // events callback
-      afterLoad: (origin, destination, direction) => {
-        // console.log(destination);
-      },
-      afterRender: () => {
-        // console.log('afterRender');
-      },
-      afterResize: (width, height) => {
-        // console.log('afterResize' + width + ' ' + height);
-      },
-      afterSlideLoad: (section, origin, destination, direction) => {
-        // console.log(destination);
-      }
+      navigation: false
     };
    }
 
