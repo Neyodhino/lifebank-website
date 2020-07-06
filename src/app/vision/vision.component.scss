@@ -42,7 +42,7 @@
 
 .vision_2 {
   height: 70vh;
-  background :linear-gradient(to right top,rgba(0,0,0,0.6),rgba(255, 254, 254, 0.2)),url(../../assets/images/56.png);
+  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/multi-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,7 +78,7 @@
 
 .vision_3 {
   height: 100vh;
-  background :linear-gradient(to right top,rgba(0,0,0,0.8),rgba(255, 254, 254, 0.2)),url(../../assets/images/responsive-screen-2.png);
+  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/responsive-screen-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -172,6 +172,143 @@
     p {
       font-size: 3.4rem;
       line-height: 1.28;
+    }
+  }
+}
+
+@media(max-width: 1009px) {
+  .vision__content {
+    margin-left: 50px;
+    width: 55%;
+    p {
+      font-size: 2.5rem;
+      line-height: 1.28;
+    }
+  }
+
+  .vision_2-content {
+    margin-left: 50px;
+    width: 55%;
+    p {
+      font-size: 2.5rem;
+      line-height: 1.28;
+    }
+  }
+
+  .vision_3-content {
+    margin-left: 50px;
+    width: 55%;
+    p {
+      font-size: 2.7rem;
+      line-height: 1.28;
+    }
+  }
+}
+
+@media(max-width: 727px) {
+  .vision__content {
+    margin-left: 50px;
+    width: 60%;
+    p {
+      font-size: 2.3rem;
+      line-height: 1.28;
+    }
+  }
+
+  .vision_2-content {
+    margin-left: 50px;
+    width: 60%;
+    p {
+      font-size: 2.3rem;
+      line-height: 1.28;
+    }
+  }
+
+  .vision_3-content {
+    margin-left: 50px;
+    width: 60%;
+    p {
+      font-size: 2.3rem;
+      line-height: 1.28;
+    }
+  }
+}
+
+@media(max-width: 550px) {
+  .vision__content {
+    margin-left: 10px;
+    width: 60%;
+    margin-bottom: 20px;
+    p {
+      font-size: 2.3rem;
+      line-height: 1.28;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .vision_2-content {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 60%;
+    p {
+      font-size: 2.3rem;
+      line-height: 1.28;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .vision_3-content {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 60%;
+    p {
+      font-size: 2.3rem;
+      line-height: 1.28;
+    }
+  }
+}
+
+@media(max-width: 360px) {
+  .vision__content {
+    margin-left: 30px;
+    width: 70%;
+    p {
+      font-size: 2rem;
+      line-height: 1.28;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .vision_2-content {
+    margin-left: 30px;
+    width: 70%;
+    p {
+      font-size: 2rem;
+      line-height: 1.28;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .vision_3-content {
+    margin-left: 30px;
+    width: 70%;
+    p {
+      font-size: 2rem;
+      line-height: 1.28;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 30px;
     }
   }
 }
