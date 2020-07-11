@@ -1,6 +1,9 @@
 @import '../../../../global/component/button';
 @import '../../../../global/abstract/variables';
 
+:host {
+  position: relative;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -41,8 +44,8 @@
 }
 .nav__button {
   position: absolute;
-  left: 90%;
-  top: 80px;
+  left: 300px;
+  top: 30px;
   z-index: 30;
   display: none;
 }
@@ -51,12 +54,11 @@
 }
 .mobile__navigation {
   position: fixed;
-  background-color: $LifeBankred;
+  background-color: #F4F6F7;
   z-index: 1;
   height: 100vh;
   width: 0;
   opacity: 0;
-  top: 0;
   transition: opacity .5s;
   nav {
     margin-top: 50px;
@@ -66,7 +68,9 @@
         margin-top: 30px;
         a {
           text-decoration: none;
-          font-size: 18px;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: 'Crimson Text', serif;
         }
       }
     }
@@ -74,11 +78,9 @@
 }
 
 .navigation__icon {
-  position: relative;
   &,
   &::before,
   &::after {
-    width: 2.6rem;
     height: 3px;
     background-color: black;
     display: inline-block;
@@ -88,6 +90,7 @@
     content: "";
     position: absolute;
     left: 0;
+    width: 3.2rem;
   }
   &::before{
     top: -1rem;
@@ -95,6 +98,9 @@
   &::after{
     top: 1rem;
   }
+}
+.navigation__icon {
+  width: 2.3rem;
 }
 
 

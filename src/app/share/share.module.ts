@@ -9,6 +9,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatNativeDateModule} from '@angular/material';
+import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -18,9 +19,10 @@ import { NotificationComponent } from './components/notification/notification.co
   declarations: [ NotificationComponent ],
   imports: [
     CommonModule, FormsModule, ReactiveFormsModule, MatDialogModule, MatFormFieldModule, MatInputModule,
-    MatSelectModule
+    MatSelectModule, MatRadioModule
    ],
-  exports: [ NotificationComponent, FormsModule, ReactiveFormsModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSelectModule],
+  // tslint:disable-next-line: max-line-length
+  exports: [ NotificationComponent, FormsModule, ReactiveFormsModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatRadioModule],
   providers: [],
 })
 export class ShareModule {}

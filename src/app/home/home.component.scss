@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 50;
 }
 
 .header__content {
@@ -16,7 +17,6 @@
   margin: 0 auto 0 auto;
 }
 .header__text{
-  // align-self: center;
   margin-top: 100px;
   width: 50%;
   h1 {
@@ -38,10 +38,14 @@
     animation-duration: 2s;
   }
   a {
-    border-radius: 7px;
-    font-size: 20px;
-    padding: 15px 70px;
+    font-size: 18px;
+    padding: 15px 35px;
     font-family: 'Crimson Text', serif;
+    cursor: pointer;
+    color: white;
+    background-color: $LifeBankred;
+    border-radius: 10px;
+    text-decoration: none;
   }
 }
 .header__img{
@@ -69,6 +73,7 @@
   }
 }
 
+
 .color__links {
   justify-self: flex-end;
   display: flex;
@@ -77,15 +82,17 @@
   background-color: $LifeBankred;
   height: 10px;
   width: 25%;
+  z-index: 30;
   &:hover > #lifebank {
     visibility: visible;
     animation: slide .6s ease-in-out
   }
 }
 .color__orange {
-  background-color:#B32911;;
+  background-color:#B32911;
   height: 10px;
   width: 25%;
+  z-index: 30;
   &:hover > #quip {
     visibility: visible;
     animation: slide .6s ease-in-out
@@ -95,6 +102,7 @@
   background-color:$airbankblue;
   height: 10px;
   width: 25%;
+  z-index: 30;
   &:hover > #air {
     visibility: visible;
     animation: slide .6s ease-in-out
@@ -112,7 +120,7 @@
 
 
 #lifebank{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0)),
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(black, 0.7)),
              url(../../assets/images/LifeBank.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,26 +141,26 @@
     width: 80%;
     margin: 0 auto;
   }
-  button{
+  a {
     background-color: transparent;
-    padding: 16px 40px;
+    padding: 16px 70px;
     border: 3px solid $LifeBankred;
     border-radius: 30px;
     color: white;
-    width: 50%;
     margin: 0 auto;
     cursor: pointer;
     font-size: 20px;
     outline: none;
+    text-decoration: none;
   }
 }
 
 #quip{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0.2)),
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(black, 0.7)),
              url(../../assets/images/LabBank.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   position: absolute;
   width: 25%;
   top: 50%;
@@ -169,22 +177,23 @@
     width: 80%;
     margin: 0 auto;
   }
-  button{
+  a {
     background-color: transparent;
-    padding: 16px 40px;
-    border: 3px solid $HomekItorange;
+    padding: 16px 70px;
+    border: 3px solid $airbankblue;
     border-radius: 30px;
     color: white;
-    width: 50%;
     margin: 0 auto;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 17px;
     outline: none;
+    text-decoration: none;
   }
 }
 
+
 #air{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0.2)),
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(black, 0.7)),
              url(../../assets/images/AirBank.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,22 +214,22 @@
     width: 80%;
     margin: 0 auto;
   }
-  button{
+  a {
     background-color: transparent;
-    padding: 16px 40px;
+    padding: 16px 70px;
     border: 3px solid $airbankblue;
     border-radius: 30px;
     color: white;
-    width: 50%;
     margin: 0 auto;
     cursor: pointer;
     font-size: 17px;
     outline: none;
+    text-decoration: none;
   }
 }
 
 #stock{
-  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(gray, 0.2)),
+  background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(black, 0.7)),
              url(../../assets/images/StockBank.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -241,17 +250,17 @@
     width: 80%;
     margin: 0 auto;
   }
-  button{
+  a {
     background-color: transparent;
-    padding: 16px 40px;
+    padding: 16px 70px;
     border: 3px solid $stockbankgreen;
     border-radius: 30px;
     color: white;
-    width: 50%;
     margin: 0 auto;
     cursor: pointer;
     font-size: 20px;
     outline: none;
+    text-decoration: none;
   }
 }
 
@@ -366,7 +375,7 @@
     &__content {
       color: white;
       width: 50%;
-      margin-bottom: 20px;
+      margin-bottom: 150px;
       margin-left: 40px;
       h1 {
         font-size: 47px;
@@ -377,9 +386,9 @@
         font-size: 57px;
         font-family: 'Crimson Text', serif;
         margin-top: 20px;
+        padding-bottom: 60px;
       }
-      button {
-        margin-top: 40px;
+      a {
         font-size: 18px;
         padding: 15px 35px;
         font-family: 'Crimson Text', serif;
@@ -387,6 +396,7 @@
         color: white;
         background-color: $LifeBankred;
         border-radius: 10px;
+        text-decoration: none;
       }
     }
 }
@@ -394,17 +404,17 @@
 
 .partner {
   height: 100vh;
-  background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/red-boat.jpg);
+  background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/Joseph-on-BOAT.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     &__content {
       color: white;
       width: 50%;
       margin-left: 100px;
-      // text-align: right;
+      margin-bottom: 100px;
       h1{
         font-size: 47px;
         font-weight: bold;
@@ -414,8 +424,9 @@
         font-size: 40px;
         font-family: 'Crimson Text', serif;
         margin-top: 20px;
+        padding-bottom: 60px;
       }
-      button {
+      a {
         margin-top: 40px;
         font-size: 18px;
         padding: 15px 35px;
@@ -424,6 +435,7 @@
         color: white;
         background-color: $LifeBankred;
         border-radius: 10px;
+        text-decoration: none;
       }
     }
 }
@@ -449,8 +461,9 @@
         font-size: 40px;
         font-family: 'Crimson Text', serif;
         margin-top: 20px;
+        padding-bottom: 60px;
       }
-      button {
+      a {
         margin-top: 40px;
         font-size: 18px;
         padding: 15px 35px;
@@ -459,6 +472,7 @@
         color: white;
         background-color: $LifeBankred;
         border-radius: 10px;
+        text-decoration: none;
       }
     }
 }
@@ -534,6 +548,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__card {
@@ -798,6 +813,23 @@
       line-height: 40px;
     }
   }
+  .award{
+    flex-wrap: wrap;
+    &__content{
+      padding: 20px;
+      width: 100%;
+      display: block;
+      h1{
+        font-size: 36px;
+        text-align: center;
+      }
+      p{
+        margin-top: 20px;
+        font-size: 18;
+        line-height: 2.8rem;
+      }
+    }
+  }
 }
 
 @media(max-width: '692px') {
@@ -861,33 +893,6 @@
       line-height: 27px;
     }
   }
-  .header__direction{
-    margin: 10px auto 0 auto;
-    width: 6%;
-  }
-}
-
-@media(max-width: '360px') {
-  .header__content{
-    width: 100%;
-    margin: 20px auto 0 auto;
-  }
-
-  .header__text{
-    width: 93%;
-    text-align: left;
-    h1{
-      font-size: 4.3rem;
-      text-align: left;
-    }
-    p{
-      margin-top: 15px;
-      text-align: left;
-      font-size: 1.7rem;
-      width: 100%;
-      line-height: 23px;
-    }
-  }
   .header__trusted {
     margin-top: 80px;
   }
@@ -930,23 +935,6 @@
     margin-top: 10px;
   }
  }
- .award{
-   flex-wrap: wrap;
-   &__content{
-     padding: 20px;
-     width: 100%;
-     display: block;
-     h1{
-       font-size: 36px;
-       text-align: center;
-     }
-     p{
-       margin-top: 20px;
-       font-size: 18;
-       line-height: 2.8rem;
-     }
-   }
- }
  .achievement {
    h1 {
      font-size: 30px;
@@ -955,7 +943,33 @@
      width: 95%;
      font-size: 2rem;
    }
+   &__card {
+     width: 80%;
+   }
  }
+}
+
+@media(max-width: '360px') {
+  .header__content{
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  .header__text{
+    width: 93%;
+    text-align: left;
+    h1{
+      font-size: 4.3rem;
+      text-align: left;
+    }
+    p{
+      margin-top: 15px;
+      text-align: left;
+      font-size: 1.7rem;
+      width: 100%;
+      line-height: 23px;
+    }
+  }
 }
 
 

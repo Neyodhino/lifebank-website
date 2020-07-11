@@ -1,5 +1,5 @@
 <div (scroll)="onWindowScroll($event);" fullpage id="fullpage" [options]="config" #fullpageRef>
-    <section class="container section easing">
+    <section class="container section">
       <div class="header">
         <div >
           <app-notification></app-notification>
@@ -16,7 +16,7 @@
                   We deliver critical medical supplies round the clock to busy hospital teams across africa using technology and a
                   multi-modal distribution network.
                 </p>
-                <a class="btn">Start Here</a>
+                <a class="btn-link" [routerLink] = "['/hospitals']">Start Here</a>
                 <div class="header__trusted">
                   <p>Trusted by over 500 hospitals</p>
                   <div class="header__trusted-img">
@@ -36,25 +36,25 @@
         <div class="color__red">
           <div id="lifebank">
             <p>Safer, Faster, Chepear delivery of blood and blood products.</p>
-            <button>LifeBank</button>
+            <a [routerLink]="['/hospitals']">LifeBank</a>
           </div>
         </div>
         <div class="color__blue">
           <div id="air">
             <p>On-demand emergency/scheduled delivery of medical oxygen.</p>
-            <button>AirBank</button>
+            <a [routerLink]="['/innovation']">AirBank</a>
           </div>
         </div>
         <div class="color__orange">
           <div id="quip">
             <p>Contactless pick up and drop off distribution model for medical samples.</p>
-            <button>LabBank</button>
+            <a href="" target="_blank">LabBank</a>
           </div>
         </div>
         <div class="color__green">
           <div id="stock">
             <p>Structured access to limited medical consumables and Personal Protective Equipment (PPE).</p>
-            <button>StockBank</button>
+            <a [routerLink]="['/innovation']">StockBank</a>
           </div>
         </div>
       </div>
@@ -86,11 +86,11 @@
 </div>
 </section> -->
 
-    <section class="patient section section-three easing">
+    <section class="patient section section-three">
       <div class="patient__content">
         <h1>Patients</h1>
         <p> We deliver critical supplies faster,cheaper and safer to our patients and bring efficiency to our hospitals</p>
-        <div class="header__trusted" style="margin-top: 50px;">
+        <!-- <div class="header__trusted" style="margin-top: 50px;">
           <p style="font-size: 2.5rem;">Trusted by these health systems:</p>
           <div class="header__trusted-img">
             <img src="../../assets/images/marchant_1.png" alt="">
@@ -98,8 +98,8 @@
             <img src="../../assets/images/marchant_3.png" alt="">
             <img src="../../assets/images/4-1.png" alt="">
           </div>
-        </div>
-        <button class="btn-link">Learn More</button>
+        </div> -->
+        <a class="btn-link" [routerLink]="['/hospitals']">Learn More</a>
       </div>
     </section>
 
@@ -107,7 +107,7 @@
       <div class="partner__content">
         <h1>Partners</h1>
         <p>We impact vulnerable communities in urban , peri-urban and rural Africa by delivering to the very last mile. We have saved over 9,000 lives and counting. We create critical life-saving jobs in the communities where we operate. We are the soft infrastructure for Africa’ health system.</p>
-        <button class="btn-link">Learn More</button>
+        <a class="btn-link" [routerLink]="['/impact']">Learn More</a>
       </div>
     </section>
 
@@ -116,7 +116,7 @@
         <h1>People</h1>
         <p>At LifeBank , we are builders. We build high tech tools and an agile distribution system to power health systems across Africa. </p>
         <p>Join our team and build innovations that drive impact for your community and growth for your career. </p>
-        <button class="btn-link">Learn More</button>
+        <a class="btn-link" [routerLink]="['/careers']">Learn More</a>
       </div>
     </section>
 

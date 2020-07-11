@@ -2,16 +2,13 @@
 
 .hero{
   background-color: #B70303;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 90px;
   &__content {
-    width: 97%;
+    width: 70%;
     color: white;
-    display: flex;
-    justify-content: space-between;
     &-text{
-      width: 60%;
       h1{
         font-size: 6.4rem;
         font-family: 'Crimson Text', serif;
@@ -20,39 +17,8 @@
       p{
         font-size: 2.5rem;
         font-family: 'Crimson Text', serif;
-        margin-top: 50px;
+        margin-top: 30px;
       }
-    }
-    &-quote {
-      width: 30%;
-      align-self: center;
-
-      blockquote p {
-        font-style: italic;
-        color: white;
-        line-height: 6rem;
-        font-weight: bold;
-        font-size: 3rem;
-     }
-     blockquote p::before,
-     blockquote p::after {
-        content: "“";
-        font-family: Georgia;
-        font-size: 10rem;
-        margin: 0 0 0 -7rem;
-        position: absolute;
-        opacity: 0.5;
-        color: white;
-     }
-     blockquote p::after {
-      content: "”";
-      margin: 1rem 0 0;
-    }
-    .float-right {
-      text-align: right;
-      font-size: 1.9rem;
-      font-family: 'Crimson Text', serif;
-    }
     }
   }
 }
@@ -62,6 +28,7 @@
   &__container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 65%;
     margin: auto;
   }
@@ -91,15 +58,13 @@
     }
   }
 }
-#mobile {
-  display: none;
-}
 
 .benefit {
   margin-top: 100px;
   &__container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 60%;
     margin: auto;
   }
@@ -216,31 +181,42 @@
   }
 }
 
-@media (max-width: 1356px) {
-  .hero__content {
-    &-text {
-      p {
-        font-size: 2rem;
-      }
-    }
-    &-quote {
-      blockquote p {
-        font-size: 2.5rem;
-      }
-    }
+// @media (max-width: 1356px) {
+//   .hero__content {
+//     &-text {
+//       p {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+//   .virtues__container {
+//     width: 85%;
+//   }
+//   .benefit__container {
+//     width: 75%;
+//   }
+// }
+
+
+@media(max-width: '1552px') {
+  .hero{
+    padding-top: 40px;
   }
-  .virtues__container {
-    width: 75%;
+  .virtues__container{
+    width: 80%;
   }
   .benefit__container {
-    width: 75%;
+    width: 80%;
+  }
+  .vacancies__container{
+    width: 80%;
+  }
+  .vacancies__card{
+    width: 47%;
   }
 }
 
 @media (max-width: 1290px) {
-  .hero {
-    padding-left: 30px;
-  }
   .hero__content {
     &-text {
       h1 {
@@ -251,220 +227,116 @@
         margin-top: 20px;
       }
     }
-    &-quote {
-      blockquote p {
-        font-size: 2.5rem;
-      }
+  }
+  .virtues__text {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.8rem;
     }
   }
 }
 
-// @media(max-width: '1552px') {
-//   .hero{
-//     padding-top: 40px;
-//   }
-//   .virtues__container{
-//     width: 80%;
-//   }
-//   .benefit__container {
-//     width: 80%;
-//   }
-//   .vacancies__container{
-//     width: 80%;
-//   }
-//   .vacancies__card{
-//     width: 47%;
-//   }
-// }
+@media(max-width: '970px') {
+  .hero{
+    padding-top: 70px;
+    &__content {
+      width: 90%;
+      h1 {
+        font-size: 5rem;
+      }
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
 
-// @media(max-width: '1440px') {
-//   .hero{
-//     padding-top: 70px;
-//     &__content {
-//       width: 60%;
-//       h1 {
-//         font-size: 5rem;
-//       }
-//       p {
-//         margin-top: 10px;
-//       }
-//     }
-//   }
-//   .vacancies__container{
-//     width: 80%;
-//   }
-//   .vacancies__card{
-//     width: 47%;
-//   }
-// }
+  .vacancies{
+    padding: 0 20px;
+  }
+  .vacancies__container{
+    width: 100%;
+  }
+}
 
-// @media(max-width: '970px') {
-//   .hero{
-//     padding-top: 70px;
-//     &__content {
-//       width: 90%;
-//       h1 {
-//         font-size: 5rem;
-//       }
-//       p {
-//         margin-top: 20px;
-//       }
-//     }
-//   }
-//   .virtues__container {
-//     width: 95%;
-//   }
-//   .virtues__text {
-//     h1 {
-//       font-size: 2.7rem;
-//     }
-//     p {
-//       font-size: 1.7rem;
-//       margin-top: 10px;
-//     }
-//   }
+@media (max-width: 800px) {
+  .hero {
+    padding-left: 30px;
+  }
+  .virtues__text {
+    width: 80%;
+  }
+  .virtues__image {
+    margin-top: 20px;
+    order: 1;
+    max-width: 80%;
+  }
+  .benefit__text {
+    width: 100%;
+  }
+  .benefit__image {
+    margin-top: 20px;
+    order: 1;
+    max-width: 80%;
+  }
+}
 
-//   .benefit__container {
-//     width: 95%;
-//   }
-//   .benefit__text{
-//     h1 {
-//       font-size: 2.7rem;
-//     }
-//     p{
-//       font-size: 1.7rem;
-//       margin-top: 10px;
-//     }
-//   }
-//   .vacancies{
-//     padding: 0 20px;
-//   }
-//   .vacancies__container{
-//     width: 100%;
-//   }
-// }
+@media(max-width: '700px') {
+  .hero{
+    padding-top: 30px;
 
-// @media(max-width: '650px') {
-//   .hero{
-//     padding-top: 30px;
+    &__content {
+      width: 90%;
+      h1 {
+        font-size: 5rem;
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+  .vacancies__container {
+    flex-wrap: wrap;
+  }
+  .vacancies__heading {
+    padding-top: 30px;
+    font-size: 5rem;
+  }
+  .vacancies__card{
+    width: 100%;
+  }
+}
 
-//     &__content {
-//       width: 100%;
-//       h1 {
-//         font-size: 5rem;
-//       }
-//       p {
-//         margin-top: 10px;
-//       }
-//     }
-//   }
-//   .virtues__container{
-//     flex-wrap: wrap;
-//     width: 70%;
-//   }
-//   .virtues__text {
-//     width: 100%;
-//     width: 90%;
-//     margin: auto;
-//     p {
-//       font-size: 2rem;
-//     }
-//   }
-//   .virtues__image {
-//     width: 70%;
-//     margin: auto;
-//   }
-//   .benefit__container{
-//     flex-wrap: wrap;
-//     width: 70%;
-//   }
-//   .benefit__text {
-//     width: 100%;
-//     width: 90%;
-//     margin: auto;
-//     p {
-//       font-size: 2rem;
-//     }
-//   }
-//   .benefit__image {
-//     width: 100%;
-//   }
+@media(max-width: '568px') {
+  .virtues {
+    margin-top: 50px;
+  }
+  .virtues__text{
+    width: 100%;
+  }
+  .virtues__image {
+      max-width: 100%;
+  }
+  .benefit__container{
+    width: 90%;
+  }
+  .benefit__image {
+    max-width: 100%;
+  }
+  .virtues__container {
+    width: 90%;
+  }
+}
 
-//   #desktop {
-//     display: none;
-//   }
-//   #mobile {
-//     display: block;
-//   }
-//   .vacancies__container {
-//     flex-wrap: wrap;
-//   }
-//   .vacancies__card{
-//     width: 100%;
-//   }
-// }
-
-// @media(max-width: '560px') {
-//   .hero{
-//     padding-left: 30px;
-//     padding-top: 30px;
-
-//     &__content {
-//       width: 100%;
-//       h1 {
-//         font-size: 4.5rem;
-//       }
-//       p {
-//         margin-top: 8px;
-//       }
-//     }
-//   }
-//   .virtues__container{
-//     width: 100%;
-//   }
-//   .virtues__image {
-//       width: 90%;
-//   }
-//   .benefit__container{
-//     width: 90%;
-//   }
-// }
-
-// @media(max-width: '480px') {
-//   .hero{
-//     padding-left: 30px;
-//     padding-top: 30px;
-//     height: 90vh;
-
-//     &__content {
-//       width: 100%;
-//       h1 {
-//         font-size: 4rem;
-//         text-align: center;
-//       }
-//       p {
-//         font-size: 2rem;
-//         text-align: center;
-//         margin-top: 8px;
-//       }
-//     }
-//   }
-//   .vacancies__heading{
-//     font-size: 4rem;
-//   }
-//   .vacancies{
-//     padding: 40 5px;
-//   }
-// }
-
-// @media(max-width: '360px') {
-//   .hero__content {
-//     h1 {
-//       font-size: 2.7rem;
-//       font-weight: bold;
-//     }
-//     p {
-//       font-size: 2rem;
-//     }
-//   }
-// }
+@media(max-width: '360px') {
+  .hero__content {
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}

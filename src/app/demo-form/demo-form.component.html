@@ -16,21 +16,14 @@
       <input matInput placeholder="Number of Bed">
     </mat-form-field>
 
-    <mat-form-field appearance="outline">
-      <mat-label>Estimated monthly need of blood</mat-label>
-      <input matInput placeholder="Estimated monthly need of blood">
-    </mat-form-field>
-
-    <mat-form-field appearance="outline">
-      <mat-label>Estimated monthly need of oxygen</mat-label>
-      <input matInput placeholder="Estimated monthly need of oxygen">
-    </mat-form-field>
-
-    <mat-form-field appearance="outline">
-      <mat-label>Monthly budget for consumables</mat-label>
-      <input matInput placeholder="Monthly budget for consumables">
-    </mat-form-field>
-
+    <section class="example-section">
+      <mat-radio-group>
+        <mat-radio-button class="example-margin" value="lifeBank">LifeBank</mat-radio-button>
+        <mat-radio-button class="example-margin" value="airBank">AirBank</mat-radio-button>
+        <mat-radio-button class="example-margin" value="labBank">LabBank</mat-radio-button>
+        <mat-radio-button class="example-margin" value="stockBank">StockBank</mat-radio-button>
+      </mat-radio-group>
+    </section>
     <button class="btn">Book</button>
 </form>
 </mat-dialog-content>
