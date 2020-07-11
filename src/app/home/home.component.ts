@@ -22,7 +22,8 @@ export class HomeComponent implements OnInit {
       fadingEffect: true,
       easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
       scrollingSpeed: 550,
-      navigation: false
+      navigation: false,
+      scrollOverflow: true
     };
   }
 
