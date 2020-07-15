@@ -1,29 +1,35 @@
-<app-navbar></app-navbar>
+<h2 mat-dialog-title>Leave a message</h2>
+<mat-dialog-content class="mat-typography">
+  <form>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name">
+    </mat-form-field>
 
-<section class="contact">
-  <div class="contact__text">
-    <div>
-      <h1>Get in Touch</h1>
-      <p>LifeBank has a 24/7 call centre, a web application and USSD channels to communicate with hospitals, clients, partners and volunteers.</p>
-      <p>You can contact us via email at hello@lifebank.ng or over the phone at +234 909 7167 238 or +234 813 6077 324</p>
-    </div>
-  </div>
-  <div class="contact__form">
-    <form>
-      <div class="form__control">
-        <input type="text" placeholder="Name" required>
-      </div>
-      <div class="form__control">
-        <input type="email" placeholder="Email" required>
-      </div>
-      <div class="form__control">
-        <input type="phone" placeholder="Phone Number" required>
-      </div>
-      <div class="form__control">
-        <textarea type="text" placeholder="Message" rows="7" cols="50" required></textarea>
-      </div>
-      <button class="btn-link">Submit</button>
-    </form>
-  </div>
-</section>
-<app-footer></app-footer>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Phone Number</mat-label>
+      <input matInput placeholder="Org Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Contact</mat-label>
+      <input matInput placeholder="Org Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Choose an option</mat-label>
+      <mat-select>
+        <mat-option value="option1">Save a Life</mat-option>
+        <mat-option value="option2">Help a Community</mat-option>
+        <mat-option value="option3">Train a Rider</mat-option>
+        <mat-option value="option3">Support our work</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button class="btn">Send</button>
+</form>
+</mat-dialog-content>

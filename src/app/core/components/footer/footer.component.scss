@@ -1,11 +1,36 @@
 @import '../../../../global/abstract/variables';
 
-footer{
+.footer {
   padding: 20px;
   background-color: $LifeBankred;
   color: white;
-  p {
-    text-align: center;
-    font-size: 1.8rem;
+  &__content {
+    width: 40%;
+    margin: auto;
+    p {
+      text-align: center;
+      font-size: 2.3rem;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+    }
   }
+}
+.footer__social {
+  margin-top: 20px;
+  text-align: center;
+
+  span {
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    padding: 8px 0;
+    margin-right: 20px;
+  }
+}
+.footer__quote {
+  margin-top: 30px;
 }

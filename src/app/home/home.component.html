@@ -1,10 +1,10 @@
-<div (scroll)="onWindowScroll($event);" fullpage id="fullpage" [options]="config" #fullpageRef>
+<div fullpage id="fullpage" [options]="config" #fullpageRef>
     <section class="container section">
       <div class="header">
-        <div >
+        <div>
           <app-notification></app-notification>
         </div>
-        <div id="menu">
+        <div>
           <app-navbar></app-navbar>
         </div>
         <div class="header__content">
@@ -18,7 +18,7 @@
                 </p>
                 <a class="btn-link" [routerLink] = "['/hospitals']">Start Here</a>
                 <div class="header__trusted">
-                  <p>Trusted by over 500 hospitals</p>
+                  <p>Trusted by over 500+ hospitals in Nigeria and Kenya</p>
                   <div class="header__trusted-img">
                     <img src="../../assets/images/marchant_1.png" alt="">
                     <img src="../../assets/images/marchant_2.png" alt="">
@@ -88,8 +88,8 @@
 
     <section class="patient section section-three">
       <div class="patient__content">
-        <h1>For Our Patients</h1>
-        <p> We deliver critical supplies faster,cheaper and safer to our patients and bring efficiency to our hospitals</p>
+        <h1>For our patients</h1>
+        <p>We deliver critical medical supplies faster, cheaper, and safer to our patients and bring efficiency to our hospital partners.</p>
         <!-- <div class="header__trusted" style="margin-top: 50px;">
           <p style="font-size: 2.5rem;">Trusted by these health systems:</p>
           <div class="header__trusted-img">
@@ -105,74 +105,77 @@
 
     <section class="partner section section-four easing">
       <div class="partner__content">
-        <h1>For Our Partners</h1>
-        <p>We impact vulnerable communities in urban , peri-urban and rural Africa by delivering to the very last mile. We have saved over 9,000 lives and counting. We create critical life-saving jobs in the communities where we operate. We are the soft infrastructure for Africa’ health system.</p>
+        <h1>For our partners</h1>
+        <p>We impact vulnerable communities in urban, peri-urban, and rural Africa by delivering to the very last mile. We are the infrastructure for Africa’s health system.</p>
         <a class="btn-link" [routerLink]="['/impact']">Learn More</a>
       </div>
     </section>
 
     <section class="people section section-four easing">
       <div class="people__content">
-        <h1>For Our People</h1>
-        <p>At LifeBank , we are builders. We build high tech tools and an agile distribution system to power health systems across Africa. </p>
-        <p>Join our team and build innovations that drive impact for your community and growth for your career. </p>
+        <h1>For our people</h1>
+        <p>At LifeBank, we are builders. We are a team committed to creating an agile distribution system to power healthcare across Africa. Join our team.</p>
         <a class="btn-link" [routerLink]="['/careers']">Learn More</a>
       </div>
     </section>
 
-  <section class="award section easing">
-    <div class="award__content">
-      <h1>LifeBank has won several awards</h1>
-      <p>These include the 2018 MIT Solve Health Challenge, Africa’s Top 50 Innovations by the Africa Innovation
-        Summit, and TechCrunch Top Pick at TC Disrupt SF, the premiere trade conference in Silicon Valley for
-        technology start-ups across the world. We have also received favourable coverage from local, regional and
-        international press such as Guardian Nigeria, CNBC Africa, BBC, CNN and The Guardian UK. In June 2019, we
-        were featured on the Google Search Page and have a permanent feature on their company’s About page.
-        Last year, we won the African Netpreneur Prize Initiative Award by Jack Ma.</p>
-    </div>
-    <div class="award__icon">
-      <div class="award__icon-container">
-        <img src="../../assets/images/google.png" alt="">
-        <img src="../../assets/images/crunch.png" alt="">
+  <section class="section">
+    <div class="value">
+      <div class="value__content">
+        <h1>Faster, Cheaper, Safer</h1>
+        <p>We are on a mission to save lives across Africa through the delivery of blood, oxygen, rare drugs and supplies, and vaccines regardless of location or timing. We are on a mission to save as many lives as quickly as we can.</p>
+        <a [routerLink]="['/hospitals']">Join Us</a>
       </div>
-      <div class="award__icon-container">
-        <img src="../../assets/images/cnn.png" alt="">
-        <img src="../../assets/images/mit.png" alt="">
+    </div>
+    <div class="achievement">
+      <h1>Our Achievements</h1>
+      <div class="achievement__container">
+        <div class="achievement__card">
+          <h1>21,900</h1>
+          <p>Products Moved</p>
+        </div>
+        <div class="achievement__card">
+          <h1>450</h1>
+          <p>Hospital Served</p>
+        </div>
+        <div class="achievement__card">
+          <h1>2</h1>
+          <p>African Countries</p>
+        </div>
+        <div class="achievement__card">
+          <h1>8,200</h1>
+          <p>Lives saved</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="award">
+      <div class="award__content">
+        <h1>LifeBank has won several awards</h1>
+        <a href="https://www.cartierwomensinitiative.com/candidate/temie-giwa-tubosun">Cartier 2020 Women's Initiative Sub-Saharan Africa Laureate
+        </a>
+        <a href="https://www.alizila.com/nigerias-lifebank-wins-first-africa-netpreneur-prize/">African Netpreneur Prize Initiative Award by Jack Ma</a>
+        <a href="https://www.jnj.com/johnson-johnson-announces-six-winners-of-the-champions-of-science-africa-innovation-challenge-2-0-at-the-28th-world-economic-forum-on-africa">Johnson and Johnson Science Africa Innovation Challenge 2.0 Award </a>
+        <a href="https://solve.mit.edu/challenges/frontlines-of-health/solutions/4898">2018 MIT Solve Health Challenge</a>
+        <a href="https://techcrunch.com/2018/07/12/announcing-the-tc-top-picks-for-disrupt-sf-2018/">TechCrunch Top Pick at TC Disrupt SF</a>
       </div>
-      <div class="award__icon-container">
-        <img src="../../assets/images/guardian.png" alt="">
-        <img src="../../assets/images/bbc.png" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="achievement section">
-    <h1>Our Achievements</h1>
-    <p>We are on a mission to save lives across the globe through the delivery of essential medical products regardless of location or timing. We aim to save as many lives within Sub-Saharan Africa and other developing countries. Be a Part of It!</p>
-    <div class="achievement__container">
-      <div class="achievement__card">
-        <h1>21,900</h1>
-        <p>Products Moved</p>
-      </div>
-      <div class="achievement__card">
-        <h1>450</h1>
-        <p>Hospital Served</p>
-      </div>
-      <div class="achievement__card">
-        <h1>2</h1>
-        <p>African Countries</p>
-      </div>
-      <div class="achievement__card">
-        <h1>5,910</h1>
-        <p>Donors</p>
-      </div>
-      <div class="achievement__card">
-        <h1>8,200</h1>
-        <p>Life saved</p>
+      <div class="award__icon">
+        <h1>LifeBank in the news</h1>
+        <div class="award__icon-container">
+          <div><a target="_blank" href="https://about.google/stories/lifebank/"><img src="../../assets/images/google.png" alt=""></a></div>
+          <div><a target="_blank" href="https://techcrunch.com/2018/07/12/announcing-the-tc-top-picks-for-disrupt-sf-2018/"><img src="../../assets/images/crunch.png" alt=""></a></div>
+        </div>
+        <div class="award__icon-container">
+          <div><a target="_blank" href="https://edition.cnn.com/2019/08/23/africa/lifebank-nigeria-intl/index.html"><img src="../../assets/images/cnn.png" alt=""></a></div>
+          <div><a target="_blank" href="https://solve.mit.edu/challenges/frontlines-of-health/solutions/4898"><img src="../../assets/images/mit.png" alt=""></a></div>
+        </div>
+        <div class="award__icon-container">
+          <div><a target="_blank" href="https://guardian.ng/features/health/google-lifebank-partner-to-raise-awareness-on-blood-donation-lessen-delivery-time/"><img src="../../assets/images/guardian.png" alt=""></a></div>
+          <div><a target="_blank" href="https://www.bloomberg.com/news/articles/2019-06-11/africa-s-technology-hub-rises-in-a-congested-lagos-neighborhood"><img src="../../assets/images/Bloomberg_grey.png" alt=""></a></div>
+        </div>
       </div>
     </div>
-    <app-footer></app-footer>
+  <app-footer></app-footer>
   </section>
 </div>
 

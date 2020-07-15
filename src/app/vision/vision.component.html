@@ -1,24 +1,35 @@
 <div  fullpage id="fullpage" [options]="config" #fullpageRef>
-        <section class="section">
-          <div>
+        <section class="section panel section-one">
+          <div class="nav">
             <app-navbar></app-navbar>
           </div>
-          <div class="vision">
-            <div class="vision__content">
-              <h1>THIS IS LIFEBANK</h1>
-              <p>We believe no African should die because of the shortage of medical supplies.</p>
-              <p>LifeBank is committed to rescuing women, children and other vulnerable people through ensuring access to blood, oxygen, vaccines and other critical supplies.</p>
-              <button class="btn">Learn More</button>
+            <div class="panel__content">
+              <p>At LifeBank, we believe no African person should die because of the critical supplies they need was not available when and where they needed it.</p>
+              <h1>This is LifeBank!</h1>
+              <!-- <lottie-animation-view
+                    [options]="lottieConfig"
+                    [width]="300"
+                    [height]="600">
+              </lottie-animation-view> -->
             </div>
+      </section>
+
+      <section class="section vision">
+          <div class="vision__content">
+            <p>Busy hospital teams across the developing world need access to critical medical supplies. Broken supply chains often lead to the worst outcome for patients even in the best of times.</p>
         </div>
       </section>
+
+      <section class="section vision_4">
+        <div class="vision_4-content">
+          <p>In Africa, a robust health supply chain engine must deliver from ports to clinic and do so 24/7. This infrastructure engine must be affordable, flexible, and serve all to the very last mile. This is LifeBank!</p>
+      </div>
+    </section>
 
       <section class="section vision_2">
         <div class="vision_2-content">
           <h1>Multi-Modal Delivery Network</h1>
-          <p>We deliver using bikes, boats, drones, contactless pick up and delivery maruwa and trucks.</p>
-          <p>We bring flexibility and cost savings to our distribution network to deliver faster, safer and cheaper to every patient all the time.</p>
-          <button class="btn">Learn More</button>
+          <p> We deliver critical supplies with bikes, boats, trucks, tricycles, and drones faster, cheaper, and safer!</p>
         </div>
     </section>
 
@@ -26,12 +37,22 @@
       <div class="vision_3">
         <div class="vision_3-content">
           <h1>Our Tech</h1>
-          <p>We are building technology to improve blood safety, access and affordability of essential supplies. We combine accessible technology with deep tech to build tools that ensure universal access.</p>
-          <button class="btn">Learn More</button>
+          <p>We build tech tools to organise our distribution system using deep tech like AI and Blockchain, deployed with accessible tools like USSD, and SMS systems to ensure universal access.</p>
         </div>
       </div>
-      <div>
-        <app-footer></app-footer>
-      </div>
+  </section>
+
+  <section class="contact section section-one">
+    <div class="contact__content">
+      <p>At Scale, LifeBank will reach every village, every town, and every city, across Africa with lifesaving supplies.</p>
+      <h1>This is the future!</h1>
+      <button (click)="openDialog()">Join Us</button>
+    </div>
+    <hr class="right">
+    <hr class="left">
+    <div class="icon">
+      <img src="../../assets/images/icons-white.png" alt="">
+    </div>
   </section>
 </div>
+

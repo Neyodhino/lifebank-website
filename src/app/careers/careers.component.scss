@@ -2,35 +2,115 @@
 
 .hero{
   background-color: #B70303;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 90px;
+  height: 90vh;
   &__content {
-    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    &-text{
+    text-align: center;
       h1{
-        font-size: 6.4rem;
+        font-size: 9rem;
         font-family: 'Crimson Text', serif;
         font-weight: 500;
       }
       p{
-        font-size: 2.5rem;
+        font-size:3.2rem;
+        font-family: 'Crimson Text', serif;
+        margin-top: 30px;
+        padding-bottom: 70px;
+        width: 100%;
+      }
+      a {
+        font-size: 24px;
+        padding: 12px 40px;
+        margin-top: 40px;
+        border-radius: 10px;
+        font-family: 'Crimson Text', serif;
+        cursor: pointer;
+        outline: none;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+      }
+  }
+}
+
+.career{
+  background :linear-gradient(to right top,rgba(0,0,0,.85),rgba(0,0,0,.85)),url(../../assets/images/photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  &__content {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+      h1{
+        font-size: 9rem;
+        font-family: 'Crimson Text', serif;
+        font-weight: 500;
+      }
+      p{
+        font-size: 3rem;
         font-family: 'Crimson Text', serif;
         margin-top: 30px;
       }
+  }
+}
+
+.career2 {
+  height: 100vh;
+  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/bike.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    &__content {
+      width: 48%;
+      margin-bottom: 100px;
+      margin-left: 50px;
+      p {
+        font-size: 4rem;
+        font-family: 'Crimson Text', serif;
+        margin-top: 40px;
+        line-height: 6rem;
+        color: white;
     }
   }
 }
 
+
+
+
 .virtues {
-  margin-top: 100px;
+  &__heading {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 50px;
+    font-family: inherit;
+    padding-bottom: 25px;
+  }
+  &__paragraph {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    font-family: inherit;
+    padding-bottom: 70px;
+  }
   &__container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 65%;
-    margin: auto;
+    margin: 80px auto 0 auto;
   }
   &__text{
     width: 45%;
@@ -48,7 +128,7 @@
     }
   }
   &__image{
-    max-width: 45%;
+    max-width: 42%;
     max-height: 400px;
     img{
       width: 100%;
@@ -60,7 +140,16 @@
 }
 
 .benefit {
-  margin-top: 100px;
+  margin-top: 50px;
+  background-color: #cfcfcf;
+  padding: 50px 0;
+
+  .bene {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+    font-family: inherit;
+  }
   &__container{
     display: flex;
     justify-content: space-between;
@@ -110,7 +199,6 @@
 
 
 .vacancies{
-  margin-top: 50px;
   background-color: #B70303;
   padding: 60px;
   &__heading {
@@ -123,7 +211,7 @@
   &__text{
     font-size: 2.1rem;
     font-family: 'Crimson Text', serif;
-    text-align: center;
+    text-align: justify;
     margin-top: 15px;
     margin-bottom: 40px;
     color: white;
@@ -180,23 +268,6 @@
     }
   }
 }
-
-// @media (max-width: 1356px) {
-//   .hero__content {
-//     &-text {
-//       p {
-//         font-size: 2rem;
-//       }
-//     }
-//   }
-//   .virtues__container {
-//     width: 85%;
-//   }
-//   .benefit__container {
-//     width: 75%;
-//   }
-// }
-
 
 @media(max-width: '1552px') {
   .hero{

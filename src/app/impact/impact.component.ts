@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JoinUsComponent } from '../join-us/join-us.component';
+import { ContactComponent } from '../contact/contact.component';
 import {MatDialog} from '@angular/material/dialog';
 
 @Component({
@@ -14,6 +15,14 @@ export class ImpactComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+  }
+
+  openContact() {
+    const dialogRef = this.dialog.open(ContactComponent, {
+      width: '600px'
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 
   openDialog() {

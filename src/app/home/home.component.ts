@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, Inject, Renderer2, ViewChild, ElementRef} from '@angular/core';
+import { Component, OnInit, Inject, Renderer2, ViewChild, ElementRef} from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
       fadingEffect: true,
       easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
       scrollingSpeed: 550,
-      navigation: false,
+      navigation: true,
       scrollOverflow: true
     };
   }
@@ -30,16 +30,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(e): void {
-     if (window.pageYOffset > 90) {
-       const element = document.getElementById('navbar');
-       element.classList.add('sticky');
-     } else {
-      const element = document.getElementById('navbar');
-      element.classList.remove('sticky');
-     }
-  }
+  // @HostListener('window:scroll', ['$event'])
+  // onWindowScroll(e): void {
+  //    if (window.pageYOffset > 90) {
+  //      const element = document.getElementById('navbar');
+  //      element.classList.add('sticky');
+  //    } else {
+  //     const element = document.getElementById('navbar');
+  //     element.classList.remove('sticky');
+  //    }
+  // }
 
 }
 

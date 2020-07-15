@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 50;
+  background-color: #fff;
 }
 
 .header__content {
@@ -62,6 +63,7 @@
   p {
     font-size: 2rem;
     font-family: 'Crimson Text', serif;
+    padding-bottom: 20px;
   }
   &-img  {
     width: 120px;
@@ -365,11 +367,10 @@
 
 
 .patient {
-  height: 100vh;
   background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/mother-child.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     display: flex;
     align-items: flex-end;
     transition: all 0.6s cubic-bezier(0.55, 0.06, 0.68, 0.19);
@@ -384,7 +385,7 @@
         font-family: 'Crimson Text', serif;
       }
       p {
-        font-size: 57px;
+        font-size: 40px;
         font-family: 'Crimson Text', serif;
         margin-top: 20px;
         padding-bottom: 60px;
@@ -404,7 +405,6 @@
 
 
 .partner {
-  height: 100vh;
   background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/Joseph-on-BOAT.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -414,8 +414,8 @@
     &__content {
       color: white;
       width: 50%;
-      margin-left: 100px;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
+      margin-left: 40px;
       h1{
         font-size: 47px;
         font-weight: bold;
@@ -441,18 +441,17 @@
     }
 }
 .people {
-  height: 100vh;
-  background-image: url(../../assets/images/people.jpeg);
+  background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/dadddd.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     display: flex;
     align-items: flex-end;
     &__content {
       color: white;
       width: 45%;
-      margin-bottom: 100px;
-      margin-left: 100px;
+      margin-bottom: 50px;
+      margin-left: 40px;
       h1 {
         font-size: 47px;
         font-family: 'Crimson Text', serif;
@@ -476,10 +475,41 @@
       }
     }
 }
-
+.value {
+  padding: 50px 0 70px 0;
+  background-color: $LifeBankred;
+  &__content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    h1 {
+      font-size: 8rem;
+      font-family: inherit;
+    }
+    p {
+      font-size: 3rem;
+      padding-top: 20px;
+      font-family: inherit;
+      padding-bottom: 50px;
+    }
+    a {
+      margin-top: 40px;
+      font-size: 20px;
+      padding: 15px 35px;
+      font-family: 'Crimson Text', serif;
+      cursor: pointer;
+      color: $LifeBankred;
+      background-color: white;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+  }
+}
 .award {
+  margin-top: 80px;
   display: flex;
-  height: 90vh;
+  padding: 70px 0;
   &__content {
     padding: 60px;
     background-color: #f2f1f8;
@@ -488,43 +518,69 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     h1 {
       text-align: left;
-      font-family: 'Crimson Text', serif;
+      font-family: inherit;
       font-size: 30px;
+      margin-left: -20px;
     }
-    p {
+    a {
+      margin-top: 20px;
+      font-size: 2rem;
       font-family: 'Crimson Text', serif;
-      margin-top: 40px;
-      font-size: 22px;
-      line-height: 3.7rem;
+      position: relative;
+      padding-left: 40px;
+      text-decoration: none;
+      color: black;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background: url(../../assets/images/ico-bullet.svg) no-repeat 0 0;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        width: 24px;
+        height: 24px;
+      }
     }
   }
   &__icon {
-    padding: 20px;
+    padding: 60px 50px;
     flex: 1;
     align-self: center;
     display: flex;
     flex-direction: column;
     align-content: space-around;
 
+    h1 {
+      font-family: inherit;
+      font-size: 30px;
+      padding-bottom: 40px;
+    }
+
     &-container {
+      width: 80%;
       display: flex;
       justify-content: space-around;
+      div{
+        max-width: 20%;
+        height: 30%;
+      }
       img {
-        width: 20%;
-        height: 20%;
+        width: 100%;
+        height: 100%;
       }
     }
   }
 }
 .award__icon-container:not(:last-child) {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .achievement {
-  margin-top: 50px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   background-color: #f4f6f7;
@@ -545,7 +601,7 @@
   }
   &__container{
     width: 70%;
-    margin: auto;
+    margin: 70px auto 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -554,8 +610,7 @@
   &__card {
     background-color: white;
     border-radius: 20px;
-    width: 18%;
-    // height: 300px;
+    width: 22%;
     color: white;
     box-shadow: 0 16px 16px 0 rgba(61, 118, 165, 0.05);
     padding-top: 70px;
@@ -569,7 +624,7 @@
     }
     p {
       margin: 40px auto 70px;
-      font-size: 17px;
+      font-size: 20px;
       width: 100%;
       font-family: 'Crimson Text', serif;
       color: black;
