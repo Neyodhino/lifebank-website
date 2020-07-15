@@ -95,6 +95,15 @@
   }
 }
 
+hr {
+  border: none;
+  border-top: 1px solid white;
+  color: white;
+  height: 2px;
+  width: 100%;
+  z-index: 10;
+}
+
 /*==================================================media queries==============================================================================*/
 
 @media(max-width: 1906px) {

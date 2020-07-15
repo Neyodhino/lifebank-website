@@ -25,7 +25,8 @@ export class VisionComponent implements OnInit {
     this.lottieConfig = {
       path: '../../assets/love.svg',
       autoplay: true,
-      loop: true
+      loop: true,
+      renderer: 'svg'
   };
    }
 

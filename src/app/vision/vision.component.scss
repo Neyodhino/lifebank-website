@@ -62,7 +62,7 @@
 
 .vision_2 {
   height: 70vh;
-  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/multi-2.png);
+  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/Collage-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -71,7 +71,7 @@
 
     &-content {
       color: white;
-      width: 48%;
+      width: 46%;
       margin-bottom: 100px;
       margin-left: 100px;
       h1 {
@@ -108,7 +108,7 @@
     &-content {
       color: white;
       width: 46%;
-      margin-bottom: 100px;
+      margin-bottom: 170px;
       margin-left: 50px;
       h1 {
         font-size: 40px;
@@ -174,7 +174,7 @@
   &__content {
     position: absolute;
     width: 60%;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -207,7 +207,7 @@
     height: 6px;
     width: 40%;
     position: absolute;
-    top: 93.8%;
+    top: 81.8%;
     z-index: 10;
   }
   .left{
@@ -217,13 +217,13 @@
     height: 6px;
     width: 40%;
     position: absolute;
-    top: 93.6%;
+    top: 81.6%;
     left: 65%;
     z-index: 10;
   }
   .icon {
     position: absolute;
-    top: 90%;
+    top: 78%;
     left: 33%;
     img {
       z-index: 30;
@@ -232,7 +232,123 @@
     }
   }
 }
+.footer {
+  position: absolute;
+  top: 86%;
+  width: 100%;
+}
 
+.svg-1 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 140%;
+  left: 85%;
+}
+
+.svg-2 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 130%;
+  left: -20%;
+}
+
+.svg-3 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 140%;
+  left: -30%;
+}
+.svg-4 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 120%;
+  left: -30%;
+}
+.svg-5 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 140%;
+  left: -10%;
+}
+
+.svg-6 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 130%;
+  left: 120%;
+}
+.svg-7 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+}
+.svg-8 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 140%;
+  left: 100%;
+}
+.svg-9 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 140%;
+  left: 40%;
+}
+.svg-10 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 140%;
+  left: 70%;
+}
+.svg-11 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 140%;
+  left: 30%;
+}
+.svg-12 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 120%;
+  left: 80%;
+}
+.svg-13 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 150%;
+  left: 80%;
+}
+.svg-14 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 170%;
+  left: 20%;
+}
+.svg-15 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 165%;
+  left: 10%;
+}
+.svg-16 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 170%;
+  left: 10%;
+}
+.svg-17 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 170%;
+  left: -26%;
+}
+.svg-18 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 178%;
+  left: -16%;
+}
 .section-one h1 {
 	-webkit-transform: translateY(-400px);
 	        transform: translateY(-400px);
@@ -292,6 +408,16 @@
       opacity: 1;
       transform: translate(0);
     }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.8)
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1.3)
+  }
 }
 @keyframes moveInBottom{
   0% {
