@@ -411,3 +411,43 @@
     }
   }
 }
+
+//Adigun
+
+@media only screen and  (max-width: 450px) {
+  .we-are-the{
+    font-size: 20px !important;
+  }
+  .we-believe{
+    font-size:20px !important;
+  }
+  .text-stuff{
+    font-size:20px !important;
+  }
+  .career{
+    &__content {
+      top: 45%;
+      text-align: center;
+      width:80%;
+      margin:auto;
+    }
+  }
+  .career2{
+    &__content {
+      top: 65%;
+      text-align: center;
+      width:80%;
+      margin:auto;
+    }
+  }
+  .virtues {
+    &__paragraph {
+      margin: auto;
+      width: 75%;
+      text-align: center;
+      font-size: 25px;
+      font-family: inherit;
+      padding-bottom: 70px;
+    }
+  }
+}

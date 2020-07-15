@@ -34,3 +34,51 @@
 .footer__quote {
   margin-top: 30px;
 }
+
+@media only screen and  (max-width: 450px) {
+  .footer{
+    font-size:10px !important;
+  }
+  .footer-upper-text{
+    font-size:15px !important;
+  }
+
+  .footer {
+    padding: 5px;
+    background-color: $LifeBankred;
+    color: white;
+    &__content {
+      width: 80%;
+      margin: auto;
+      p {
+        text-align: center;
+        // font-size: 2.3rem;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .footer__social {
+    margin-top: 15px !important;
+    text-align: center;
+    width:40%;
+    margin:auto;
+  
+    span {
+      border: 2px solid $LifeBankred;
+      // border:2px solid white;
+      width: 50px;
+      height: 30px;
+      border-radius: 50%;
+      display: block;
+      padding: 8px 0;
+      margin-right: 20px;
+    }
+  }
+  .footer__quote {
+    margin-top: 15px;
+  }
+  
+}

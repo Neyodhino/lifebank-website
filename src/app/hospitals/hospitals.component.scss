@@ -239,3 +239,44 @@
     }
   }
 }
+
+//Adigun
+@media only screen and  (max-width: 450px) {
+  .demo {
+    padding: 20px 0;
+    &__content {
+      width: 80%;
+      p {
+        font-size: 20px;
+      }
+      button {
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .hero{
+    padding: 100px 0 100px 80px;
+    &__content {
+      width: 100%;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      &-text {
+        width: 80%;
+        h1 {
+          font-size: 2rem;
+          font-weight: 650;
+          font-family: 'Crimson Text', serif;
+          font-weight: 500;
+        }
+        button {
+          font-size: 15px;
+          padding: 10px 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

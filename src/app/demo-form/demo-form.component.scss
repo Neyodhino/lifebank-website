@@ -49,3 +49,17 @@ button {
   color: white;
   cursor: not-allowed;
 }
+.btn-book{
+  width:100px !important;
+  margin:auto !important;
+  text-align: center !important;
+}
+@media only screen and  (max-width: 450px) {
+  .btn-stuff{
+    display: flex; 
+    flex-direction: column;
+  }
+  .btn1{
+    margin-left:16px;
+  }
+}
