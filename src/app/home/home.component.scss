@@ -20,38 +20,42 @@
 .header__text{
   margin-top: 100px;
   width: 50%;
-  h1 {
-    font-size: 9rem;
-    font-family: 'Crimson Text', serif;
-    text-align: left;
-    font-weight: bolder;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-  }
-  &>p {
-    text-align: left;
-    font-size: 26px;
-    margin: 20px 0;
-    font-family: 'Crimson Text', serif;
-    width: 90%;
-    line-height: 38px;
-    animation-name: moveInRight;
-    animation-duration: 2s;
-    padding-bottom: 50px;
-  }
-  a {
-    font-size: 18px;
-    padding: 15px 75px;
-    font-family: 'Crimson Text', serif;
-    cursor: pointer;
-    color: white;
-    background-color: $LifeBankred;
-    border-radius: 10px;
-    text-decoration: none;
+  position: relative;
+  &-first{
+    h1 {
+      font-size: 9rem;
+      font-family: 'Crimson Text', serif;
+      text-align: left;
+      font-weight: bolder;
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+    }
+    &>p {
+      text-align: left;
+      font-size: 26px;
+      margin: 20px 0;
+      font-family: 'Crimson Text', serif;
+      width: 90%;
+      line-height: 38px;
+      animation-name: moveInRight;
+      animation-duration: 2s;
+      padding-bottom: 50px;
+    }
+    a {
+      font-size: 18px;
+      padding: 15px 75px;
+      font-family: 'Crimson Text', serif;
+      cursor: pointer;
+      color: white;
+      background-color: $LifeBankred;
+      border-radius: 10px;
+      text-decoration: none;
+    }
   }
 }
 .header__img{
-  max-width: 37%;
+  max-width: 40%;
+  max-height: 100%;
   img{
     width: 100%;
     height: 100%;
@@ -59,7 +63,8 @@
 }
 
 .header__trusted {
-  margin-top: 125px;
+  position: absolute;
+  bottom: 30px;
   p {
     font-size: 2rem;
     font-family: 'Crimson Text', serif;
@@ -564,8 +569,8 @@
       display: flex;
       justify-content: space-around;
       div{
-        max-width: 10%;
-        height: 10%;
+        max-width: 15%;
+        height: 5%;
       }
       img {
         width: 100%;
@@ -770,8 +775,8 @@
   }
   .award__icon-container{
     img{
-      width: 30%;
-      height: 30%;
+      width: 100%;
+      height: 100%;
     }
   }
   .achievement {
@@ -817,15 +822,15 @@
 //   }
 //  }
 
- @media(max-width: '1280px'){
+ @media(max-width: '1366px'){
   .header__content{
     width: 93%;
   }
-  .header__img {
-    max-width: 35%;
-  }
   .header__direction{
     margin: 100px auto 0 auto;
+  }
+  .header__img {
+    max-width: 40%;
   }
   .patient__content{
     p {
@@ -852,6 +857,19 @@
     }
     &__container {
       margin-top: 50px;
+    }
+  }
+  .award__icon-container {
+    div {
+      max-width: 20%;
+    }
+  }
+  .award__icon {
+    width: 100%;
+  }
+  .award__content {
+    a {
+      font-size: 1.7rem;
     }
   }
  }
@@ -957,7 +975,7 @@
 @media(max-width: '500px') {
   .header__content{
     width: 95%;
-    margin: 50px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
 
   .header__text{
@@ -1032,42 +1050,45 @@
  }
 }
 
-@media(max-width: '360px') {
-  .header__content{
-    width: 100%;
-    margin: 20px auto 0 auto;
-  }
+// @media(max-width: '360px') {
+//   .header__content{
+//     width: 100%;
+//     margin: 20px auto 0 auto;
+//   }
 
-  .header__text{
-    width: 93%;
-    text-align: left;
-    h1{
-      font-size: 4.3rem;
-      text-align: left;
-    }
-    p{
-      margin-top: 15px;
-      text-align: left;
-      font-size: 1.7rem;
-      width: 100%;
-      line-height: 23px;
-    }
-  }
-}
+//   .header__text{
+//     width: 93%;
+//     text-align: left;
+//     h1{
+//       font-size: 4.3rem;
+//       text-align: left;
+//     }
+//     p{
+//       margin-top: 15px;
+//       text-align: left;
+//       font-size: 1.7rem;
+//       width: 100%;
+//       line-height: 23px;
+//     }
+//   }
+// }
 
-@media only screen and  (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .home-header{
     display: flex;
     justify-content: center;
     text-align: center;
   }
+  .header__content {
+    width: 100%;
+  }
   .header__text{
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     &>p {
-      font-size: 18px;
-      margin: 20px 0;
+      font-size: 20px;
+      padding-bottom: 10px;
     }
     a {
       font-size: 15px;
@@ -1089,9 +1110,9 @@
   }
 
   .header__trusted {
-    margin-top: 125px;
+    margin-top: 15px;
     p {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-family: 'Crimson Text', serif;
       padding-bottom: 20px;
     }
@@ -1142,33 +1163,12 @@
       flex-direction: column;
       justify-content: center;
       h1 {
-        font-size: 24px;
+        font-size: 18px;
       }
       a {
         font-size: 1.7rem;
       }
     }
-    &__icon {
-
-      &-container {
-        img {
-          width: 200%;
-          height: 200%;
-        }
-      }
-    }
   }
 }
-
-.award {
-  &__icon {
-    &-container {
-      img {
-        width: 200% !important;
-        height: 200% !important;
-      }
-    }
-  }
-}
-
 

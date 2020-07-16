@@ -713,10 +713,11 @@ hr {
     }
   }
   .virtues {
+    &__heading {
+      font-size: 25px;
+    }
     &__paragraph {
-      margin: auto;
-      width: 75%;
-      text-align: center;
+      width: 100%;
       font-size: 25px;
       font-family: inherit;
       padding-bottom: 70px;

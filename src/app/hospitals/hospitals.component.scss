@@ -94,7 +94,6 @@
     }
   }
 }
-
 hr {
   border: none;
   border-top: 1px solid white;
@@ -178,6 +177,9 @@ hr {
 }
 
 @media(max-width: 755px) {
+  .hero {
+    background-image: none;
+  }
   .hero__content-text {
     h1 {
       font-size:3.5rem;
@@ -271,22 +273,21 @@ hr {
     }
   }
   .hero{
-    padding: 100px 0 100px 80px;
     &__content {
       width: 100%;
       color: white;
       display: flex;
       justify-content: space-between;
       &-text {
-        width: 80%;
+        width: 95%;
         h1 {
-          font-size: 2rem;
+          font-size: 2.9rem;
           font-weight: 650;
           font-family: 'Crimson Text', serif;
           font-weight: 500;
         }
         button {
-          font-size: 15px;
+          font-size: 17px;
           padding: 10px 20px;
           border-radius: 5px;
         }
