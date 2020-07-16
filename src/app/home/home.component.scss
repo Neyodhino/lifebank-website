@@ -1030,4 +1030,119 @@
   }
 }
 
+@media only screen and  (max-width: 450px) {
+  .home-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .header__text{
+    h1 {
+      font-size: 3rem;
+    }
+    &>p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    a {
+      font-size: 15px;
+      padding: 10px 30px;
+      border-radius: 5px;
+      text-align: center;
+      display:flex;
+      justify-content: center;
+      width: 50%;
+      margin:auto;
+    }
+  }
+  .header__img{
+    max-width: 37%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .header__trusted {
+    margin-top: 125px;
+    p {
+      font-size: 2rem;
+      font-family: 'Crimson Text', serif;
+      padding-bottom: 20px;
+    }
+    &-img  {
+      width: 120px;
+      height: 40px;
+      display: flex;
+      img {
+        max-width: 100%;
+        margin-right: 20px;
+      }
+    }
+  }
+  .section-three, .section-four{
+    text-align: center;
+    font-size: 1rem !important;
+  }
+  .value {
+    &__content {
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+        padding-top: 20px;
+      }
+      a {
+        margin-top: 40px;
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .achievement {
+    &__card {
+      margin-bottom: 20px;
+    }
+  }
+
+  .award {
+    margin-top: 20px;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: 24px;
+      }
+      a {
+        font-size: 1.7rem;
+      }
+    }
+    &__icon {
+
+      &-container {
+        img {
+          width: 200%;
+          height: 200%;
+        }
+      }
+    }
+  }
+}
+
+.award {
+  &__icon {
+    &-container {
+      img {
+        width: 200% !important;
+        height: 200% !important;
+      }
+    }
+  }
+}
 

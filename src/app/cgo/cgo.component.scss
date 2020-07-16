@@ -64,3 +64,31 @@
     margin-top: 20px;
   }
 }
+
+
+//Adigun
+@media only screen and  (max-width: 450px) {
+  .description {
+    margin-top: 50px;
+    &__content {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .header {
+    &__content {
+      padding-top: 50px;
+      width: 50%;
+      margin: 0 auto;
+      color: white;
+
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
