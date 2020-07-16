@@ -29,6 +29,7 @@
       font-weight: bolder;
       animation-name: moveInLeft;
       animation-duration: 2s;
+      line-height: 1.2;
     }
     &>p {
       text-align: left;
@@ -733,7 +734,6 @@
    .header__text{
      h1{
        font-size: 6.8rem;
-       line-height: .8;
      }
      p{
        font-size: 2.3rem;
