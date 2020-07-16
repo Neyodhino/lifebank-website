@@ -4,35 +4,35 @@
 
 
 .nav {
-  box-shadow: 5px 5px 20px #cfcfcf;
+  // box-shadow: 5px 5px 20px red;
+  background-color: white;
 }
+
 
 .panel {
   background-color: white;
-  background-repeat: no-repeat;
-  background-size: 450px;
-  background-position: left 750px;
+  height: 90vh;
   &__content {
     position: absolute;
-    width: 60%;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
-    h1 {
-      font-size: 60px;
-      font-weight: 550;
-      font-family: inherit;
-    }
-    p {
-      padding-top: 20px;
-      font-size: 45px;
-      font-family: inherit;
-      padding-bottom: 40px;
-    }
+      h1{
+        font-size: 9rem;
+        font-family: 'Crimson Text', serif;
+        font-weight: 500;
+      }
+      p{
+        font-size:3.2rem;
+        font-family: 'Crimson Text', serif;
+        margin-top: 30px;
+        padding-bottom: 70px;
+        width: 100%;
+      }
   }
 }
+
 .vision {
   background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/blur.png);
     background-size: cover;
@@ -168,6 +168,7 @@
     }
 }
 
+
 .contact {
   background-color: $LifeBankred;
   height: 120vh;
@@ -201,24 +202,22 @@
     }
   }
   .right {
-    border: none;
     border-top: 3px solid white;
     color: white;
     height: 6px;
     width: 40%;
     position: absolute;
-    top: 81.8%;
+    top: 81.7%;
     z-index: 10;
   }
   .left{
-    border: none;
     border-top: 3px solid white;
     color: white;
     height: 6px;
     width: 40%;
     position: absolute;
-    top: 81.6%;
-    left: 65%;
+    top: 81.7%;
+    left: 75%;
     z-index: 10;
   }
   .icon {
@@ -229,6 +228,7 @@
       z-index: 30;
       height: 120%;
       width: 120%;
+      position: relative;
     }
   }
 }
@@ -391,24 +391,59 @@
   top: 175%;
   left: 120%;
 }
+
 .svg-26 {
   animation: 2s ease-in 1s infinite alternate scale;
   position: absolute;
-  top: 155%;
-  left: 110%;
+  top: 135%;
+  left: -50%;
 }
 .svg-27 {
   animation: 2s ease-in 1s infinite alternate scale;
   position: absolute;
-  top: 148%;
-  left: 60%;
+  top: 135%;
+  left: 136%;
 }
 .svg-28 {
   animation: 2s ease-in 1s infinite alternate scale;
   position: absolute;
-  top: 158%;
-  left: -5%;
+  top: 145%;
+  left: 56%;
 }
+
+.svg-29 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 145%;
+  left: 16%;
+}
+
+.svg-30 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 145%;
+  left: 110%;
+}
+
+.svg-31 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 158%;
+  left: -44%;
+}
+.svg-32 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 160%;
+  left: 135%;
+}
+.svg-33 {
+  animation: 2s ease-in 1s infinite alternate scale;
+  position: absolute;
+  top: 165%;
+  left: -3%;
+}
+
 .section-one h1 {
 	-webkit-transform: translateY(-400px);
 	        transform: translateY(-400px);
@@ -509,28 +544,186 @@
   }
 }
 
-@media(max-width: 1277px) {
+@media(max-width: '1440px') {
+  .vision__content{
+    width: 70%;
+    top: 55%;
+    h1{
+      font-size: 3.3rem;
+    }
+    p{
+      font-size: 4rem;
+      line-height: 6.1rem;
+    }
+  }
+
+  .vision_2-content{
+    margin-left: 100px;
+    width: 50%;
+    margin-bottom: 70px;
+    p{
+      font-size: 3.4rem;
+      line-height: 5rem;
+    }
+  }
+
+  .vision_3-content{
+    background-size: contain;
+    margin-left: 50px;
+    margin-bottom: 130px;
+    width: 43%;
+    h1{
+      font-size: 3.3rem;
+    }
+    p{
+      font-size: 2.7rem;
+      line-height: 6.1rem;
+    }
+  }
+
+  .vision_4-content{
+    margin-left: 100px;
+    margin-bottom: 70px;
+    width: 60%;
+    p{
+      font-size: 3.2rem;
+      line-height: 6.1rem;
+    }
+  }
+  .contact {
+    background-color: $LifeBankred;
+    height: 120vh;
+    &__content {
+      position: absolute;
+      width: 60%;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      h1 {
+        font-size: 60px;
+        font-weight: 550;
+        font-family: inherit;
+      }
+      p {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 45px;
+        font-family: inherit;
+      }
+      button {
+        font-size: 24px;
+        padding: 15px 60px;
+        margin-top: 40px;
+        border-radius: 10px;
+        font-family: inherit;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+    .right {
+      border-top: 3px solid white;
+      color: white;
+      height: 6px;
+      width: 30%;
+      position: absolute;
+      top: 81.8%;
+      z-index: 10;
+    }
+    .left{
+      border-top: 3px solid white;
+      color: white;
+      height: 6px;
+      width: 80%;
+      position: absolute;
+      top: 81.7%;
+      left: 69%;
+      z-index: 10;
+    }
+    .icon {
+      position: absolute;
+      top: 77.75%;
+      left: 25%;
+      img {
+        z-index: 30;
+        height: 120%;
+        width: 120%;
+        position: relative;
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    top: 84%;
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 1280px) {
+  .panel__content {
+    width: 80%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .vision__content {
-    p {
-      font-size: 3rem;
-      line-height: 1.28;
-    }
-  }
-
-  .vision_2-content {
-    p {
-      font-size: 3rem;
-      line-height: 1.28;
-    }
-  }
-
-  .vision_3-content {
+    left: 50%;
     p {
       font-size: 3.4rem;
       line-height: 1.28;
     }
   }
-}
+
+  .vision_2-content {
+    width: 40%;
+    p {
+      font-size: 3rem;
+      line-height: 1.28;
+    }
+  }
+
+  .vision_3 {
+    background-size: contain;
+  }
+
+  .vision_3-content {
+    margin-bottom: 130px;
+    width: 43%;
+    p {
+      font-size: 3.1rem;
+      line-height: 1.28;
+    }
+  }
+  .vision_4-content {
+    p {
+      font-size: 3.1rem;
+      line-height: 1.30;
+    }
+  }
+  .contact {
+    &__content {
+      top: 40%;
+      p {
+        font-size: 35px;
+      }
+      h1 {
+        font-size: 50px;
+      }
+    }
+    .left {
+      top: 82.3%;
+    }
+    .icon {
+      left: 24%;
+    }
+    .right {
+      top: 82.3%;
+      width: 30%;
+    }
+  }
+  }
 
 @media(max-width: 1009px) {
   .vision__content {
@@ -668,45 +861,6 @@
     }
   }
 }
-@media(max-width: '1440px') {
-  .vision__content{
-    margin-left: 100px;
-    width: 60%;
-    h1{
-      font-size: 3.3rem;
-    }
-    p{
-      font-size: 4rem;
-      line-height: 6.1rem;
-    }
-  }
-
-  .vision_2-content{
-    margin-left: 100px;
-    width: 60%;
-    h1{
-      font-size: 3.3rem;
-    }
-    p{
-      font-size: 3.7rem;
-      line-height: 5rem;
-    }
-  }
-
-  .vision_3-content{
-    margin-left: 100px;
-    width: 60%;
-    h1{
-      font-size: 3.3rem;
-    }
-    p{
-      font-size: 4rem;
-      line-height: 6.1rem;
-    }
-  }
-
-}
-
 
 @media(max-width: '786px') {
   .vision__content{

@@ -10,6 +10,6 @@ export class DataService {
 
   }
   public getAchievement() {
-    return this.http.get('http://lifebank.ng/api');
+    return this.http.get('https://lifebank.ng/api');
   }
 }

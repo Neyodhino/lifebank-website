@@ -1,6 +1,6 @@
 @import '../../global//component/button';
 
-.hero{
+.hero {
   background-color: #B70303;
   height: 90vh;
   &__content {
@@ -84,6 +84,7 @@
         color: white;
     }
   }
+
 }
 
 
@@ -511,16 +512,30 @@ hr {
   }
 }
 
-@media (max-width: 1290px) {
+
+@media (max-width: 1440px) {
   .hero__content {
-    &-text {
       h1 {
-        font-size: 5rem;
+        font-size: 6.5rem;
       }
       p {
-        font-size: 2rem;
+        font-size: 2.6rem;
         margin-top: 20px;
       }
+    }
+  }
+  .career {
+    &__content {
+      width: 60%;
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+  .career2__content {
+    p {
+      font-size: 3rem;
+      line-height: 4rem;
     }
   }
   .virtues__text {
@@ -531,7 +546,40 @@ hr {
       font-size: 1.8rem;
     }
   }
-}
+
+  @media (max-width: 1280px) {
+    .hero__content {
+        h1 {
+          font-size: 6rem;
+        }
+        p {
+          font-size: 2.2rem;
+          margin-top: 20px;
+        }
+      }
+    }
+    .career {
+      &__content {
+        width: 60%;
+        h1 {
+          font-size: 6rem;
+        }
+      }
+    }
+    .career2__content {
+      p {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+    .virtues__text {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
 
 @media(max-width: '970px') {
   .hero{
