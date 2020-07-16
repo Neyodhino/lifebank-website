@@ -8,7 +8,6 @@
   background-color: white;
 }
 
-
 .panel {
   background-color: white;
   height: 90vh;
@@ -545,6 +544,12 @@
 }
 
 @media(max-width: '1440px') {
+  .panel__content{
+    top: 45%;
+    p {
+      padding-bottom: 30px;
+    }
+  }
   .vision__content{
     width: 70%;
     top: 55%;
