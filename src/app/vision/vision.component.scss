@@ -58,7 +58,6 @@
     }
 }
 
-
 .vision_2 {
   height: 70vh;
   background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/Collage-2.jpg);
@@ -200,33 +199,14 @@
       outline: none;
     }
   }
-  .right {
-    border-top: 3px solid white;
-    color: white;
-    height: 6px;
-    width: 40%;
-    position: absolute;
-    top: 81.7%;
-    z-index: 10;
-  }
-  .left{
-    border-top: 3px solid white;
-    color: white;
-    height: 6px;
-    width: 40%;
-    position: absolute;
-    top: 81.7%;
-    left: 75%;
-    z-index: 10;
-  }
   .icon {
     position: absolute;
     top: 78%;
-    left: 33%;
+
     img {
       z-index: 30;
-      height: 120%;
-      width: 120%;
+      height: 100%;
+      width: 100%;
       position: relative;
     }
   }
@@ -732,7 +712,6 @@
 
 @media(max-width: 1009px) {
   .vision__content {
-    margin-left: 50px;
     width: 55%;
     p {
       font-size: 2.5rem;
@@ -768,7 +747,6 @@
     }
   }
   .vision__content {
-    margin-left: 50px;
     width: 60%;
     p {
       font-size: 2.3rem;
@@ -807,7 +785,6 @@
     }
   }
   .vision__content {
-    margin-left: 10px;
     width: 60%;
     margin-bottom: 20px;
     p {
@@ -855,7 +832,6 @@
     }
   }
   .vision__content {
-    margin-left: 30px;
     width: 70%;
     p {
       font-size: 2rem;
@@ -909,7 +885,6 @@
 
 @media(max-width: '786px') {
   .vision__content{
-    margin-left: 60px;
     margin-bottom: 40px;
     width: 60%;
     h1{
@@ -957,7 +932,6 @@
 
 @media(max-width: '666px') {
   .vision__content{
-    margin-left: 30px;
     margin-bottom: 0;
     width: 70%;
     h1{
@@ -998,7 +972,6 @@
 
 @media(max-width: '426px') {
   .vision__content{
-    margin-left: 30px;
     margin-bottom: 0;
     width: 70%;
     h1{
@@ -1039,7 +1012,6 @@
 
 @media(max-width: '394px') {
   .vision__content{
-    margin-left: 30px;
     margin-bottom: 0;
     width: 70%;
     h1{
@@ -1081,7 +1053,6 @@
 
 @media(max-width: '360px') {
   .vision__content{
-    margin-left: 30px;
     margin-bottom: 0;
     width: 70%;
     h1{
