@@ -85,18 +85,26 @@
   }
 }
 
-@media(max-width: 1643px) {
-  .hero__content {
-    p {
-      font-size: 2.8rem;
+@media(max-width:1800px) {
+  .hero {
+    padding: 50px 0 100px 80px;
+    background-size: 1200px;
+    &__content {
+      margin-top: 100px;
+      p {
+        width: 55%;
+      }
+      h1 {
+        font-size: 7rem;
+      }
     }
   }
   .product__container {
-    width: 80%;
+    width: 90%;
   }
 }
 
-@media(max-width: 1440px) {
+@media(max-width: 1505px) {
   .hero {
     padding: 50px 0 100px 80px;
     background-size: 1200px;
@@ -115,7 +123,26 @@
   }
 }
 
-@media(max-width: 1280px) {
+@media(max-width: 1440px) {
+  .hero {
+    padding: 50px 0 100px 80px;
+    background-size: 1200px;
+    &__content {
+      margin-top: 100px;
+      p {
+        width: 55%;
+      }
+      h1 {
+        font-size: 5.4rem;
+      }
+    }
+  }
+  .product__container {
+    width: 90%;
+  }
+}
+
+@media(max-width: 1330px) {
   .hero {
     padding: 50px 0 100px 80px;
     background-size: 1200px;
@@ -142,10 +169,32 @@
   }
 }
 
+@media(max-width: 1237px) {
+  .hero {
+    padding: 50px 0 100px 80px;
+    background-size: 1000px;
+    background-position: bottom right;
+    &__content {
+      margin-top: 100px;
+      p {
+        width: 67%;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
 @media(max-width: 950px) {
+  .hero {
+    background-image: none;
+  }
   .hero__content {
+    margin-top: 70px;
+    width: 90%;
     p {
-      font-size: 2.3rem;
+      font-size: 2.8rem;
     }
   }
   .product {
@@ -162,7 +211,7 @@
     }
     &__image {
       order: 1;
-      max-width: 100%;
+      max-width: 60%;
       max-height: 550px;
     }
   }
@@ -206,13 +255,10 @@
   }
   .product {
     &__container {
-      min-width: 97%;
     }
     &__text {
+      width: 100%;
       padding-bottom: 20px;
-    }
-    &__image {
-      max-height: 450px;
     }
   }
 }
@@ -225,17 +271,20 @@
     width: 90%;
     margin-top: 10px;
     p {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
     button {
       font-size: 18px;
     }
   }
   .product {
-    margin-top: 20px;
+    margin-top: 0;
   }
   .product__text {
     width: 100%;
+    p{
+      font-size: 1.8rem;
+    }
   }
   .product__image {
     max-width: 100%;
