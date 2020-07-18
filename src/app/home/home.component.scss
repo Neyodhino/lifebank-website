@@ -10,6 +10,7 @@
   background-color: #fff;
 }
 
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -1062,7 +1063,7 @@
 @media(max-width: '360px') {
   .header__content{
     width: 100%;
-    margin: 20px auto 0 auto;
+    // margin: 20px auto 0 auto;
   }
 
   .header__text{
@@ -1176,6 +1177,12 @@
       }
       a {
         font-size: 1.7rem;
+      }
+    }
+    &__icon-container {
+      div {
+        max-width: 40%;
+        height: 10%;
       }
     }
   }

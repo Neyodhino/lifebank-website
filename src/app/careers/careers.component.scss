@@ -1,5 +1,16 @@
 @import '../../global//component/button';
 
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 50;
+  background-color: #fff;
+}
+
+
+
 .hero {
   background-color: #B70303;
   height: 90vh;

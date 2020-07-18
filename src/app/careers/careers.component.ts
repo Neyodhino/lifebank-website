@@ -18,12 +18,13 @@ export class CareersComponent implements OnInit {
   ) {
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
+      anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9'],
       verticalCentered: false,
       horizontalCentered: false,
       fadingEffect: true,
       easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
-      scrollingSpeed: 550,
-      navigation: false,
+      scrollingSpeed: 500,
+      navigation: true,
       scrollOverflow: true
     };
    }
