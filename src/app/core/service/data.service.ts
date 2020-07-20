@@ -6,8 +6,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
+
   constructor(private http: HttpClient) {}
   public getAchievement() {
-    return this.http.get('http://lifebank.ng/api');
+    let proxylurl = 'https://cors-anywhere.herokuapp.com/';
+    let url = proxylurl + 'http://lifebank.ng/api';
+    return this.http.get(url);
   }
 }
