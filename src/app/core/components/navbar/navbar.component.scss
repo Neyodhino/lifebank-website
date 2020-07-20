@@ -156,6 +156,9 @@
   #mobile__nav {
     display: block;
   }
+  .nav__button{
+    display: block;
+  }
 }
 
 @media(max-width: '900px') {
@@ -176,9 +179,6 @@
     width: 50%;
     height: 50%;
   }
-  }
-  .nav__button{
-    display: block;
   }
 }
 
