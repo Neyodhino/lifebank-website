@@ -2,6 +2,8 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 import {MatDialog} from '@angular/material/dialog';
 import { VisionContactComponent } from '../vision-contact/vision-contact.component';
 
+declare var particlesJS: any;
+
 @Component({
   selector: 'app-vision',
   templateUrl: './vision.component.html',
@@ -13,7 +15,7 @@ export class VisionComponent implements OnInit {
   fullpage_api;
   public lottieConfig: Object;
 
-
+  
   constructor(private renderer: Renderer2, private dialog: MatDialog) {
     this.config = {
       licenseKey: 'YOUR LICENSE KEY HERE',
@@ -31,6 +33,7 @@ export class VisionComponent implements OnInit {
    }
 
   ngOnInit() {
+    particlesJS.load('particles-js', 'assets/data/particles.json', function() { console.log('callback - particles.js config loaded'); });
   }
 
   openDialog() {

@@ -32,7 +32,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./src/assets/js/scrollOverflow.js"
+              "./src/assets/js/scrollOverflow.js",
+              "node_modules/particles.js"
             ]
           },
           "configurations": {
