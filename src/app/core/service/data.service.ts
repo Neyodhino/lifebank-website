@@ -10,7 +10,7 @@ export class DataService {
   constructor(private http: HttpClient) {}
   public getAchievement() {
     let proxylurl = 'https://cors-anywhere.herokuapp.com/';
-    let url = proxylurl + 'http://lifebank.ng/api';
+    let url = proxylurl + 'https://lifebank.ng/api';
     return this.http.get(url);
   }
 }
