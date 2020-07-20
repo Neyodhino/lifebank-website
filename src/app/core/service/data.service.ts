@@ -6,10 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  constructor(private http: HttpClient) {
-
-  }
+  constructor(private http: HttpClient) {}
   public getAchievement() {
-    return this.http.get('https://lifebank.ng/api');
+    return this.http.get('http://lifebank.ng/api');
   }
 }
