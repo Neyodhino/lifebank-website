@@ -2,6 +2,7 @@ import { Component, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/co
 import {MatDialog} from '@angular/material/dialog';
 import { VisionContactComponent } from '../vision-contact/vision-contact.component';
 
+declare var particlesJS: any;
 @Component({
   selector: 'app-vision',
   templateUrl: './vision.component.html',
@@ -30,6 +31,9 @@ export class VisionComponent implements OnInit {
    }
 
   ngOnInit() {
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
   }
 
   openDialog() {
