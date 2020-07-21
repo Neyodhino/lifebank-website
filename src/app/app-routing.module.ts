@@ -10,6 +10,7 @@ import { InnovationComponent } from './innovation/innovation.component';
 import { CfoComponent } from './cfo/cfo.component';
 import { CgoComponent } from './cgo/cgo.component';
 import { CmComponent } from './cm/cm.component';
+import { FulfillmentComponent } from './fulfillment-lead/fulfillment-lead.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'innovation', component: InnovationComponent },
   { path: 'careers/cfo', component: CfoComponent },
   { path: 'careers/cgo', component: CgoComponent },
-  { path: 'careers/cm', component: CmComponent }
+  { path: 'careers/cm', component: CmComponent },
+  { path: 'careers/fl', component: FulfillmentComponent }
 ];
 
 @NgModule({

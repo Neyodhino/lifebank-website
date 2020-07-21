@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module';
 import { ShareModule } from './share/share.module';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
-import { LottieAnimationViewModule } from 'ng-lottie';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +20,7 @@ import { CfoComponent } from './cfo/cfo.component';
 import { CgoComponent } from './cgo/cgo.component';
 import { CmComponent } from './cm/cm.component';
 import { VisionContactComponent } from './vision-contact/vision-contact.component';
+import { FulfillmentComponent } from './fulfillment-lead/fulfillment-lead.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import { VisionContactComponent } from './vision-contact/vision-contact.componen
     CfoComponent,
     CgoComponent,
     CmComponent,
-    VisionContactComponent
+    VisionContactComponent,
+    FulfillmentComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +47,6 @@ import { VisionContactComponent } from './vision-contact/vision-contact.componen
     ShareModule,
     BrowserAnimationsModule,
     AngularFullpageModule,
-    LottieAnimationViewModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
