@@ -24,7 +24,7 @@ export class VisionComponent implements OnInit {
    }
 
   ngOnInit() {
-    particlesJS.load('particles-js', 'assets/particless.json', function() {
+    particlesJS.load('particles-js', 'assets/particles.json', function() {
       console.log('callback - particles.js config loaded');
     });
   }
