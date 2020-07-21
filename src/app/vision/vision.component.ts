@@ -21,16 +21,10 @@ export class VisionComponent implements OnInit {
       verticalCentered: false,
       navigation: false,
     };
-    this.lottieConfig = {
-      path: '../../assets/love.svg',
-      autoplay: true,
-      loop: true,
-      renderer: 'svg'
-  };
    }
 
   ngOnInit() {
-    particlesJS.load('particles-js', 'assets/particles.json', function() {
+    particlesJS.load('particles-js', 'assets/particless.json', function() {
       console.log('callback - particles.js config loaded');
     });
   }
