@@ -15,9 +15,7 @@
   // box-shadow: 5px 5px 20px red;
   background-color: white;
 }
-
 .panel {
-  height: 90vh;
   &__content {
     position: absolute;
     top: 50%;
@@ -40,6 +38,7 @@
 }
 
 .vision {
+  z-index: 600;
   background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/blur.png);
     background-size: cover;
     background-repeat: no-repeat;
