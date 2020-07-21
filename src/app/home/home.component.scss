@@ -514,7 +514,7 @@
 .award {
   margin-top: 80px;
   display: flex;
-  padding: 70px 0;
+  padding: 70px 0 0;
   &__content {
     padding: 60px;
     background-color: #f2f1f8;
@@ -686,6 +686,14 @@
 }
 
 /* ==========================================media queries==============================================================================*/
+
+// @media (max-height: 770px) {
+//   .header__text{
+//     h1 {
+//       color: blue;
+//     }
+//   }
+// }
 
 @media(max-width: '1884px') {
   //  .header__text{
