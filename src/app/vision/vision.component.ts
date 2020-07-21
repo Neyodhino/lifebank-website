@@ -20,7 +20,6 @@ export class VisionComponent implements OnInit {
       menu: '#menu',
       verticalCentered: false,
       navigation: false,
-      scrollOverflow: true
     };
     this.lottieConfig = {
       path: '../../assets/love.svg',
