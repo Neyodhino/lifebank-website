@@ -10,6 +10,11 @@
   background-color: #fff;
 }
 
+
+.header {
+  height: 99vh;
+}
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -537,6 +542,7 @@
       padding-left: 40px;
       text-decoration: none;
       color: black;
+      display: block;
 
       &::after {
         content: '';
@@ -911,6 +917,18 @@
    }
  }
 
+ @media (max-width: 927px) {
+   .achievement__card {
+     width: 40%;
+     margin-top: 30px;
+   }
+   .people__content {
+     p {
+       font-size: 30px;
+     }
+  }
+ }
+
  @media(max-width: '848px') {
 
   .header__text{
@@ -946,10 +964,12 @@
 }
 
 @media(max-width: '692px') {
-
+.header {
+  height: 98.9vh;
+}
   .header__text{
     h1{
-      font-size: 7.2rem;
+      font-size: 6.5rem;
       text-align: center;
     }
     p{
@@ -958,6 +978,29 @@
       font-size: 2.3rem;
       width: 100%;
       line-height: 40px;
+    }
+  }
+  .patient__content {
+    width: 70%;
+    p {
+      font-size: 30px;
+    }
+  }
+  .partner__content {
+    width: 70%;
+    p {
+      font-size: 30px;
+    }
+  }
+  .people__content {
+    width: 70%;
+    p {
+      font-size: 30px;
+    }
+  }
+  .value__content {
+    h1 {
+      font-size: 4rem;
     }
   }
 }
@@ -981,9 +1024,15 @@
       line-height: 30px;
     }
   }
-  .header__direction{
-    margin: 70px auto 0 auto;
-    width: 6%;
+  .header__trusted {
+    bottom: 70px;
+    &-img {
+      width: 70px;
+      height: auto;
+    }
+  }
+  .achievement__card {
+    width: 60%;
   }
 }
 
@@ -1008,9 +1057,6 @@
   }
   .header__trusted {
     margin-top: 50px;
-  }
-  #mobile {
-    display: none;
   }
   .color__links {
     display: none;
@@ -1065,7 +1111,7 @@
  }
 }
 
-@media(max-width: '360px') {
+@media(max-width: '375px') {
   .header__content{
     width: 100%;
     // margin: 20px auto 0 auto;
@@ -1087,6 +1133,7 @@
     }
   }
 }
+
 
 @media only screen and (max-width: 450px) {
   .home-header{
@@ -1140,6 +1187,9 @@
         margin-right: 20px;
       }
     }
+  }
+  #mobile {
+    display: none;
   }
   .section-three, .section-four{
     text-align: center;
