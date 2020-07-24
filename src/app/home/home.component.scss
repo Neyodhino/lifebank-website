@@ -1211,8 +1211,13 @@
         line-height: 23px;
       }
       img {
-        max-width: 50px;
+        max-width: 130px;
       }
+  }
+  .header__mobile-trusted {
+    p {
+      padding-bottom: 5px;
+    }
   }
   .header__trusted-img  {
     width: 120px;
@@ -1297,9 +1302,6 @@
       &>p {
         font-size: 1.8rem;
         line-height: 23px;
-      }
-      img {
-        max-width: 50px;
       }
       a {
         font-size: 14px;
