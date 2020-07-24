@@ -9,11 +9,12 @@
   justify-content: space-between;
   background-color: #fff;
 }
-
+.header__mobile {
+  display: none;
+}
 .header {
   height: 90%;
 }
-
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -894,25 +895,72 @@
  }
 
  @media(max-width: '1000px') {
-   .header__img {
-     display: none;
-   }
-   .header__text{
-     width: 80%;
-     margin: 0 auto;
-     text-align: center;
-     h1{
-       font-size: 8rem;
-       text-align: center;
-     }
-     p{
-       margin-top: 30px;
-       text-align: center;
-       font-size: 2.5rem;
-       width: 100%;
-       line-height: 40px;
-     }
-   }
+    .header {
+      display: none;
+    }
+    .header__mobile {
+      display: block;
+      height: 100%;
+      &-content {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        h1 {
+          font-size: 5rem;
+          text-align: center;
+          font-family: 'Crimson Text', serif;
+          font-weight: bolder;
+          animation-name: moveInLeft;
+          animation-duration: 2s;
+          line-height: 1.2;
+        }
+        &>p {
+          text-align: center;
+          font-size: 2rem;
+          margin: 20px 0;
+          font-family: 'Crimson Text', serif;
+          width: 90%;
+          line-height: 38px;
+          animation-name: moveInRight;
+          animation-duration: 2s;
+        }
+        img {
+          max-width: 250px;
+          height: auto;
+        }
+      }
+      a {
+        font-size: 18px;
+        padding: 15px 75px;
+        font-family: 'Crimson Text', serif;
+        cursor: pointer;
+        color: white;
+        background-color: $LifeBankred;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+    }
+    .header__mobile-trusted {
+      margin-bottom: 50px;
+      p {
+        font-size: 2rem;
+        font-family: 'Crimson Text', serif;
+        text-align: left;
+        padding-bottom: 30px;
+      }
+    }
+    .header__trusted-img  {
+      width: 120px;
+      height: 40px;
+      display: flex;
+      img {
+        max-width: 100%;
+        margin-right: 20px;
+      }
+    }
+    .color__links {
+      display: none;
+    }
  }
 
  @media (max-width: 927px) {
@@ -957,6 +1005,69 @@
         font-size: 18;
         line-height: 2.8rem;
       }
+    }
+  }
+}
+
+@media (max-width: 777px) {
+  .header__mobile {
+    display: block;
+    height: 100%;
+    &-content {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Crimson Text', serif;
+        font-weight: bolder;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        line-height: 1.2;
+      }
+      &>p {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 20px 0;
+        font-family: 'Crimson Text', serif;
+        width: 90%;
+        line-height: 38px;
+        animation-name: moveInRight;
+        animation-duration: 2s;
+      }
+      img {
+        max-width: 250px;
+        height: auto;
+      }
+    }
+    a {
+      font-size: 18px;
+      padding: 15px 75px;
+      font-family: 'Crimson Text', serif;
+      cursor: pointer;
+      color: white;
+      background-color: $LifeBankred;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+  }
+  .header__mobile-trusted {
+    margin-bottom: 50px;
+    p {
+      font-size: 2rem;
+      font-family: 'Crimson Text', serif;
+      text-align: left;
+      padding-bottom: 30px;
+    }
+  }
+  .header__trusted-img  {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    img {
+      max-width: 100%;
+      margin-right: 20px;
     }
   }
 }
