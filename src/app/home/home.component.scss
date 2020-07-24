@@ -1132,13 +1132,6 @@
       line-height: 23px;
     }
   }
-  .people {
-    // background :linear-gradient(to right top,rgba(0,0,0,0.7),rgba(255, 254, 254, 0.2)),url(../../assets/images/mobile.png);
-    background-position: right;
-  }
-  .partner {
-    background-position: right;
-  }
 }
 
 
@@ -1221,6 +1214,12 @@
         border-radius: 5px;
       }
     }
+  }
+  .people {
+    background-position: right;
+  }
+  .partner {
+    background-position: right;
   }
   .achievement {
     &__card {
