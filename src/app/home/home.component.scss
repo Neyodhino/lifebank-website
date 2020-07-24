@@ -2,11 +2,9 @@
 @import '../../global/component/button';
 @import'../../global/abstract/_sectionContentAnimation.css';
 .container {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 50;
   background-color: #fff;
 }
 
@@ -15,7 +13,7 @@
 }
 
 .header {
-  height: 50%;
+  height: 100%;
 }
 
 .header__content {
