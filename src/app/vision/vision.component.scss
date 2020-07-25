@@ -12,10 +12,10 @@
 }
 
 .nav {
-  // box-shadow: 5px 5px 20px red;
   background-color: white;
 }
 .panel {
+  height: 100vh;
   &__content {
     position: absolute;
     top: 50%;

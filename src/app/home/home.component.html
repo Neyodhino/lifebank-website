@@ -104,70 +104,70 @@
         <a class="btn-link" [routerLink]="['/careers']">Learn More</a>
       </div>
     </section>
-
-  <section class="section fp-auto-height">
-    <div class="value">
-      <div class="value__content">
-        <h1>Faster, Cheaper, Safer</h1>
-        <p>We are on a mission to save lives across Africa through the delivery of blood, oxygen, rare drugs and supplies, and vaccines regardless of location or timing. We are on a mission to save as many lives as quickly as we can.</p>
-        <a [routerLink]="['/hospitals']">Join Us</a>
-      </div>
+    <div class="fp-auto-height section" style="display: flex; flex-direction: column; justify-content: flex-end; position: relative;">
+      <section>
+        <div class="value">
+          <div class="value__content">
+            <h1>Faster, Cheaper, Safer</h1>
+            <p>We are on a mission to save lives across Africa through the delivery of blood, oxygen, rare drugs and supplies, and vaccines regardless of location or timing. We are on a mission to save as many lives as quickly as we can.</p>
+            <a [routerLink]="['/hospitals']">Join Us</a>
+          </div>
+        </div>
+        </section>
+        <section>
+        <div class="achievement">
+          <h1>Our Achievements</h1>
+          <div class="achievement__container">
+            <div class="achievement__card">
+              <h1>{{productMoved}}</h1>
+              <p>Products Moved</p>
+            </div>
+            <div class="achievement__card">
+              <h1>{{hospitalServed}}</h1>
+              <p>Hospital Served</p>
+            </div>
+            <div class="achievement__card">
+              <h1>{{countries}}</h1>
+              <p>African Countries</p>
+            </div>
+            <div class="achievement__card">
+              <h1>{{saved}}</h1>
+              <p>Lives saved</p>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section>
+          <div class="award">
+            <div class="award__content">
+              <h1>LifeBank has won several awards</h1>
+              <a href="https://www.cartierwomensinitiative.com/candidate/temie-giwa-tubosun" target="_blank">Cartier 2020 Women's Initiative Sub-Saharan Africa Laureate
+              </a>
+              <a href="https://www.alizila.com/nigerias-lifebank-wins-first-africa-netpreneur-prize/" target="_blank">African Netpreneur Prize Initiative Award by Jack Ma</a>
+              <a href="https://www.jnj.com/johnson-johnson-announces-six-winners-of-the-champions-of-science-africa-innovation-challenge-2-0-at-the-28th-world-economic-forum-on-africa" target="_blank">Johnson and Johnson Science Africa Innovation Challenge 2.0 Award </a>
+              <a href="https://solve.mit.edu/challenges/frontlines-of-health/solutions/4898" target="_blank">2018 MIT Solve Health Challenge</a>
+              <a href="https://techcrunch.com/2018/07/12/announcing-the-tc-top-picks-for-disrupt-sf-2018/" target="_blank">TechCrunch Top Pick at TC Disrupt SF</a>
+            </div>
+            <div class="award__icon">
+              <h1>LifeBank in the news</h1>
+              <div class="award__icon-container">
+                <div><a target="_blank" href="https://about.google/stories/lifebank/" ><img src="../../assets/images/google.png" alt=""></a></div>
+                <div><a target="_blank" href="https://techcrunch.com/2018/07/12/announcing-the-tc-top-picks-for-disrupt-sf-2018/"><img src="../../assets/images/crunch.png" alt=""></a></div>
+              </div>
+              <div class="award__icon-container">
+                <div><a target="_blank" href="https://edition.cnn.com/2019/08/23/africa/lifebank-nigeria-intl/index.html"><img src="../../assets/images/cnn.png" alt=""></a></div>
+                <div><a target="_blank" href="https://solve.mit.edu/challenges/frontlines-of-health/solutions/4898"><img src="../../assets/images/mit.png" alt=""></a></div>
+              </div>
+              <div class="award__icon-container">
+                <div><a target="_blank" href="https://guardian.ng/features/health/google-lifebank-partner-to-raise-awareness-on-blood-donation-lessen-delivery-time/"><img src="../../assets/images/guardian.png" alt=""></a></div>
+                <div><a target="_blank" href="https://www.bloomberg.com/news/articles/2019-06-11/africa-s-technology-hub-rises-in-a-congested-lagos-neighborhood"><img src="../../assets/images/Bloomberg_grey.png" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <section>
+            <app-footer></app-footer>
+        </section>
     </div>
-  </section>
-  <section class="section fp-auto-height">
-    <div class="achievement">
-      <h1>Our Achievements</h1>
-      <div class="achievement__container">
-        <div class="achievement__card">
-          <h1>{{productMoved}}</h1>
-          <p>Products Moved</p>
-        </div>
-        <div class="achievement__card">
-          <h1>{{hospitalServed}}</h1>
-          <p>Hospital Served</p>
-        </div>
-        <div class="achievement__card">
-          <h1>{{countries}}</h1>
-          <p>African Countries</p>
-        </div>
-        <div class="achievement__card">
-          <h1>{{saved}}</h1>
-          <p>Lives saved</p>
-        </div>
-      </div>
-    </div>
-    </section>
-
-    <section class="section fp-auto-height">
-    <div class="award">
-      <div class="award__content">
-        <h1>LifeBank has won several awards</h1>
-        <a href="https://www.cartierwomensinitiative.com/candidate/temie-giwa-tubosun" target="_blank">Cartier 2020 Women's Initiative Sub-Saharan Africa Laureate
-        </a>
-        <a href="https://www.alizila.com/nigerias-lifebank-wins-first-africa-netpreneur-prize/" target="_blank">African Netpreneur Prize Initiative Award by Jack Ma</a>
-        <a href="https://www.jnj.com/johnson-johnson-announces-six-winners-of-the-champions-of-science-africa-innovation-challenge-2-0-at-the-28th-world-economic-forum-on-africa" target="_blank">Johnson and Johnson Science Africa Innovation Challenge 2.0 Award </a>
-        <a href="https://solve.mit.edu/challenges/frontlines-of-health/solutions/4898" target="_blank">2018 MIT Solve Health Challenge</a>
-        <a href="https://techcrunch.com/2018/07/12/announcing-the-tc-top-picks-for-disrupt-sf-2018/" target="_blank">TechCrunch Top Pick at TC Disrupt SF</a>
-      </div>
-      <div class="award__icon">
-        <h1>LifeBank in the news</h1>
-        <div class="award__icon-container">
-          <div><a target="_blank" href="https://about.google/stories/lifebank/" ><img src="../../assets/images/google.png" alt=""></a></div>
-          <div><a target="_blank" href="https://techcrunch.com/2018/07/12/announcing-the-tc-top-picks-for-disrupt-sf-2018/"><img src="../../assets/images/crunch.png" alt=""></a></div>
-        </div>
-        <div class="award__icon-container">
-          <div><a target="_blank" href="https://edition.cnn.com/2019/08/23/africa/lifebank-nigeria-intl/index.html"><img src="../../assets/images/cnn.png" alt=""></a></div>
-          <div><a target="_blank" href="https://solve.mit.edu/challenges/frontlines-of-health/solutions/4898"><img src="../../assets/images/mit.png" alt=""></a></div>
-        </div>
-        <div class="award__icon-container">
-          <div><a target="_blank" href="https://guardian.ng/features/health/google-lifebank-partner-to-raise-awareness-on-blood-donation-lessen-delivery-time/"><img src="../../assets/images/guardian.png" alt=""></a></div>
-          <div><a target="_blank" href="https://www.bloomberg.com/news/articles/2019-06-11/africa-s-technology-hub-rises-in-a-congested-lagos-neighborhood"><img src="../../assets/images/Bloomberg_grey.png" alt=""></a></div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <app-footer></app-footer>
-    </div>
-  </section>
 </div>
 
