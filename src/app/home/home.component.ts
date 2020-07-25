@@ -23,14 +23,12 @@ export class HomeComponent implements OnInit {
     private data: DataService
   ) {
     this.config = {
-      licenseKey: 'YOUR LICENSE KEY HERE',
+      licenseKey: '987535C4-2B0E4F06-ACD6C3B3-F3FB48C9',
       verticalCentered: false,
-      horizontalCentered: false,
-      fadingEffect: true,
       easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
       scrollingSpeed: 400,
       navigation: true,
-      scrollOverflow: true
+      scrollOverflow: true,
     };
   }
 

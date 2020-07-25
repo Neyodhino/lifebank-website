@@ -39,7 +39,7 @@
 .snippet {
   display: none;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 35%;
   ul {
     li {
       list-style: none;
@@ -93,6 +93,13 @@
   }
   .snippet {
     display: block;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 450px) {
+  .snippet {
+    margin-left: 20px;
   }
 }
 

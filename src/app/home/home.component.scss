@@ -9,11 +9,20 @@
   justify-content: space-between;
   background-color: #fff;
 }
+.section__container{
+  height: 1650px;
+}
 .header__mobile {
   display: none;
 }
 .header {
   height: 90%;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
 }
 .header__content {
   display: flex;
@@ -746,6 +755,9 @@
   }
 
   @media(max-width: '1528px') {
+    .section__container {
+      height: 1550px;
+    }
    .header__text{
      h1{
        font-size: 6.8rem;
@@ -846,6 +858,9 @@
 //  }
 
  @media(max-width: '1366px'){
+   .section__container {
+     height: 1400px
+   }
   .header__content{
     width: 88%;
   }
@@ -894,7 +909,16 @@
   }
  }
 
+ @media(max-width: 1200px) {
+   .header__img {
+     max-width: 50%
+   }
+ }
+
  @media(max-width: '1000px') {
+   .section__container {
+     height: 1650px;
+   }
     .header {
       display: none;
     }
@@ -964,6 +988,9 @@
  }
 
  @media (max-width: 927px) {
+   .section__container {
+     height: 2000px;
+   }
    .achievement__card {
      width: 40%;
      margin-top: 30px;
@@ -976,6 +1003,10 @@
  }
 
  @media(max-width: '848px') {
+
+  .section__container {
+    height: 2250px;
+  }
 
   .header__text{
     h1{
@@ -1067,7 +1098,9 @@
 }
 
 @media(max-width: '587px') {
-
+.section__container {
+  height: 2800px;
+}
   .header__content{
     margin: 50px auto 0 auto;
   }
@@ -1098,6 +1131,9 @@
 }
 
 @media(max-width: '500px') {
+  .section__container{
+    height: 2950px;
+  }
   .header__content{
     width: 95%;
     margin: 20px auto 0 auto;
