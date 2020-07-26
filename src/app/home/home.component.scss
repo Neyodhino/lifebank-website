@@ -1132,7 +1132,7 @@
 
 @media(max-width: '500px') {
   .section__container{
-    height: 2950px;
+    height: 2830px;
   }
   .header__content{
     width: 95%;
@@ -1209,6 +1209,9 @@
 }
 
 @media(max-width: '375px') {
+  .section__container{
+    height: 2900px;
+  }
   .header__content{
     width: 100%;
     // margin: 20px auto 0 auto;
