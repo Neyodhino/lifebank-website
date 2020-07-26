@@ -266,6 +266,17 @@
   }
 }
 
+@media(max-width: 450px) {
+  .product__image {
+    max-width: 100%;
+  }
+  .product__text {
+    button {
+      font-size: 18px;
+    }
+  }
+}
+
 @media(max-width: 375px) {
   .hero {
     padding-left: 30px;
@@ -286,9 +297,6 @@
       width: 100%;
       p{
         font-size: 1.8rem;
-      }
-      button {
-        font-size: 18px;
       }
     }
     &__image {
