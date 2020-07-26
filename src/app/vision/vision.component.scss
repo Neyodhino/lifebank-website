@@ -109,16 +109,16 @@
 
 .vision_3 {
   height: 100vh;
-  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/responsive-screen-2.png);
+  background :linear-gradient(to right top,rgba(0,0,0,1),rgba(255, 252, 252, 0)),url(../../assets/images/responsive-screen.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     align-items: flex-end;
 
     &-content {
       color: white;
-      width: 46%;
+      width: 44%;
       margin-bottom: 170px;
       margin-left: 50px;
       h1 {
@@ -568,9 +568,8 @@
   }
 
   .vision_3-content{
-    background-size: contain;
     margin-left: 50px;
-    margin-bottom: 130px;
+    margin-bottom: 43px;
     width: 43%;
     h1{
       font-size: 3.3rem;
@@ -639,6 +638,7 @@
     transform: translate(-50%, -50%);
   }
   .vision__content {
+    top: 53%;
     left: 50%;
     p {
       font-size: 3.4rem;
@@ -648,22 +648,21 @@
 
   .vision_2-content {
     width: 40%;
+    h1 {
+      font-size: 3.5rem;
+    }
     p {
       font-size: 3rem;
       line-height: 1.28;
     }
   }
 
-  .vision_3 {
-    background-size: contain;
-  }
-
   .vision_3-content {
-    margin-bottom: 130px;
-    width: 43%;
+    margin-bottom: 50px;
+    width: 41%;
     p {
-      font-size: 3.1rem;
-      line-height: 1.28;
+      font-size: 2.7rem;
+      line-height: 1.30;
     }
   }
   .vision_4-content {
@@ -800,7 +799,7 @@
     p {
       font-size: 2rem;
       line-height: 1.28;
-      margin-top: 20px;
+      margin-top: 106px;
     }
     h1 {
       font-size: 30px;
@@ -844,6 +843,21 @@
     h1 {
       font-size: 30px;
     }
+  }
+  .contact {
+    &__content {
+      top: 34%;
+    }
+    .icon {
+      top: 71%;
+    }
+    button{
+      font-size: 20px;
+      padding: 10px 40px;
+    }
+  }
+  .footer {
+    top: 70%;
   }
 }
 
@@ -958,7 +972,9 @@
       line-height: 3.6rem;
     }
   }
-
+.vision_3 {
+  background-position: right;
+}
   .vision_3-content{
     margin-left: 30px;
     width: 70%;
@@ -1005,7 +1021,7 @@
       font-size: 2.8rem;
     }
     p{
-      font-size: 2.1rem;
+      font-size: 2.2rem;
       line-height: 3.5rem;
       margin-top: 20px;
     }
@@ -1018,7 +1034,7 @@
       font-size: 2.8rem;
     }
     p{
-      font-size: 2.7rem;
+      font-size: 2.2rem;
       line-height: 4rem;
       margin-top: 20px;
     }

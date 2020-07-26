@@ -48,7 +48,7 @@
     margin: auto;
   }
   &__text{
-    width: 47%;
+    width: 43%;
     align-self: center;
     h1{
       font-family: 'Crimson Text', serif;
@@ -102,7 +102,7 @@
     width: 80%;
   }
   .product__image {
-    max-width: 40%;
+    max-width: 43%;
   }
 }
 
@@ -266,7 +266,7 @@
   }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 375px) {
   .hero {
     padding-left: 30px;
   }
@@ -282,15 +282,18 @@
   }
   .product {
     margin-top: 0;
-  }
-  .product__text {
-    width: 100%;
-    p{
-      font-size: 1.8rem;
+    &__text {
+      width: 100%;
+      p{
+        font-size: 1.8rem;
+      }
+      button {
+        font-size: 18px;
+      }
     }
-  }
-  .product__image {
-    max-width: 100%;
+    &__image {
+      max-width: 100%;
+    }
   }
 }
 

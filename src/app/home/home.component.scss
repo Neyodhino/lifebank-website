@@ -756,7 +756,7 @@
 
   @media(max-width: '1528px') {
     .section__container {
-      height: 1550px;
+      height: 1490px;
     }
    .header__text{
      h1{
@@ -811,6 +811,9 @@
       height: 100%;
     }
   }
+  .award__icon-container:not(:last-child) {
+    margin-bottom: 18px;
+  }
   .achievement__container{
     margin-top: 30px;
     width: 86%;
@@ -859,7 +862,7 @@
 
  @media(max-width: '1366px'){
    .section__container {
-     height: 1400px
+     height: 1350px
    }
   .header__content{
     width: 88%;
@@ -1210,7 +1213,7 @@
 
 @media(max-width: '375px') {
   .section__container{
-    height: 2900px;
+    height: 2720px;
   }
   .header__content{
     width: 100%;
@@ -1250,7 +1253,7 @@
         line-height: 23px;
       }
       img {
-        max-width: 130px;
+        max-width: 40%;
       }
   }
   .header__mobile-trusted {
@@ -1303,7 +1306,7 @@
   }
   .achievement {
     &__card {
-      margin-bottom: 20px;
+      margin: 0 auto 30px auto;
     }
   }
 
@@ -1314,10 +1317,15 @@
       flex-direction: column;
       justify-content: center;
       h1 {
-        font-size: 18px;
+        font-size: 20px;
       }
       a {
         font-size: 1.7rem;
+      }
+    }
+    &__icon{
+      h1 {
+        font-size: 20px;
       }
     }
     &__icon-container {
