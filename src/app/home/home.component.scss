@@ -1239,7 +1239,7 @@
 
 
 
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) and (max-height: 815px) {
   .header__mobile {
     &-content {
       width: 95%;
@@ -1253,7 +1253,7 @@
         line-height: 23px;
       }
       img {
-        max-width: 32%;
+        max-width: 75%;
       }
   }
   .header__mobile-trusted {

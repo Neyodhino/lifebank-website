@@ -2,10 +2,9 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -18,10 +17,11 @@ body {
    font-family: 'Crimson Text', serif
 }
 
-html, body { height: 100%; }
+html, body {
+   height: 100%;
+}
 body {
   margin: 0;
   font-family: "Crimson Text", serif;
   background-color: #f4f6f7;
  }
-
