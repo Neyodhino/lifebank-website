@@ -202,7 +202,7 @@
   a {
     background-color: transparent;
     padding: 16px 70px;
-    border: 3px solid $airbankblue;
+    border: 3px solid #B32911;
     border-radius: 30px;
     color: white;
     margin: 0 auto;
@@ -1135,7 +1135,7 @@
 
 @media(max-width: '500px') {
   .section__container{
-    height: 2700px;
+    height: 1840px;
   }
   .header__content{
     width: 95%;
@@ -1213,7 +1213,7 @@
 
 @media(max-width: '375px') {
   .section__container{
-    height: 2720px;
+    height: 1850px;
   }
   .header__content{
     width: 100%;
@@ -1306,13 +1306,24 @@
     background-position: right;
   }
   .achievement {
+    padding-top: 25px;
+    &__container {
+      width: 97%;
+      margin: 20px auto 0 auto;
+    }
     &__card {
+      width: 47%;
       margin: 0 auto 30px auto;
+      padding-top: 40px;
+      p {
+        margin: 20px auto 34px;
+      }
     }
   }
 
   .award {
     margin-top: 20px;
+    padding: 0;
     &__content {
       display: flex;
       flex-direction: column;
@@ -1342,6 +1353,13 @@
   .header__mobile {
     img {
       max-width: 72%;
+    }
+  }
+}
+@media(height: 736px) {
+  .header__mobile {
+    img {
+      max-width: 54%;
     }
   }
 }
