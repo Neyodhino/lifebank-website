@@ -1349,14 +1349,14 @@
   }
 }
 
-@media(min-height: 760px) {
-  .header__mobile {
-    img {
-      max-width: 72%;
-    }
-  }
-}
-@media(height: 736px) {
+// @media(min-height: 760px) {
+//   .header__mobile {
+//     img {
+//       max-width: 72%;
+//     }
+//   }
+// }
+@media(min-height: 732px) {
   .header__mobile {
     img {
       max-width: 54%;
