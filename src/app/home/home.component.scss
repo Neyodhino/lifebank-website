@@ -710,6 +710,7 @@
 //   }
 // }
 
+
 @media(max-width: '1884px') {
   //  .header__text{
   //    margin-top: 70px;
@@ -1008,7 +1009,7 @@
  @media(max-width: '848px') {
 
   .section__container {
-    height: 2250px;
+    height: 2230px;
   }
 
   .header__text{
@@ -1135,7 +1136,7 @@
 
 @media(max-width: '500px') {
   .section__container{
-    height: 1840px;
+    height: 1820px;
   }
   .header__content{
     width: 95%;
@@ -1207,13 +1208,14 @@
    }
    &__card {
      width: 80%;
+     margin: 0 auto 30px auto;
    }
  }
 }
 
 @media(max-width: '375px') {
   .section__container{
-    height: 1850px;
+    height: 1830px;
   }
   .header__content{
     width: 100%;
@@ -1313,7 +1315,6 @@
     }
     &__card {
       width: 47%;
-      margin: 0 auto 30px auto;
       padding-top: 40px;
       p {
         margin: 20px auto 34px;
@@ -1349,21 +1350,6 @@
   }
 }
 
-// @media(min-height: 760px) {
-//   .header__mobile {
-//     img {
-//       max-width: 72%;
-//     }
-//   }
-// }
-@media(min-height: 732px) {
-  .header__mobile {
-    img {
-      max-width: 54%;
-    }
-  }
-}
-
 @media(max-width: 360px) {
   .header__mobile {
     &-content {
@@ -1371,7 +1357,7 @@
       margin: auto;
       text-align: center;
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
       &>p {
         font-size: 1.7rem;
@@ -1398,3 +1384,54 @@
 }
 }
 
+@media (max-width: 320px) {
+  .section__container {
+    height: 1900px;
+  }
+  .header__mobile {
+    &-content {
+      h1 {
+        font-size: 2rem;
+      }
+      &>p {
+        font-size: 1.4rem;
+      }
+    }
+    &-trusted {
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media(min-height: 653px) {
+  .header__mobile {
+    img {
+      max-width: 41%;
+    }
+  }
+}
+
+@media(min-height: 730px) {
+  .header__mobile {
+    img {
+      max-width: 54%;
+    }
+  }
+}
+
+@media (min-height: 800px) {
+  .header__mobile {
+    img {
+      max-width: 72%;
+    }
+  }
+}
+@media (min-height: 1000px) {
+  .header__mobile {
+    img {
+      max-width: 80%;
+    }
+  }
+}
