@@ -639,21 +639,6 @@
       font-size: 30px;
     }
   }
-  .contact {
-    &__content {
-      top: 30%;
-    }
-    .icon {
-      top: 65%;
-    }
-    button{
-      font-size: 20px;
-      padding: 10px 40px;
-    }
-  }
-  .footer {
-    top: 65%;
-  }
 }
 
 @media(max-width: '786px') {
@@ -799,6 +784,21 @@
     h1 {
       font-size: 2.5rem;
     }
+  }
+  .contact {
+    &__content {
+      top: 30%;
+    }
+    .icon {
+      top: 65%;
+    }
+    button{
+      font-size: 20px;
+      padding: 10px 40px;
+    }
+  }
+  .footer {
+    top: 65%;
   }
 }
 
