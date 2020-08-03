@@ -869,7 +869,7 @@
     width: 88%;
   }
   .header__img {
-    max-width: 48%;
+    max-width: 43%;
   }
   .patient__content{
     p {
@@ -911,6 +911,12 @@
       font-size: 1.7rem;
     }
   }
+ }
+
+ @media (max-width: 1440px) {
+   .header__img {
+     max-width: 48%;
+   }
  }
 
  @media(max-width: 1200px) {
@@ -1351,13 +1357,16 @@
 }
 
 @media(max-width: 360px) {
+  .section__container {
+    height: 1840px;
+  }
   .header__mobile {
     &-content {
       width: 95%;
       margin: auto;
       text-align: center;
       h1 {
-        font-size: 4rem;
+        font-size: 2.8rem;
       }
       &>p {
         font-size: 1.7rem;
@@ -1405,7 +1414,7 @@
   }
 }
 
-@media(min-height: 653px) {
+@media(min-height: 568px) {
   .header__mobile {
     img {
       max-width: 41%;
@@ -1413,10 +1422,18 @@
   }
 }
 
+@media(min-height: 653px) {
+  .header__mobile {
+    img {
+      max-width: 44%;
+    }
+  }
+}
+
 @media(min-height: 730px) {
   .header__mobile {
     img {
-      max-width: 54%;
+      max-width: 59%;
     }
   }
 }
@@ -1424,7 +1441,7 @@
 @media (min-height: 800px) {
   .header__mobile {
     img {
-      max-width: 72%;
+      max-width: 77%;
     }
   }
 }

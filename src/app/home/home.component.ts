@@ -25,8 +25,8 @@ export class HomeComponent implements OnInit {
     this.config = {
       licenseKey: '987535C4-2B0E4F06-ACD6C3B3-F3FB48C9',
       verticalCentered: false,
-      easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
-      scrollingSpeed: 400,
+      // easingcss3: 'cubic-bezier(0.45, 0, 0.55, 1)',
+      // scrollingSpeed: 400,
       navigation: true,
       scrollOverflow: true,
     };
