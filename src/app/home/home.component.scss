@@ -1219,6 +1219,12 @@
  }
 }
 
+@media(width: 384px) {
+  .section__container {
+    height: 1835px;
+  }
+}
+
 @media(max-width: '375px') {
   .section__container{
     height: 1830px;
