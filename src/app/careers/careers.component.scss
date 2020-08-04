@@ -776,6 +776,12 @@ hr {
   }
 }
 
+@media(max-width: 385px) {
+  .section__container {
+    height: 6690px;
+  }
+}
+
 @media(max-width: 375px) {
   .section__container {
     height: 6710px;
