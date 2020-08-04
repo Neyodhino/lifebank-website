@@ -16,6 +16,9 @@
   }
 }
 
+.radio {
+  margin-bottom: 20px;
+}
 
 .mat-radio-button ~ .mat-radio-button {
   margin-left: 16px;
@@ -38,7 +41,6 @@ button {
   border-radius: 40px;
   cursor: pointer;
   padding: 13px 70px;
-  margin-top: 20px;
   font-size: 2rem;
   font-family: 'Lato', sans-serif;
   box-shadow: 20px 10px 40px #c7c7c7c7;

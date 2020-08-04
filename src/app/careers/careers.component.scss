@@ -606,6 +606,12 @@ hr {
       }
     }
 
+@media(max-width: 1024px) {
+  .section__container {
+    height: 4140px
+  }
+}
+
 @media(max-width: '970px') {
   .hero{
     padding-top: 70px;
@@ -629,6 +635,9 @@ hr {
 }
 
 @media (max-width: 800px) {
+  .section__container {
+    height: 5700px;
+  }
   .hero {
     padding-left: 30px;
   }
@@ -649,7 +658,6 @@ hr {
     max-width: 80%;
   }
 }
-
 @media(max-width: '700px') {
   .hero{
     padding-top: 30px;
@@ -671,8 +679,17 @@ hr {
     padding-top: 30px;
     font-size: 5rem;
   }
+  .virtues__paragraph {
+    width: 70%;
+  }
   .vacancies__card{
     width: 100%;
+  }
+}
+
+@media(max-width: 601px) {
+  .section__container {
+    height: 6280px;
   }
 }
 
