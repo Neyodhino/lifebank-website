@@ -719,7 +719,7 @@
   //    }
   //  }
    .header__img {
-     max-width: 38%;
+     max-width: 45%;
    }
  }
 
@@ -915,13 +915,13 @@
 
  @media (max-width: 1440px) {
    .header__img {
-     max-width: 48%;
+     max-width: 43%;
    }
  }
 
- @media(max-width: 1200px) {
+ @media(max-width: 1280px) {
    .header__img {
-     max-width: 50%
+     max-width: 48%
    }
  }
 
@@ -1227,7 +1227,7 @@
 
 @media(max-width: '375px') {
   .section__container{
-    height: 1800px;
+    height: 18px;
   }
   .header__content{
     width: 100%;
