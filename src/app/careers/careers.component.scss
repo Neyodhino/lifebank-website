@@ -9,6 +9,10 @@
   background-color: #fff;
 }
 
+.section__container{
+  height: 3920px;
+}
+
 .hero {
   background-color: #B70303;
   height: 90vh;
@@ -95,9 +99,6 @@
   }
 
 }
-
-
-
 
 .virtues {
   &__heading {
@@ -492,6 +493,9 @@ hr {
 /**======================media queries============================================*/
 
 @media (max-width: 1758px) {
+  .section__container {
+    height: 3770px
+  }
   .hero__content {
     &-text {
       p {
@@ -504,6 +508,9 @@ hr {
 }
 
 @media(max-width: '1552px') {
+  .section__container {
+    height: 3920px
+  }
   .hero{
     padding-top: 40px;
   }
@@ -523,6 +530,9 @@ hr {
 
 
 @media (max-width: 1440px) {
+  .section__container {
+    height: 3850px
+  }
   .hero__content {
       h1 {
         font-size: 6.5rem;
@@ -553,6 +563,12 @@ hr {
     }
     p {
       font-size: 1.8rem;
+    }
+  }
+
+  @media(max-width: 1366px) {
+    .section__container {
+      height: 3840px;
     }
   }
 
@@ -696,6 +712,9 @@ hr {
 
 
 @media only screen and  (max-width: 450px) {
+  .section__container {
+    height: 6530px;
+  }
   .we-are-the{
     font-size: 30px !important;
   }
@@ -732,5 +751,28 @@ hr {
       font-family: inherit;
       padding-bottom: 0;
     }
+  }
+}
+@media(max-width: 411px) {
+  .section__container {
+    height: 6570px;
+  }
+}
+
+@media(max-width: 375px) {
+  .section__container {
+    height: 6710px;
+  }
+}
+
+@media(max-width: 360px) {
+  .section__container {
+    height: 6850px;
+  }
+}
+
+@media(max-width: 320px) {
+  .section__container {
+    height: 7140px;
   }
 }
