@@ -1371,9 +1371,6 @@
       width: 95%;
       margin: auto;
       text-align: center;
-      h1 {
-        font-size: 2.8rem;
-      }
       &>p {
         font-size: 1.7rem;
         line-height: 23px;
@@ -1439,7 +1436,7 @@
 @media(min-height: 730px) {
   .header__mobile {
     img {
-      max-width: 51%;
+      max-width: 55%;
     }
   }
 }
